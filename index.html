@@ -10,87 +10,60 @@
     <style>
         :root {
             --primary-color: #2c3e50;
-            --accent-color: #3498db;
             --bg-sidebar: rgba(255, 255, 255, 0.95);
         }
 
-        body, html { margin: 0; padding: 0; height: 100%; font-family: 'Segoe UI', Roboto, sans-serif; }
-        
+        body, html { margin: 0; padding: 0; height: 100%; font-family: 'Segoe UI', sans-serif; }
         #map { height: 100vh; width: 100%; z-index: 1; }
 
-        /* Menú lateral amb desplaçament elegant */
         #sidebar {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 300px;
-            z-index: 1000;
-            background: var(--bg-sidebar);
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-            max-height: 85vh;
-            overflow-y: auto;
-            border: 1px solid rgba(0,0,0,0.05);
+            position: absolute; top: 20px; left: 20px; width: 300px; z-index: 1000;
+            background: var(--bg-sidebar); padding: 20px; border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15); max-height: 85vh; overflow-y: auto;
         }
 
-        h2 { margin: 0 0 5px 0; color: var(--primary-color); font-size: 1.4rem; }
+        h2 { margin: 0; color: var(--primary-color); font-size: 1.4rem; }
         p.subtitle { margin: 0 0 15px 0; font-size: 0.85rem; color: #7f8c8d; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-
         .category-title { font-weight: bold; margin: 15px 0 8px 0; display: block; color: #555; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; }
 
-        /* Estil dels Checkboxes */
         .layer-item {
-            display: flex;
-            align-items: center;
-            padding: 8px 12px;
-            margin-bottom: 6px;
-            background: #f8f9fa;
-            border-radius: 6px;
-            transition: background 0.2s;
-            cursor: pointer;
+            display: flex; align-items: center; padding: 10px; margin-bottom: 6px;
+            background: #f8f9fa; border-radius: 6px; cursor: pointer;
         }
-
-        .layer-item:hover { background: #edf2f7; }
         .layer-item input { margin-right: 12px; width: 18px; height: 18px; cursor: pointer; }
-        .layer-item label { cursor: pointer; flex-grow: 1; font-size: 0.95rem; color: #333; }
+        .layer-item label { cursor: pointer; flex-grow: 1; font-size: 0.95rem; }
 
-        /* Indicador de color de la capa */
-        .color-dot { width: 10px; height: 10px; border-radius: 50%; margin-left: 8px; border: 1px solid rgba(0,0,0,0.1); }
-
-        /* Ajustos per a mòbils */
-        @media (max-width: 480px) {
-            #sidebar { width: calc(100% - 60px); top: 10px; left: 10px; }
-        }
+        /* Mini llegenda dins del menú */
+        .color-preview { display: flex; gap: 3px; margin-left: 5px; }
+        .dot { width: 8px; height: 8px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.1); }
     </style>
 </head>
 <body>
 
     <div id="sidebar">
         <h2>Sant Andreu de la Barca</h2>
-        <p class="subtitle">Visor d'elements destacats (OSM)</p>
+        <p class="subtitle">Visor d'elements destacats</p>
 
-        <span class="category-title">Capes d'Informació</span>
+        <span class="category-title">Capes Personalitzades</span>
 
         <div class="layer-item">
-            <input type="checkbox" class="layer-toggle" id="cat-patrimoni" 
-                   data-files="patrimoni.geojson,monuments.geojson" data-color="#e74c3c">
-            <label for="cat-patrimoni">Patrimoni i Monuments</label>
-            <div class="color-dot" style="background: #e74c3c;"></div>
+            <input type="checkbox" class="layer-toggle" id="cat-cultura" 
+                   data-files="patrimoni.geojson, monuments.geojson" 
+                   data-colors="#e74c3c, #9b59b6"> <label for="cat-cultura">Cultura i Història</label>
+            <div class="color-preview">
+                <div class="dot" style="background: #e74c3c;"></div>
+                <div class="dot" style="background: #9b59b6;"></div>
+            </div>
         </div>
 
         <div class="layer-item">
-            <input type="checkbox" class="layer-toggle" id="cat-verd" 
-                   data-files="parcs.geojson,jardins.geojson,fonts.geojson" data-color="#27ae60">
-            <label for="cat-verd">Zones Verdes i Aigua</label>
-            <div class="color-dot" style="background: #27ae60;"></div>
-        </div>
-
-        <div class="layer-item">
-            <input type="checkbox" class="layer-toggle" id="cat-serveis" 
-                   data-files="farmacies.geojson,escoles.geojson" data-color="#3498db">
-            <label for="cat-serveis">Serveis Públics</label>
-            <div class="color-dot" style="background: #3498db;"></div>
+            <input type="checkbox" class="layer-toggle" id="cat-natura" 
+                   data-files="parcs.geojson, fonts.geojson" 
+                   data-colors="#27ae60, #3498db"> <label for="cat-natura">Natura i Aigua</label>
+            <div class="color-preview">
+                <div class="dot" style="background: #27ae60;"></div>
+                <div class="dot" style="background: #3498db;"></div>
+            </div>
         </div>
 
     </div>
@@ -100,62 +73,56 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <script>
-        // 1. Configuració inicial del mapa (Centrat a Sant Andreu de la Barca)
-        const map = L.map('map', {
-            zoomControl: false // El movem a la dreta per no tapar el menú
-        }).setView([41.4475, 1.9328], 15);
-
+        const map = L.map('map', { zoomControl: false }).setView([41.4475, 1.9328], 15);
         L.control.zoom({ position: 'topright' }).addTo(map);
 
-        // 2. Capa Base (CartoDB Positron - estil net i clar)
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OpenStreetMap &copy; CARTO'
+            attribution: '&copy; OpenStreetMap'
         }).addTo(map);
 
-        // Objecte global per emmagatzemar els grups de capes carregats
         const loadedGroups = {};
 
-        // 3. Funció principal per gestionar grups de fitxers GeoJSON
         async function toggleLayerGroup(checkbox) {
             const id = checkbox.id;
             const fileList = checkbox.getAttribute('data-files').split(',');
-            const color = checkbox.getAttribute('data-color');
+            const colorList = checkbox.getAttribute('data-colors').split(',');
 
             if (checkbox.checked) {
-                // Si el grup ja s'ha carregat prèviament, només l'afegim al mapa
                 if (loadedGroups[id]) {
                     map.addLayer(loadedGroups[id]);
                 } else {
-                    // Si és la primera vegada, creem un nou LayerGroup
                     const newGroup = L.layerGroup();
                     
-                    // Carreguem cada fitxer de la llista de forma asíncrona
-                    const loadPromises = fileList.map(async (fileName) => {
+                    // Mapegem cada fitxer amb el seu color corresponent per índex
+                    const loadPromises = fileList.map(async (fileName, index) => {
                         try {
                             const response = await fetch(`data/${fileName.trim()}`);
-                            if (!response.ok) throw new Error(`No s'ha trobat el fitxer: ${fileName}`);
                             const data = await response.json();
                             
+                            // Assignem el color segons la posició a la llista (o gris si no n'hi ha prou)
+                            const specificColor = (colorList[index] || "#95a5a6").trim();
+                            const layerName = fileName.trim().replace('.geojson', '');
+
                             const geoLayer = L.geoJSON(data, {
                                 pointToLayer: (feature, latlng) => L.circleMarker(latlng, {
-                                    radius: 7,
-                                    fillColor: color,
+                                    radius: 8,
+                                    fillColor: specificColor,
                                     color: "#fff",
-                                    weight: 1.5,
-                                    opacity: 1,
-                                    fillOpacity: 0.8
+                                    weight: 2,
+                                    fillOpacity: 0.9
                                 }),
                                 onEachFeature: (feature, layer) => {
-                                    let popupContent = `<div style="padding:5px">`;
-                                    popupContent += `<strong>${feature.properties.name || "Element sense nom"}</strong><br>`;
-                                    if(feature.properties.description) popupContent += `<small>${feature.properties.description}</small><br>`;
-                                    popupContent += `<hr><small>Font: OpenStreetMap</small></div>`;
-                                    layer.bindPopup(popupContent);
+                                    layer.bindPopup(`
+                                        <div style="text-align:center">
+                                            <strong style="color:${specificColor}">${feature.properties.name || "Sense nom"}</strong><br>
+                                            <small>Capa: ${layerName}</small>
+                                        </div>
+                                    `);
                                 }
                             });
                             newGroup.addLayer(geoLayer);
                         } catch (err) {
-                            console.warn("Error carregant les dades:", err.message);
+                            console.error("Error:", err);
                         }
                     });
 
@@ -164,18 +131,12 @@
                     map.addLayer(newGroup);
                 }
             } else {
-                // Si es desmarca, eliminem el grup del mapa
-                if (loadedGroups[id]) {
-                    map.removeLayer(loadedGroups[id]);
-                }
+                if (loadedGroups[id]) map.removeLayer(loadedGroups[id]);
             }
         }
 
-        // 4. Inicialització dels esdeveniments dels checkboxes
         document.querySelectorAll('.layer-toggle').forEach(input => {
             input.addEventListener('change', (e) => toggleLayerGroup(e.target));
-            
-            // Si el checkbox està marcat per defecte al codi HTML, carreguem la capa immediatament
             if (input.checked) toggleLayerGroup(input);
         });
     </script>
