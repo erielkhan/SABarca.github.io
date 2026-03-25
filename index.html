@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Destacats - Sant Andreu de la Barca</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        #map { height: 100vh; width: 100%; }
+
+        /* Estil del Menú Lateral */
+        #sidebar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 280px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        h2 { font-size: 1.2rem; margin-top: 0; color: #2c3e50; }
+        .layer-item { margin: 10px 0; display: flex; align-items: center; }
+        .layer-item input { margin-right: 10px; cursor: pointer; }
+        
+        /* Configuració per a dispositius mòbils */
+        @media (max-width: 600px) {
+            #sidebar { width: 200px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h2>Sant Andreu de la Barca</h2>
+        <p><small>Elements destacats d'OSM</small></p>
+        <hr>
+        
+        <div class="layer-item">
+            <input type="checkbox" id="capa1" checked>
+            <label for="capa1">Patrimoni Històric</label>
+        </div>
+        <div class="layer-item">
+            <input type="checkbox" id="capa2" checked>
+            <label for="capa2">Parcs i Natura</label>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        // 1. Inicialitzar Mapa (Centrat a Sant Andreu de la Barca)
+        const map = L.map('map').setView([41.4475, 1.9328], 15);
+
+        // 2. Capa Base (CartoDB Positron és molt neta per a destacar dades)
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; Contribuïdors d`OpenStreetMap &copy; CARTO'
+        }).addTo(map);
+
+        // Contenidors per a les capes
+        const capes = {};
+
+        // 3. Funció per a carregar GeoJSON
+        function carregarCapa(arxiu, idCapa, color) {
+            fetch(`data/${archivo}`)
+                .then(response => response.json())
+                .then(data => {
+                    capas[idCapa] = L.geoJSON(data, {
+                        pointToLayer: (feature, latlng) => {
+                            return L.circleMarker(latlng, {
+                                radius: 8,
+                                fillColor: color,
+                                color: "#fff",
+                                weight: 2,
+                                opacity: 1,
+                                fillOpacity: 0.8
+                            });
+                        },
+                        onEachFeature: (feature, layer) => {
+                            const info = feature.properties.name || "Sense nom";
+                            layer.bindPopup(`<strong>${info}</strong>`);
+                        }
+                    }).addTo(map);
+                })
+                .catch(err => console.error(`Error carregant ${archivo}:`, err));
+        }
+
+        // 4. Carrega els teus arxius (Canvia 'patrimonio.geojson' pels teus noms reals)
+        carregarCapa('aparcament-lliure.geojson', 'capa1', '#e74c3c'); // Vermell
+        carregarCapa('aparcament-blava.geojson', 'capa2', '#27ae60');     // Verd
+
+        // 5. Control de visibilitat des del menú
+        document.querySelectorAll('.layer-item input').forEach(checkbox => {
+            checkbox.addEventListener('change', (e) => {
+                const id = e.target.id;
+                if (e.target.checked) {
+                    map.addLayer(capes[id]);
+                } else {
+                    map.removeLayer(capes[id]);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
