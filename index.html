@@ -16,7 +16,7 @@
         body, html { margin: 0; padding: 0; height: 100%; font-family: 'Segoe UI', sans-serif; overflow: hidden; }
         #map { height: 100vh; width: 100%; z-index: 1; }
 
-        /* --- ESTILS DEL MENÚ LATERAL I BOTÓ DE COL·LAPSE --- */
+        /* --- MENÚ LATERAL --- */
         #sidebar {
             position: absolute; top: 20px; left: 20px; width: 310px; z-index: 1000;
             background: var(--bg-sidebar); padding: 20px; border-radius: 12px;
@@ -26,14 +26,13 @@
             opacity: 1;
         }
 
-        /* Classe per amagar el menú */
         #sidebar.collapsed {
             transform: translateX(-350px);
             opacity: 0;
             pointer-events: none;
         }
 
-        /* Botó flotant per controlar el menú */
+        /* --- BOTÓ DE COL·LAPSE --- */
         #menu-toggle {
             position: absolute; top: 20px; left: 20px; z-index: 1100;
             background: white; border: none; width: 45px; height: 45px;
@@ -44,12 +43,15 @@
         }
         #menu-toggle:hover { background: #f8f9fa; transform: scale(1.05); }
 
-        /* Ajustos per quan el menú està tancat */
-        .sidebar-hidden #menu-toggle { left: 20px; }
-
-        /* Resta d'estils originals */
-        h2 { margin: 0; color: var(--primary-color); font-size: 1.3rem; padding-top: 5px; }
-        p.subtitle { margin: 0 0 15px 0; font-size: 0.8rem; color: #7f8c8d; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        /* --- TÍTOL I SUBTÍTOL (DESPLAÇATS PER AL BOTÓ) --- */
+        h2 { 
+            margin: 0; color: var(--primary-color); font-size: 1.3rem; 
+            padding-top: 5px; padding-left: 55px; 
+        }
+        p.subtitle { 
+            margin: 0 0 15px 0; font-size: 0.8rem; color: #7f8c8d; 
+            border-bottom: 2px solid #eee; padding-bottom: 10px; padding-left: 55px; 
+        }
         
         details { margin-bottom: 10px; border-radius: 8px; background: #f1f3f5; overflow: hidden; }
         summary { padding: 12px; font-weight: bold; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; text-transform: uppercase; }
@@ -102,9 +104,9 @@
                     <label for="park-delivery">Càrrega i descàrrega</label>
                     <div class="dot" style="background: #DE9333;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-disabled" data-file="aparcament-discapacitat.geojson" data-color="#BA12ED">
-                    <label for="park-disabled">Discapacitat i mobilitat reduïda</label>
+                    <label for="park-disabled">Discapacitat</label>
                     <div class="dot" style="background: #BA12ED;"></div>
                 </div>
                 <div class="layer-item">
@@ -114,10 +116,10 @@
                 </div>
                 <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-recarrega" data-file="aparcament-recarrega-electric.geojson" data-color="#3498db">
-                    <label for="park-recarrega">Recarrega de coches elèctrics</label>
+                    <label for="park-recarrega">Recàrrega elèctrica</label>
                     <div class="dot" style="background: #3498db;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-emergency" data-file="aparcament-emergencia.geojson" data-color="#C80909">
                     <label for="park-emergency">Emergències</label>
                     <div class="dot" style="background: #C80909;"></div>
@@ -132,7 +134,7 @@
                     <label for="park-motorcycle">Motocicletes</label>
                     <div class="dot" style="background: #A2835D;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-bike" data-file="aparcament-bicicletes.geojson" data-color="#97C3A7">
                     <label for="park-bike">Bicicletes</label>
                     <div class="dot" style="background: #97C3A7;"></div>
@@ -146,20 +148,18 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <script>
-        // --- LÒGICA DEL BOTÓ DE COL·LAPSE ---
+        // --- LÒGICA COL·LAPSE ---
         const sidebar = document.getElementById('sidebar');
         const menuBtn = document.getElementById('menu-toggle');
 
         menuBtn.addEventListener('click', () => {
             const isCollapsed = sidebar.classList.toggle('collapsed');
-            menuBtn.innerHTML = isCollapsed ? '☰' : '✕'; // Canvia la icona
-            menuBtn.title = isCollapsed ? "Mostra el menú" : "Amaga el menú";
+            menuBtn.innerHTML = isCollapsed ? '☰' : '✕';
         });
 
-        // --- CONFIGURACIÓ DEL MAPA (COORDENADES ACTUALITZADES) ---
+        // --- MAPA ---
         const centroSAB = [41.44997317478169, 1.9711849410595195];
         const map = L.map('map', { zoomControl: false }).setView(centroSAB, 16);
-        
         L.control.zoom({ position: 'topright' }).addTo(map);
 
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -185,10 +185,7 @@
                 }
             }
             html += `</table>`;
-            if (!props.name && !teDades) {
-                return `<span style="font-size:0.8rem; color:#999 italic;">Sense informació addicional</span>`;
-            }
-            return html;
+            return (props.name || teDades) ? html : `<span style="font-size:0.8rem; color:#999 italic;">Sense dades</span>`;
         }
 
         async function toggleLayer(checkbox) {
@@ -203,37 +200,19 @@
                 } else {
                     try {
                         const response = await fetch(filePath);
-                        if (!response.ok) throw new Error("Fitxer no trobat");
                         const data = await response.json();
-
                         const geojsonLayer = L.geoJSON(data, {
-                            style: function(feature) {
-                                return {
-                                    color: colorCapa,
-                                    weight: 3,
-                                    opacity: 0.85,
-                                    fillColor: colorCapa,
-                                    fillOpacity: 0.4
-                                };
-                            },
+                            style: { color: colorCapa, weight: 3, opacity: 0.85, fillColor: colorCapa, fillOpacity: 0.4 },
                             pointToLayer: (feature, latlng) => L.circleMarker(latlng, {
-                                radius: 9,
-                                fillColor: colorCapa,
-                                color: "#ffffff",
-                                weight: 2,
-                                opacity: 1,
-                                fillOpacity: 0.9
+                                radius: 9, fillColor: colorCapa, color: "#ffffff", weight: 2, opacity: 1, fillOpacity: 0.9
                             }),
                             onEachFeature: (feature, layer) => {
                                 layer.bindPopup(crearPopup(feature.properties, colorCapa), { maxWidth: 260 });
                             }
                         });
-
                         individualLayers[id] = geojsonLayer;
                         map.addLayer(geojsonLayer);
-                    } catch (err) {
-                        console.error("Error carregant:", fileName, err);
-                    }
+                    } catch (err) { console.error("Error:", err); }
                 }
             } else {
                 if (individualLayers[id]) map.removeLayer(individualLayers[id]);
