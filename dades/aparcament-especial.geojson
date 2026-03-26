@@ -1,1 +1,165 @@
-
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-26T10:02:59Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457004547",
+        "amenity": "parking_space",
+        "capacity": "3",
+        "parking_space": "designated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9712332,
+              41.4504818
+            ],
+            [
+              1.9711531,
+              41.4505557
+            ],
+            [
+              1.9711293,
+              41.4505422
+            ],
+            [
+              1.9712094,
+              41.450468
+            ],
+            [
+              1.9712332,
+              41.4504818
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457004547"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007956",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "note": "farmàcia",
+        "note:ca": "farmàcia",
+        "note:en": "pharmacy",
+        "parking_space": "designated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.969522,
+              41.4479601
+            ],
+            [
+              1.9695596,
+              41.4479253
+            ],
+            [
+              1.9695853,
+              41.4479402
+            ],
+            [
+              1.969549,
+              41.4479761
+            ],
+            [
+              1.969522,
+              41.4479601
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007956"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007957",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "note": "farmàcia",
+        "note:ca": "farmàcia",
+        "note:en": "pharmacy",
+        "parking_space": "designated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9694847,
+              41.4479952
+            ],
+            [
+              1.969522,
+              41.4479601
+            ],
+            [
+              1.969549,
+              41.4479761
+            ],
+            [
+              1.9695124,
+              41.4480118
+            ],
+            [
+              1.9694847,
+              41.4479952
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007957"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007958",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "note": "farmàcia",
+        "note:ca": "farmàcia",
+        "note:en": "pharmacy",
+        "parking_space": "designated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9694474,
+              41.4480302
+            ],
+            [
+              1.9694847,
+              41.4479952
+            ],
+            [
+              1.9695124,
+              41.4480118
+            ],
+            [
+              1.9694758,
+              41.4480475
+            ],
+            [
+              1.9694474,
+              41.4480302
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007958"
+    }
+  ]
+}

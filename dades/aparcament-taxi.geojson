@@ -1,1 +1,230 @@
-
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-26T10:04:00Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007959",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "parking_space": "taxi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9712355,
+              41.4497225
+            ],
+            [
+              1.9712756,
+              41.4496782
+            ],
+            [
+              1.9712994,
+              41.4496903
+            ],
+            [
+              1.9712593,
+              41.4497346
+            ],
+            [
+              1.9712355,
+              41.4497225
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007959"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007960",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "parking_space": "taxi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9712116,
+              41.4497103
+            ],
+            [
+              1.9712518,
+              41.449666
+            ],
+            [
+              1.9712756,
+              41.4496782
+            ],
+            [
+              1.9712355,
+              41.4497225
+            ],
+            [
+              1.9712116,
+              41.4497103
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007961",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "parking_space": "taxi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9711878,
+              41.4496982
+            ],
+            [
+              1.971228,
+              41.4496539
+            ],
+            [
+              1.9712518,
+              41.449666
+            ],
+            [
+              1.9712116,
+              41.4497103
+            ],
+            [
+              1.9711878,
+              41.4496982
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007961"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007962",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "parking_space": "taxi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.971164,
+              41.4496861
+            ],
+            [
+              1.9712041,
+              41.4496418
+            ],
+            [
+              1.971228,
+              41.4496539
+            ],
+            [
+              1.9711878,
+              41.4496982
+            ],
+            [
+              1.971164,
+              41.4496861
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007962"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007963",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "parking_space": "taxi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9711401,
+              41.4496739
+            ],
+            [
+              1.9711803,
+              41.4496296
+            ],
+            [
+              1.9712041,
+              41.4496418
+            ],
+            [
+              1.971164,
+              41.4496861
+            ],
+            [
+              1.9711401,
+              41.4496739
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007963"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007964",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "parking_space": "taxi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9711163,
+              41.4496618
+            ],
+            [
+              1.9711565,
+              41.4496175
+            ],
+            [
+              1.9711803,
+              41.4496296
+            ],
+            [
+              1.9711401,
+              41.4496739
+            ],
+            [
+              1.9711163,
+              41.4496618
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007964"
+    }
+  ]
+}
