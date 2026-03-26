@@ -34,11 +34,11 @@
         .layer-item input { margin-right: 12px; width: 16px; height: 16px; }
         .dot { width: 10px; height: 10px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.1); margin-left: 5px; }
 
-        /* Estilos Popup */
-        .osm-table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 0.75rem; }
-        .osm-table th { text-align: left; padding: 4px; background: #f9f9f9; border: 1px solid #ddd; color: #666; }
+        /* Estils Taula Popup */
+        .osm-table { width: 100%; border-collapse: collapse; margin-top: 5px; font-size: 0.75rem; }
+        .osm-table th { text-align: left; padding: 4px; background: #f9f9f9; border: 1px solid #ddd; color: #666; width: 35%; }
         .osm-table td { padding: 4px; border: 1px solid #ddd; color: #333; }
-        .popup-header { font-size: 1rem; font-weight: bold; display: block; margin-bottom: 5px; padding-bottom: 3px; border-bottom: 2px solid #eee; }
+        .popup-header { font-size: 1rem; font-weight: bold; display: block; margin-bottom: 8px; padding-bottom: 3px; border-bottom: 2px solid #eee; }
     </style>
 </head>
 <body>
@@ -72,9 +72,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <script>
-        // --- COORDENADAS ACTUALIZADAS ---
         const centroSAB = [41.44997317478169, 1.9711849410595195];
-        
         const map = L.map('map', { zoomControl: false }).setView(centroSAB, 16);
         
         L.control.zoom({ position: 'topright' }).addTo(map);
@@ -85,18 +83,36 @@
 
         const individualLayers = {};
 
+        // Funció per crear el Popup optimitzada
         function crearPopup(props, color) {
-            let html = `<span class="popup-header" style="color: ${color}">${props.name || "Sense nom"}</span>`;
+            let html = "";
+            
+            // Només afegim el header si la propietat 'name' existeix i no està buida
+            if (props.name && props.name.trim() !== "") {
+                html += `<span class="popup-header" style="color: ${color}">${props.name}</span>`;
+            }
+
             html += `<table class="osm-table">`;
+            let teDades = false;
+
             for (const clau in props) {
+                // Ignorem el nom (perquè ja l'hem posat a dalt), l'ID i metadades d'OSM
                 if (!['name', 'id'].includes(clau) && !clau.startsWith('@')) {
                     const valor = props[clau];
                     const valHtml = (typeof valor === 'string' && valor.startsWith('http')) 
                         ? `<a href="${valor}" target="_blank">Enllaç</a>` : valor;
+                    
                     html += `<tr><th>${clau}</th><td>${valHtml}</td></tr>`;
+                    teDades = true;
                 }
             }
             html += `</table>`;
+
+            // Si no hi ha nom ni dades a la taula, posem un missatge genèric molt discret
+            if (!props.name && !teDades) {
+                return `<span style="font-size:0.8rem; color:#999 italic;">Sense informació addicional</span>`;
+            }
+
             return html;
         }
 
