@@ -1,0 +1,368 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-26T13:11:15Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007956",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "note": "farmàcia",
+        "note:ca": "farmàcia",
+        "note:en": "pharmacy",
+        "parking_space": "emergency"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.969522,
+              41.4479601
+            ],
+            [
+              1.9695596,
+              41.4479253
+            ],
+            [
+              1.9695853,
+              41.4479402
+            ],
+            [
+              1.969549,
+              41.4479761
+            ],
+            [
+              1.969522,
+              41.4479601
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007956"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007957",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "note": "farmàcia",
+        "note:ca": "farmàcia",
+        "note:en": "pharmacy",
+        "parking_space": "emergency"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9694847,
+              41.4479952
+            ],
+            [
+              1.969522,
+              41.4479601
+            ],
+            [
+              1.969549,
+              41.4479761
+            ],
+            [
+              1.9695124,
+              41.4480118
+            ],
+            [
+              1.9694847,
+              41.4479952
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007957"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007958",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "note": "farmàcia",
+        "note:ca": "farmàcia",
+        "note:en": "pharmacy",
+        "parking_space": "emergency"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9694474,
+              41.4480302
+            ],
+            [
+              1.9694847,
+              41.4479952
+            ],
+            [
+              1.9695124,
+              41.4480118
+            ],
+            [
+              1.9694758,
+              41.4480475
+            ],
+            [
+              1.9694474,
+              41.4480302
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007958"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457019239",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "note": "CUAP La Solana",
+        "note:ca": "CUAP La Solana",
+        "note:es": "CUAP La Solana",
+        "parking_space": "emergency"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9760161,
+              41.4495755
+            ],
+            [
+              1.9759909,
+              41.4495889
+            ],
+            [
+              1.9759523,
+              41.4495509
+            ],
+            [
+              1.9759768,
+              41.449537
+            ],
+            [
+              1.9760161,
+              41.4495755
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457019239"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457019240",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "note": "CUAP La Solana",
+        "note:ca": "CUAP La Solana",
+        "note:es": "CUAP La Solana",
+        "parking_space": "emergency"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9760514,
+              41.4496105
+            ],
+            [
+              1.9760269,
+              41.4496244
+            ],
+            [
+              1.9759936,
+              41.4495913
+            ],
+            [
+              1.9760181,
+              41.4495774
+            ],
+            [
+              1.9760514,
+              41.4496105
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457019240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457019241",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "note": "CUAP La Solana",
+        "note:ca": "CUAP La Solana",
+        "note:es": "CUAP La Solana",
+        "parking_space": "emergency"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9760896,
+              41.4496501
+            ],
+            [
+              1.976065,
+              41.449664
+            ],
+            [
+              1.9760269,
+              41.4496244
+            ],
+            [
+              1.9760514,
+              41.4496105
+            ],
+            [
+              1.9760896,
+              41.4496501
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457019241"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457019242",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "note": "CUAP La Solana",
+        "note:ca": "CUAP La Solana",
+        "note:es": "CUAP La Solana",
+        "parking_space": "emergency"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9761593,
+              41.4497234
+            ],
+            [
+              1.9761347,
+              41.4497372
+            ],
+            [
+              1.9761014,
+              41.4497042
+            ],
+            [
+              1.976126,
+              41.4496903
+            ],
+            [
+              1.9761593,
+              41.4497234
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457019242"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457019243",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "note": "CUAP La Solana",
+        "note:ca": "CUAP La Solana",
+        "note:es": "CUAP La Solana",
+        "parking_space": "emergency"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9761926,
+              41.4497564
+            ],
+            [
+              1.976168,
+              41.4497703
+            ],
+            [
+              1.9761347,
+              41.4497372
+            ],
+            [
+              1.9761593,
+              41.4497234
+            ],
+            [
+              1.9761926,
+              41.4497564
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457019243"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457019247",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "note": "CUAP La Solana",
+        "note:ca": "CUAP La Solana",
+        "note:es": "CUAP La Solana",
+        "parking_space": "emergency"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9761968,
+              41.4497581
+            ],
+            [
+              1.9762319,
+              41.4497556
+            ],
+            [
+              1.9762367,
+              41.4497936
+            ],
+            [
+              1.9762017,
+              41.4497961
+            ],
+            [
+              1.9761968,
+              41.4497581
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457019247"
+    }
+  ]
+}

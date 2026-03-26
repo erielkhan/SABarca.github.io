@@ -1,1 +1,225 @@
-
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-26T13:17:16Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7817580352",
+        "amenity": "bicycle_parking",
+        "capacity": "6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9762907,
+          41.4500776
+        ]
+      },
+      "id": "node/7817580352"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9434502294",
+        "access": "permit",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "shed",
+        "capacity": "28",
+        "covered": "yes",
+        "fee": "no",
+        "name": "Bicitancat Sant Andreu de la Barca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9727388,
+          41.446998
+        ]
+      },
+      "id": "node/9434502294"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9751550040",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "covered": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9725236,
+          41.44971
+        ]
+      },
+      "id": "node/9751550040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10307702306",
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9752738,
+          41.4455073
+        ]
+      },
+      "id": "node/10307702306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10309497308",
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "3",
+        "covered": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9744862,
+          41.4471319
+        ]
+      },
+      "id": "node/10309497308"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11168455737",
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "8",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9722039,
+          41.4504323
+        ]
+      },
+      "id": "node/11168455737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11173178379",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "7",
+        "covered": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9713025,
+          41.4501678
+        ]
+      },
+      "id": "node/11173178379"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11204745206",
+        "amenity": "bicycle_parking",
+        "capacity": "11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9661058,
+          41.4453776
+        ]
+      },
+      "id": "node/11204745206"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11463820983",
+        "amenity": "bicycle_parking",
+        "capacity": "6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9624433,
+          41.4556623
+        ]
+      },
+      "id": "node/11463820983"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11777236750",
+        "amenity": "bicycle_parking",
+        "capacity": "5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9584645,
+          41.4542729
+        ]
+      },
+      "id": "node/11777236750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11938301541",
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "safe_loops",
+        "capacity": "10",
+        "covered": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9628691,
+          41.4512363
+        ]
+      },
+      "id": "node/11938301541"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12012776092",
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "lockers",
+        "capacity": "14",
+        "covered": "yes",
+        "fee": "yes",
+        "name": "Bicibox - Complex Esportiu L'11",
+        "operator": "Bicibox",
+        "operator:type": "public",
+        "website": "bicibox.cat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9665839,
+          41.4458503
+        ]
+      },
+      "id": "node/12012776092"
+    }
+  ]
+}

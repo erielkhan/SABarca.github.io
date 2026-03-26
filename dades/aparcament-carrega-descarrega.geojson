@@ -1,1 +1,242 @@
-
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-26T13:12:12Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424996508",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9735284,
+              41.4490022
+            ],
+            [
+              1.9734622,
+              41.4489802
+            ],
+            [
+              1.973475,
+              41.4489588
+            ],
+            [
+              1.9735415,
+              41.4489811
+            ],
+            [
+              1.9735284,
+              41.4490022
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424996508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1442920882",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9695904,
+              41.4482631
+            ],
+            [
+              1.9696544,
+              41.4482993
+            ],
+            [
+              1.969636,
+              41.4483177
+            ],
+            [
+              1.9695719,
+              41.4482815
+            ],
+            [
+              1.9695904,
+              41.4482631
+            ]
+          ]
+        ]
+      },
+      "id": "way/1442920882"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1442920883",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9696544,
+              41.4482993
+            ],
+            [
+              1.969712,
+              41.4483334
+            ],
+            [
+              1.9696926,
+              41.4483509
+            ],
+            [
+              1.969636,
+              41.4483177
+            ],
+            [
+              1.9696544,
+              41.4482993
+            ]
+          ]
+        ]
+      },
+      "id": "way/1442920883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1455853381",
+        "amenity": "parking_space",
+        "capacity": "2",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9701211,
+              41.4482498
+            ],
+            [
+              1.9701473,
+              41.448231
+            ],
+            [
+              1.9702229,
+              41.4482902
+            ],
+            [
+              1.9701967,
+              41.448309
+            ],
+            [
+              1.9701211,
+              41.4482498
+            ]
+          ]
+        ]
+      },
+      "id": "way/1455853381"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457007955",
+        "amenity": "parking_space",
+        "capacity": "2",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9695596,
+              41.4479253
+            ],
+            [
+              1.9696274,
+              41.4478593
+            ],
+            [
+              1.9696531,
+              41.4478741
+            ],
+            [
+              1.9695853,
+              41.4479402
+            ],
+            [
+              1.9695596,
+              41.4479253
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457007955"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457022283",
+        "amenity": "parking_space",
+        "capacity": "2",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9755119,
+              41.4488695
+            ],
+            [
+              1.9755375,
+              41.4488813
+            ],
+            [
+              1.9754777,
+              41.4489533
+            ],
+            [
+              1.9754538,
+              41.4489423
+            ],
+            [
+              1.9755119,
+              41.4488695
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457022283"
+    }
+  ]
+}

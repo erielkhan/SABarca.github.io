@@ -1,0 +1,82 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-26T13:12:12Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457018292",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "parking_space": "charging"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.975099,
+              41.4488172
+            ],
+            [
+              1.9751217,
+              41.4488043
+            ],
+            [
+              1.9751607,
+              41.4488428
+            ],
+            [
+              1.975138,
+              41.4488557
+            ],
+            [
+              1.975099,
+              41.4488172
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457018292"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457018293",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "parking_space": "charging"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9750601,
+              41.4487787
+            ],
+            [
+              1.9750827,
+              41.4487658
+            ],
+            [
+              1.9751217,
+              41.4488043
+            ],
+            [
+              1.975099,
+              41.4488172
+            ],
+            [
+              1.9750601,
+              41.4487787
+            ]
+          ]
+        ]
+      },
+      "id": "way/1457018293"
+    }
+  ]
+}
