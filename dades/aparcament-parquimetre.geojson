@@ -1,1 +1,208 @@
-
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-26T13:19:15Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7817673094",
+        "amenity": "vending_machine",
+        "currency:EUR": "yes",
+        "opening_hours": "Aug off; Mo-Fr 09:00-13:30,16:00-20:00; Sa 09:00-14:00",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "vending": "parking_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9753568,
+          41.4489247
+        ]
+      },
+      "id": "node/7817673094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9933992826",
+        "amenity": "vending_machine",
+        "currency:EUR": "yes",
+        "opening_hours": "Aug off; Mo-Fr 09:00-13:30,16:00-20:00; Sa 09:00-14:00",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "vending": "parking_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9712869,
+          41.4473071
+        ]
+      },
+      "id": "node/9933992826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10707321921",
+        "amenity": "vending_machine",
+        "vending": "parking_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9696254,
+          41.4494864
+        ]
+      },
+      "id": "node/10707321921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11173172232",
+        "amenity": "vending_machine",
+        "currency:EUR": "yes",
+        "opening_hours": "Aug off; Mo-Fr 09:00-13:30,16:00-20:00; Sa 09:00-14:00",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "vending": "parking_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9709566,
+          41.4506752
+        ]
+      },
+      "id": "node/11173172232"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13239625892",
+        "amenity": "vending_machine",
+        "currency:EUR": "yes",
+        "opening_hours": "Aug off; Mo-Fr 09:00-13:30,16:00-20:00; Sa 09:00-14:00",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "vending": "parking_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9685211,
+          41.4487011
+        ]
+      },
+      "id": "node/13239625892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13239890094",
+        "amenity": "vending_machine",
+        "currency:EUR": "yes",
+        "opening_hours": "Aug off; Mo-Fr 09:00-13:30,16:00-20:00; Sa 09:00-14:00",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "vending": "parking_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9736558,
+          41.4484057
+        ]
+      },
+      "id": "node/13239890094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13263980367",
+        "amenity": "vending_machine",
+        "currency:EUR": "yes",
+        "opening_hours": "Aug off; Mo-Fr 09:00-13:30,16:00-20:00; Sa 09:00-14:00",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "vending": "parking_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9724666,
+          41.4472688
+        ]
+      },
+      "id": "node/13263980367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13263980368",
+        "amenity": "vending_machine",
+        "currency:EUR": "yes",
+        "opening_hours": "Aug off; Mo-Fr 09:00-13:30,16:00-20:00; Sa 09:00-14:00",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "vending": "parking_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9752652,
+          41.4475021
+        ]
+      },
+      "id": "node/13263980368"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13263980369",
+        "amenity": "vending_machine",
+        "currency:EUR": "yes",
+        "opening_hours": "Aug off; Mo-Fr 09:00-13:30,16:00-20:00; Sa 09:00-14:00",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "vending": "parking_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9764638,
+          41.4476282
+        ]
+      },
+      "id": "node/13263980369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13354038081",
+        "amenity": "vending_machine",
+        "currency:EUR": "yes",
+        "opening_hours": "Aug off; Mo-Fr 09:00-13:30,16:00-20:00; Sa 09:00-14:00",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "vending": "parking_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9702678,
+          41.4482328
+        ]
+      },
+      "id": "node/13354038081"
+    }
+  ]
+}
