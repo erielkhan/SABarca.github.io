@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2026-03-26T13:12:12Z",
+  "timestamp": "2026-03-26T21:55:15Z",
   "features": [
     {
       "type": "Feature",
@@ -237,6 +237,906 @@
         ]
       },
       "id": "way/1457022283"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1211763756",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9770176,
+            41.4479821
+          ],
+          [
+            1.9769832,
+            41.4479662
+          ],
+          [
+            1.9769215,
+            41.4479874
+          ],
+          [
+            1.976957,
+            41.4480041
+          ],
+          [
+            1.9770176,
+            41.4479821
+          ]
+        ]
+      },
+      "id": "way/1211763756"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1211763757",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.977052,
+            41.4479979
+          ],
+          [
+            1.9770176,
+            41.4479821
+          ],
+          [
+            1.976957,
+            41.4480041
+          ],
+          [
+            1.9769925,
+            41.4480208
+          ],
+          [
+            1.977052,
+            41.4479979
+          ]
+        ]
+      },
+      "id": "way/1211763757"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1211763758",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9770864,
+            41.4480137
+          ],
+          [
+            1.977052,
+            41.4479979
+          ],
+          [
+            1.9769925,
+            41.4480208
+          ],
+          [
+            1.977028,
+            41.4480375
+          ],
+          [
+            1.9770864,
+            41.4480137
+          ]
+        ]
+      },
+      "id": "way/1211763758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1418642747",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9763277,
+            41.44857
+          ],
+          [
+            1.976325,
+            41.4485878
+          ],
+          [
+            1.9762661,
+            41.448583
+          ],
+          [
+            1.9762685,
+            41.4485653
+          ],
+          [
+            1.9763277,
+            41.44857
+          ]
+        ]
+      },
+      "id": "way/1418642747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1418974527",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.973943,
+            41.4493463
+          ],
+          [
+            1.9739274,
+            41.4493586
+          ],
+          [
+            1.9739687,
+            41.4493881
+          ],
+          [
+            1.9739843,
+            41.4493759
+          ],
+          [
+            1.973943,
+            41.4493463
+          ]
+        ]
+      },
+      "id": "way/1418974527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1418974528",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9739018,
+            41.4493167
+          ],
+          [
+            1.9738861,
+            41.449329
+          ],
+          [
+            1.9739274,
+            41.4493586
+          ],
+          [
+            1.973943,
+            41.4493463
+          ],
+          [
+            1.9739018,
+            41.4493167
+          ]
+        ]
+      },
+      "id": "way/1418974528"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1419966143",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9725108,
+            41.4505963
+          ],
+          [
+            1.9725665,
+            41.4506151
+          ],
+          [
+            1.9725771,
+            41.4505976
+          ],
+          [
+            1.9725213,
+            41.4505788
+          ],
+          [
+            1.9725108,
+            41.4505963
+          ]
+        ]
+      },
+      "id": "way/1419966143"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1419966144",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.972455,
+            41.4505775
+          ],
+          [
+            1.9725108,
+            41.4505963
+          ],
+          [
+            1.9725213,
+            41.4505788
+          ],
+          [
+            1.9724656,
+            41.4505599
+          ],
+          [
+            1.972455,
+            41.4505775
+          ]
+        ]
+      },
+      "id": "way/1419966144"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1419966149",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9720169,
+            41.450404
+          ],
+          [
+            1.9719572,
+            41.4503839
+          ],
+          [
+            1.9719445,
+            41.4504052
+          ],
+          [
+            1.9720042,
+            41.4504253
+          ],
+          [
+            1.9720169,
+            41.450404
+          ]
+        ]
+      },
+      "id": "way/1419966149"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1419966150",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9720766,
+            41.4504241
+          ],
+          [
+            1.9720169,
+            41.450404
+          ],
+          [
+            1.9720042,
+            41.4504253
+          ],
+          [
+            1.9720638,
+            41.4504453
+          ],
+          [
+            1.9720766,
+            41.4504241
+          ]
+        ]
+      },
+      "id": "way/1419966150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1419966151",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9721363,
+            41.4504442
+          ],
+          [
+            1.9720766,
+            41.4504241
+          ],
+          [
+            1.9720638,
+            41.4504453
+          ],
+          [
+            1.9721235,
+            41.4504654
+          ],
+          [
+            1.9721363,
+            41.4504442
+          ]
+        ]
+      },
+      "id": "way/1419966151"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424869497",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9728217,
+            41.4501969
+          ],
+          [
+            1.9728779,
+            41.4502123
+          ],
+          [
+            1.9728873,
+            41.4501932
+          ],
+          [
+            1.972831,
+            41.4501778
+          ],
+          [
+            1.9728217,
+            41.4501969
+          ]
+        ]
+      },
+      "id": "way/1424869497"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424869498",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9728779,
+            41.4502123
+          ],
+          [
+            1.9729341,
+            41.4502278
+          ],
+          [
+            1.9729435,
+            41.4502087
+          ],
+          [
+            1.9728873,
+            41.4501932
+          ],
+          [
+            1.9728779,
+            41.4502123
+          ]
+        ]
+      },
+      "id": "way/1424869498"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424869499",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9729341,
+            41.4502278
+          ],
+          [
+            1.9729904,
+            41.4502433
+          ],
+          [
+            1.9729997,
+            41.4502241
+          ],
+          [
+            1.9729435,
+            41.4502087
+          ],
+          [
+            1.9729341,
+            41.4502278
+          ]
+        ]
+      },
+      "id": "way/1424869499"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1442920890",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9700152,
+            41.4485547
+          ],
+          [
+            1.9699902,
+            41.448571
+          ],
+          [
+            1.970036,
+            41.4486108
+          ],
+          [
+            1.9700615,
+            41.4485943
+          ],
+          [
+            1.9700152,
+            41.4485547
+          ]
+        ]
+      },
+      "id": "way/1442920890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1442920891",
+        "capacity": "1",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9700615,
+            41.4485943
+          ],
+          [
+            1.970036,
+            41.4486108
+          ],
+          [
+            1.9700814,
+            41.4486502
+          ],
+          [
+            1.9701069,
+            41.4486337
+          ],
+          [
+            1.9700615,
+            41.4485943
+          ]
+        ]
+      },
+      "id": "way/1442920891"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1455853387",
+        "capacity": "4",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9701701,
+            41.4480321
+          ],
+          [
+            1.9703292,
+            41.4478826
+          ],
+          [
+            1.970307,
+            41.4478694
+          ],
+          [
+            1.970148,
+            41.4480189
+          ],
+          [
+            1.9701701,
+            41.4480321
+          ]
+        ]
+      },
+      "id": "way/1455853387"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457010181",
+        "capacity": "2",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9714029,
+            41.4505539
+          ],
+          [
+            1.9713796,
+            41.4505405
+          ],
+          [
+            1.9712769,
+            41.4506395
+          ],
+          [
+            1.9712985,
+            41.4506517
+          ],
+          [
+            1.9714029,
+            41.4505539
+          ]
+        ]
+      },
+      "id": "way/1457010181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457010192",
+        "capacity": "4",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9708344,
+            41.4508592
+          ],
+          [
+            1.9707251,
+            41.4509917
+          ],
+          [
+            1.9706974,
+            41.4509818
+          ],
+          [
+            1.9708094,
+            41.450847
+          ],
+          [
+            1.9708344,
+            41.4508592
+          ]
+        ]
+      },
+      "id": "way/1457010192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457011981",
+        "capacity": "2",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9736288,
+            41.4484333
+          ],
+          [
+            1.9735356,
+            41.4484861
+          ],
+          [
+            1.9735551,
+            41.4485053
+          ],
+          [
+            1.9736481,
+            41.4484523
+          ],
+          [
+            1.9736288,
+            41.4484333
+          ]
+        ]
+      },
+      "id": "way/1457011981"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457017546",
+        "capacity": "7",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9745905,
+            41.448239
+          ],
+          [
+            1.9747925,
+            41.4484413
+          ],
+          [
+            1.9747552,
+            41.4484607
+          ],
+          [
+            1.9745809,
+            41.4482814
+          ],
+          [
+            1.9745905,
+            41.448239
+          ]
+        ]
+      },
+      "id": "way/1457017546"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457025070",
+        "capacity": "2",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9762174,
+            41.4469954
+          ],
+          [
+            1.9760892,
+            41.4470717
+          ],
+          [
+            1.9760697,
+            41.4470534
+          ],
+          [
+            1.9761963,
+            41.4469805
+          ],
+          [
+            1.9762174,
+            41.4469954
+          ]
+        ]
+      },
+      "id": "way/1457025070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457026117",
+        "capacity": "3",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9747243,
+            41.4478179
+          ],
+          [
+            1.9745431,
+            41.4479191
+          ],
+          [
+            1.9745589,
+            41.447935
+          ],
+          [
+            1.9747401,
+            41.4478339
+          ],
+          [
+            1.9747243,
+            41.4478179
+          ]
+        ]
+      },
+      "id": "way/1457026117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1457026118",
+        "capacity": "2",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9743531,
+            41.4480286
+          ],
+          [
+            1.9742567,
+            41.4480826
+          ],
+          [
+            1.9742713,
+            41.4480962
+          ],
+          [
+            1.9743676,
+            41.4480438
+          ],
+          [
+            1.9743531,
+            41.4480286
+          ]
+        ]
+      },
+      "id": "way/1457026118"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1491793286",
+        "capacity": "2",
+        "maxstay": "30 minutes",
+        "opening_hours": "Mo-Fr 08:00-13:00,16:00-20:00; Sa 08:00-13:00",
+        "parking_space": "delivery"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.9745264,
+            41.4472553
+          ],
+          [
+            1.9745356,
+            41.4472318
+          ],
+          [
+            1.9746978,
+            41.4472676
+          ],
+          [
+            1.9746886,
+            41.4472911
+          ],
+          [
+            1.9745264,
+            41.4472553
+          ]
+        ]
+      },
+      "id": "way/1491793286"
     }
   ]
 }
