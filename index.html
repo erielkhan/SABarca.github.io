@@ -86,33 +86,24 @@
         // Funció per crear el Popup optimitzada
         function crearPopup(props, color) {
             let html = "";
-            
-            // Només afegim el header si la propietat 'name' existeix i no està buida
             if (props.name && props.name.trim() !== "") {
                 html += `<span class="popup-header" style="color: ${color}">${props.name}</span>`;
             }
-
             html += `<table class="osm-table">`;
             let teDades = false;
-
             for (const clau in props) {
-                // Ignorem el nom (perquè ja l'hem posat a dalt), l'ID i metadades d'OSM
                 if (!['name', 'id'].includes(clau) && !clau.startsWith('@')) {
                     const valor = props[clau];
                     const valHtml = (typeof valor === 'string' && valor.startsWith('http')) 
                         ? `<a href="${valor}" target="_blank">Enllaç</a>` : valor;
-                    
                     html += `<tr><th>${clau}</th><td>${valHtml}</td></tr>`;
                     teDades = true;
                 }
             }
             html += `</table>`;
-
-            // Si no hi ha nom ni dades a la taula, posem un missatge genèric molt discret
             if (!props.name && !teDades) {
                 return `<span style="font-size:0.8rem; color:#999 italic;">Sense informació addicional</span>`;
             }
-
             return html;
         }
 
@@ -132,10 +123,23 @@
                         const data = await response.json();
 
                         const geojsonLayer = L.geoJSON(data, {
+                            // --- NOVA CONFIGURACIÓ PER A POLÍGONS I LÍNIES ---
+                            style: function(feature) {
+                                return {
+                                    color: colorCapa,       // Color de la línia/vora (Dynamic)
+                                    weight: 3,              // Gruix de la línia
+                                    opacity: 0.85,          // Opacitat de la línia
+                                    fillColor: colorCapa,   // Color del llit del polígon (Dynamic)
+                                    fillOpacity: 0.4        // Opacitat del llit (més transparent per veure el mapa)
+                                };
+                            },
+                            // --------------------------------------------------
+
+                            // Mantenim la configuració específica per a PUNTS
                             pointToLayer: (feature, latlng) => L.circleMarker(latlng, {
                                 radius: 9,
-                                fillColor: colorCapa,
-                                color: "#ffffff",
+                                fillColor: colorCapa, // Color del punt (Dynamic)
+                                color: "#ffffff",     // Vora blanca per contrast
                                 weight: 2,
                                 opacity: 1,
                                 fillOpacity: 0.9
