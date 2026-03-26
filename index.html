@@ -16,7 +16,6 @@
         body, html { margin: 0; padding: 0; height: 100%; font-family: 'Segoe UI', sans-serif; overflow: hidden; }
         #map { height: 100vh; width: 100%; z-index: 1; }
 
-        /* Menú lateral */
         #sidebar {
             position: absolute; top: 20px; left: 20px; width: 310px; z-index: 1000;
             background: var(--bg-sidebar); padding: 20px; border-radius: 12px;
@@ -35,13 +34,11 @@
         .layer-item input { margin-right: 12px; width: 16px; height: 16px; }
         .dot { width: 10px; height: 10px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.1); margin-left: 5px; }
 
-        /* Estils Popup */
+        /* Estilos Popup */
         .osm-table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 0.75rem; }
         .osm-table th { text-align: left; padding: 4px; background: #f9f9f9; border: 1px solid #ddd; color: #666; }
         .osm-table td { padding: 4px; border: 1px solid #ddd; color: #333; }
         .popup-header { font-size: 1rem; font-weight: bold; display: block; margin-bottom: 5px; padding-bottom: 3px; border-bottom: 2px solid #eee; }
-
-        @media (max-width: 480px) { #sidebar { width: calc(100% - 40px); left: 10px; } }
     </style>
 </head>
 <body>
@@ -68,20 +65,6 @@
                 </div>
             </div>
         </details>
-
-        <details>
-            <summary>
-                <input type="checkbox" class="category-toggle">
-                Cultura i Patrimoni
-            </summary>
-            <div class="category-content">
-                <div class="layer-item">
-                    <input type="checkbox" class="layer-toggle" id="patrimoni" data-file="patrimoni.geojson" data-color="#e74c3c">
-                    <label for="patrimoni">Patrimoni Històric</label>
-                    <div class="dot" style="background: #e74c3c;"></div>
-                </div>
-            </div>
-        </details>
     </div>
 
     <div id="map"></div>
@@ -89,17 +72,19 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <script>
-        // 1. Inicialitzar mapa
-        const map = L.map('map', { zoomControl: false }).setView([41.4475, 1.9328], 15);
+        // --- COORDENADAS ACTUALIZADAS ---
+        const centroSAB = [41.44997317478169, 1.9711849410595195];
+        
+        const map = L.map('map', { zoomControl: false }).setView(centroSAB, 16);
+        
         L.control.zoom({ position: 'topright' }).addTo(map);
 
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OpenStreetMap'
+            attribution: '&copy; OpenStreetMap contributors'
         }).addTo(map);
 
         const individualLayers = {};
 
-        // 2. Funció per crear el contingut del Popup amb el color de la capa
         function crearPopup(props, color) {
             let html = `<span class="popup-header" style="color: ${color}">${props.name || "Sense nom"}</span>`;
             html += `<table class="osm-table">`;
@@ -115,7 +100,6 @@
             return html;
         }
 
-        // 3. Funció per carregar la capa amb el color especificat
         async function toggleLayer(checkbox) {
             const id = checkbox.id;
             const fileName = checkbox.getAttribute('data-file');
@@ -134,8 +118,8 @@
                         const geojsonLayer = L.geoJSON(data, {
                             pointToLayer: (feature, latlng) => L.circleMarker(latlng, {
                                 radius: 9,
-                                fillColor: colorCapa, // COLOR INDICAT A L'HTML
-                                color: "#ffffff",     // Vora blanca per contrast
+                                fillColor: colorCapa,
+                                color: "#ffffff",
                                 weight: 2,
                                 opacity: 1,
                                 fillOpacity: 0.9
@@ -156,7 +140,6 @@
             }
         }
 
-        // 4. Listeners per a individuals i categories
         document.querySelectorAll('.layer-toggle').forEach(input => {
             input.addEventListener('change', (e) => toggleLayer(e.target));
         });
