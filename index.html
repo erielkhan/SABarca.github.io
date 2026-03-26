@@ -107,7 +107,7 @@
                     // Mapegem cada fitxer amb el seu color corresponent per índex
                     const loadPromises = fileList.map(async (fileName, index) => {
                         try {
-                            const response = await fetch(`data/${fileName.trim()}`);
+                            const response = await fetch(`dades/${fileName.trim()}`);
                             const data = await response.json();
                             
                             // Assignem el color segons la posició a la llista (o gris si no n'hi ha prou)
