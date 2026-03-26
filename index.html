@@ -16,13 +16,39 @@
         body, html { margin: 0; padding: 0; height: 100%; font-family: 'Segoe UI', sans-serif; overflow: hidden; }
         #map { height: 100vh; width: 100%; z-index: 1; }
 
+        /* --- ESTILS DEL MENÚ LATERAL I BOTÓ DE COL·LAPSE --- */
         #sidebar {
             position: absolute; top: 20px; left: 20px; width: 310px; z-index: 1000;
             background: var(--bg-sidebar); padding: 20px; border-radius: 12px;
             box-shadow: 0 8px 32px rgba(0,0,0,0.15); max-height: 85vh; overflow-y: auto;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateX(0);
+            opacity: 1;
         }
 
-        h2 { margin: 0; color: var(--primary-color); font-size: 1.3rem; }
+        /* Classe per amagar el menú */
+        #sidebar.collapsed {
+            transform: translateX(-350px);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Botó flotant per controlar el menú */
+        #menu-toggle {
+            position: absolute; top: 20px; left: 20px; z-index: 1100;
+            background: white; border: none; width: 45px; height: 45px;
+            border-radius: 8px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.2rem; color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        #menu-toggle:hover { background: #f8f9fa; transform: scale(1.05); }
+
+        /* Ajustos per quan el menú està tancat */
+        .sidebar-hidden #menu-toggle { left: 20px; }
+
+        /* Resta d'estils originals */
+        h2 { margin: 0; color: var(--primary-color); font-size: 1.3rem; padding-top: 5px; }
         p.subtitle { margin: 0 0 15px 0; font-size: 0.8rem; color: #7f8c8d; border-bottom: 2px solid #eee; padding-bottom: 10px; }
         
         details { margin-bottom: 10px; border-radius: 8px; background: #f1f3f5; overflow: hidden; }
@@ -34,14 +60,17 @@
         .layer-item input { margin-right: 12px; width: 16px; height: 16px; }
         .dot { width: 10px; height: 10px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.1); margin-left: 5px; }
 
-        /* Estils Taula Popup */
         .osm-table { width: 100%; border-collapse: collapse; margin-top: 5px; font-size: 0.75rem; }
         .osm-table th { text-align: left; padding: 4px; background: #f9f9f9; border: 1px solid #ddd; color: #666; width: 35%; }
         .osm-table td { padding: 4px; border: 1px solid #ddd; color: #333; }
         .popup-header { font-size: 1rem; font-weight: bold; display: block; margin-bottom: 8px; padding-bottom: 3px; border-bottom: 2px solid #eee; }
+
+        @media (max-width: 480px) { #sidebar { width: calc(100% - 70px); } }
     </style>
 </head>
 <body>
+
+    <button id="menu-toggle" title="Mostra/Amaga el menú">☰</button>
 
     <div id="sidebar">
         <h2>Sant Andreu de la Barca</h2>
@@ -65,47 +94,47 @@
                 </div>
                 <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-parquimetre" data-file="aparcament-parquimetre.geojson" data-color="#072C9C">
-                    <label for="park-blava">Parquímetre</label>
+                    <label for="park-parquimetre">Parquímetre</label>
                     <div class="dot" style="background: #072C9C;"></div>
                 </div>
                 <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-delivery" data-file="aparcament-carrega-descarregablava.geojson" data-color="#DE9333">
-                    <label for="park-blava">Càrrega i descàrrega</label>
+                    <label for="park-delivery">Càrrega i descàrrega</label>
                     <div class="dot" style="background: #DE9333;"></div>
                 </div>
                  <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-disabled" data-file="aparcament-discapacitat.geojson" data-color="#BA12ED">
-                    <label for="park-blava">Discapacitat i mobilitat reduïda</label>
+                    <label for="park-disabled">Discapacitat i mobilitat reduïda</label>
                     <div class="dot" style="background: #BA12ED;"></div>
                 </div>
                 <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-comercial" data-file="aparcament-comercial.geojson" data-color="#A15DA2">
-                    <label for="park-blava">Estacionament comercial</label>
+                    <label for="park-comercial">Estacionament comercial</label>
                     <div class="dot" style="background: #A15DA2;"></div>
                 </div>
                 <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-recarrega" data-file="aparcament-recarrega-electric.geojson" data-color="#3498db">
-                    <label for="park-blava">Recarrega de coches elèctrics</label>
+                    <label for="park-recarrega">Recarrega de coches elèctrics</label>
                     <div class="dot" style="background: #3498db;"></div>
                 </div>
                  <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-emergency" data-file="aparcament-emergencia.geojson" data-color="#C80909">
-                    <label for="park-blava">Emergències</label>
+                    <label for="park-emergency">Emergències</label>
                     <div class="dot" style="background: #C80909;"></div>
                 </div>
                 <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-taxi" data-file="aparcament-taxi.geojson" data-color="#F7DB5E">
-                    <label for="park-blava">Taxis</label>
+                    <label for="park-taxi">Taxis</label>
                     <div class="dot" style="background: #F7DB5E;"></div>
                 </div>
                 <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-motorcycle" data-file="aparcament-motos.geojson" data-color="#A2835D">
-                    <label for="park-blava">Motocicletes</label>
+                    <label for="park-motorcycle">Motocicletes</label>
                     <div class="dot" style="background: #A2835D;"></div>
                 </div>
                  <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="park-bike" data-file="aparcament-bicicletes.geojson" data-color="#97C3A7">
-                    <label for="park-blava">Bicicletes</label>
+                    <label for="park-bike">Bicicletes</label>
                     <div class="dot" style="background: #97C3A7;"></div>
                 </div>
             </div>
@@ -117,6 +146,17 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <script>
+        // --- LÒGICA DEL BOTÓ DE COL·LAPSE ---
+        const sidebar = document.getElementById('sidebar');
+        const menuBtn = document.getElementById('menu-toggle');
+
+        menuBtn.addEventListener('click', () => {
+            const isCollapsed = sidebar.classList.toggle('collapsed');
+            menuBtn.innerHTML = isCollapsed ? '☰' : '✕'; // Canvia la icona
+            menuBtn.title = isCollapsed ? "Mostra el menú" : "Amaga el menú";
+        });
+
+        // --- CONFIGURACIÓ DEL MAPA (COORDENADES ACTUALITZADES) ---
         const centroSAB = [41.44997317478169, 1.9711849410595195];
         const map = L.map('map', { zoomControl: false }).setView(centroSAB, 16);
         
@@ -128,7 +168,6 @@
 
         const individualLayers = {};
 
-        // Funció per crear el Popup optimitzada
         function crearPopup(props, color) {
             let html = "";
             if (props.name && props.name.trim() !== "") {
@@ -168,23 +207,19 @@
                         const data = await response.json();
 
                         const geojsonLayer = L.geoJSON(data, {
-                            // --- NOVA CONFIGURACIÓ PER A POLÍGONS I LÍNIES ---
                             style: function(feature) {
                                 return {
-                                    color: colorCapa,       // Color de la línia/vora (Dynamic)
-                                    weight: 3,              // Gruix de la línia
-                                    opacity: 0.85,          // Opacitat de la línia
-                                    fillColor: colorCapa,   // Color del llit del polígon (Dynamic)
-                                    fillOpacity: 0.4        // Opacitat del llit (més transparent per veure el mapa)
+                                    color: colorCapa,
+                                    weight: 3,
+                                    opacity: 0.85,
+                                    fillColor: colorCapa,
+                                    fillOpacity: 0.4
                                 };
                             },
-                            // --------------------------------------------------
-
-                            // Mantenim la configuració específica per a PUNTS
                             pointToLayer: (feature, latlng) => L.circleMarker(latlng, {
                                 radius: 9,
-                                fillColor: colorCapa, // Color del punt (Dynamic)
-                                color: "#ffffff",     // Vora blanca per contrast
+                                fillColor: colorCapa,
+                                color: "#ffffff",
                                 weight: 2,
                                 opacity: 1,
                                 fillOpacity: 0.9
