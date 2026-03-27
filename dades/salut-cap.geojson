@@ -1,0 +1,111 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T12:02:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1068493672",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "37",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "amenity": "clinic",
+        "building": "public",
+        "building:levels": "2",
+        "healthcare": "clinic",
+        "healthcare:speciality": "general",
+        "name": "EAP Sant Andreu de la Barca",
+        "opening_hours": "Mo-Fr 09:00-14:00,15:00-20:00",
+        "operator": "ICS",
+        "operator:type": "public"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9655661,
+              41.4495361
+            ],
+            [
+              1.9657201,
+              41.4497221
+            ],
+            [
+              1.9654457,
+              41.4498429
+            ],
+            [
+              1.9654394,
+              41.4498386
+            ],
+            [
+              1.9654086,
+              41.4498536
+            ],
+            [
+              1.9653271,
+              41.4498556
+            ],
+            [
+              1.9653078,
+              41.4496358
+            ],
+            [
+              1.9653886,
+              41.4496331
+            ],
+            [
+              1.965404,
+              41.4497698
+            ],
+            [
+              1.9655876,
+              41.4496911
+            ],
+            [
+              1.9654932,
+              41.4495712
+            ],
+            [
+              1.9655661,
+              41.4495361
+            ]
+          ]
+        ]
+      },
+      "id": "way/1068493672"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7536443029",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "18",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Sant Felip Neri",
+        "amenity": "clinic",
+        "email": "admsolana.bln.cp.ics@gencat.net",
+        "emergency": "yes",
+        "healthcare": "clinic",
+        "healthcare:speciality": "general",
+        "name": "CUAP La Solana",
+        "opening_hours": "24/7",
+        "operator": "ICS",
+        "operator:type": "public",
+        "phone": "+34936356651"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9761343,
+          41.4496119
+        ]
+      },
+      "id": "node/7536443029"
+    }
+  ]
+}

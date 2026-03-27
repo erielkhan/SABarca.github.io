@@ -1,0 +1,102 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T12:11:14Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2093585732",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "11",
+        "addr:postcode": "08740",
+        "addr:street": "Via de l'Esport",
+        "amenity": "veterinary",
+        "instagram": "medivet_sp",
+        "name": "Medivet",
+        "name:-2023": "Clínica Veteralia - Via Veterinària",
+        "name:2024": "Medivet",
+        "opening_hours": "Mo-Fr 08:30-20:00",
+        "phone": "+34 93 682 30 39",
+        "website": "https://www.medivetgroup.com/es-es"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9699497,
+          41.4484372
+        ]
+      },
+      "id": "node/2093585732"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8142722316",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "3",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Guatemala",
+        "amenity": "veterinary",
+        "name": "Cap i Cua",
+        "phone": "+34 93 682 48 29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9770172,
+          41.4468489
+        ]
+      },
+      "id": "node/8142722316"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9754237767",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "42",
+        "addr:postcode": "08740",
+        "addr:street": "Via de l'Esport",
+        "alt_name": "Alba Roc",
+        "amenity": "veterinary",
+        "name": "Sant Andreu Veterinària",
+        "phone": "+34 93 682 30 35",
+        "shop": "pet_grooming"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9673502,
+          41.4470733
+        ]
+      },
+      "id": "node/9754237767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11153283430",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "3",
+        "addr:postcode": "08740",
+        "addr:street": "Parc Vall del Palau",
+        "addr:unit": "10",
+        "amenity": "veterinary",
+        "email": "cvminos@gmail.com",
+        "emergency:phone": "+34 607 67 96 17",
+        "name": "Minos",
+        "phone": "+34 93 682 35 21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9596861,
+          41.4546983
+        ]
+      },
+      "id": "node/11153283430"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T12:03:04Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8820476170",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "26",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Barcelona",
+        "air_conditioning": "yes",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "healthcare:speciality": "general;paediatrics;otolaryngology;psychiatry;dermatology;radiology;blood_check;dentist;physiotherapy",
+        "name": "Policlínico HM Sant Andreu",
+        "name:ca": "Policlínica HM Sant Andreu",
+        "opening_hours": "Mo-Fr 08:00-20:00",
+        "operator": "HM Hospitales",
+        "operator:type": "private",
+        "phone": "+34 93 682 13 01",
+        "website": "https://www.hmhospitales.com/sobre-hm/policlinicos/hm-sant-andreu",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9742231,
+          41.4480104
+        ]
+      },
+      "id": "node/8820476170"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12729984267",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "1",
+        "addr:postcode": "08740",
+        "addr:street": "Plaça Charlie Rivel",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "healthcare:speciality": "podiatry;physiatry;physiotherapy;plastic_surgery",
+        "mobile": "+34 603 772 304",
+        "name": "Clínica Bonica",
+        "phone": "+34 93 688 90 27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9668285,
+          41.4487543
+        ]
+      },
+      "id": "node/12729984267"
+    }
+  ]
+}

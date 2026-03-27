@@ -1,0 +1,283 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T11:59:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/514141292",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:full": "carrer de la Vall Del Palau, 5",
+        "addr:housenumber": "5",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de la Vall Palau",
+        "amenity": "pharmacy",
+        "contact:phone": "+34936530264",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Farmàcia Hernández Calvet, Jordi",
+        "opening_hours": "24/7",
+        "ref": "3623805",
+        "source": "Generalitat de Catalunya",
+        "source:date": "03/11/2020 07:58:52 AM +0000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9694797,
+          41.4479443
+        ]
+      },
+      "id": "node/514141292"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7323122601",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:full": "carrer Guatemala, 16",
+        "addr:housenumber": "16",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Guatemala",
+        "amenity": "pharmacy",
+        "contact:phone": "+34936533404",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Farmàcia Lozano Arroyo, Ismael",
+        "name:ca": "Farmàcia Lozano Arroyo, Ismael",
+        "ref": "3622998",
+        "source": "Generalitat de Catalunya",
+        "source:date": "03/11/2020 07:58:52 AM +0000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9763805,
+          41.4480515
+        ]
+      },
+      "id": "node/7323122601"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7323122603",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:full": "avinguda Constitució, 76-80",
+        "addr:housenumber": "76-80",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "amenity": "pharmacy",
+        "contact:phone": "+34936820357",
+        "dispensing": "yes",
+        "name": "Farmàcia Hernández Marcè, Begoña",
+        "ref": "3624588",
+        "source": "Generalitat de Catalunya",
+        "source:date": "03/11/2020 07:58:52 AM +0000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9605419,
+          41.4534244
+        ]
+      },
+      "id": "node/7323122603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7323122605",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:full": "carrer Creu, 27",
+        "addr:housenumber": "27",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de la Creu",
+        "amenity": "pharmacy",
+        "contact:phone": "+34936533369",
+        "dispensing": "yes",
+        "name": "Farmàcia Torres García, Maria Ruth",
+        "ref": "3621254",
+        "source": "Generalitat de Catalunya",
+        "source:date": "03/11/2020 07:58:52 AM +0000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9724367,
+          41.4500411
+        ]
+      },
+      "id": "node/7323122605"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7323122613",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:full": "plaça Onze de Setembre, 1-2",
+        "addr:housenumber": "1",
+        "addr:postcode": "08740",
+        "addr:street": "Plaça de l'Onze de Setembre",
+        "alt_name": "Farmàcia Pascual Aventin, Adria",
+        "amenity": "pharmacy",
+        "contact:phone": "+34936823133",
+        "dispensing": "yes",
+        "email": "farmaciadelonze@gmail.com",
+        "healthcare": "pharmacy",
+        "name": "Farmàcia de l'Onze",
+        "phone:mobile": "+34611639589",
+        "ref": "3621421"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9754481,
+          41.4449755
+        ]
+      },
+      "id": "node/7323122613"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7323122615",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:full": "carrer Rector Juanico, 35, portal 2",
+        "addr:housenumber": "35",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer del Rector Juanico",
+        "amenity": "pharmacy",
+        "contact:phone": "+34936824215",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "mobile": "+34 689 555 010",
+        "name": "Farmàcia Pugès",
+        "ref": "3621774",
+        "source": "Generalitat de Catalunya",
+        "source:date": "03/11/2020 07:58:52 AM +0000",
+        "website": "www.farmaciapuges.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9772355,
+          41.4460993
+        ]
+      },
+      "id": "node/7323122615"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7323122617",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:full": "carrer L'Anoia, 21",
+        "addr:housenumber": "21",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de l'Anoia",
+        "amenity": "pharmacy",
+        "contact:phone": "+34931534915",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Farmàcia Aguiila Pijuan, M. Soledad",
+        "ref": "3622065",
+        "source": "Generalitat de Catalunya",
+        "source:date": "03/11/2020 07:58:52 AM +0000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9671181,
+          41.4514227
+        ]
+      },
+      "id": "node/7323122617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7323122620",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:full": "carrer Priorat, LOCAL 5, 00010",
+        "addr:housenumber": "10",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer Priorat",
+        "addr:unit": "5",
+        "amenity": "pharmacy",
+        "contact:phone": "+34936820603",
+        "dispensing": "yes",
+        "name": "Farmàcia Fernández Giménez, Sandra",
+        "name:ca": "Farmàcia Fernández Giménez, Sandra",
+        "ref": "3623361",
+        "source": "Generalitat de Catalunya",
+        "source:date": "03/11/2020 07:58:52 AM +0000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.962714,
+          41.4525335
+        ]
+      },
+      "id": "node/7323122620"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7323122624",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:full": "carrer Major, 18",
+        "addr:housenumber": "18",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer Major",
+        "amenity": "pharmacy",
+        "contact:phone": "+34936530157",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Farmàcia Miralles Curto, Pere",
+        "ref": "3624528",
+        "source": "Generalitat de Catalunya",
+        "source:date": "03/11/2020 07:58:52 AM +0000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973848,
+          41.4476751
+        ]
+      },
+      "id": "node/7323122624"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13461455577",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "39",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Guatemala",
+        "addr:unit": "2",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "instagram": "farmaciajoseppla",
+        "name": "Farmàcia Josep Pla",
+        "opening_hours": "Mo-Fr 08:30-20:30; Sa 09:00-14:00",
+        "phone": "936850319"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9731339,
+          41.4514662
+        ]
+      },
+      "id": "node/13461455577"
+    }
+  ]
+}

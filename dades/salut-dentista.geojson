@@ -1,0 +1,258 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T12:05:04Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7536467215",
+        "addr:housenumber": "3",
+        "addr:street": "Carrer del Sol",
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "healthcare:speciality": "dental_oral_maxillo_facial_surgery",
+        "name": "Clínica Dental Gimeno",
+        "opening_hours": "Mo-Fr 10:00-13:00,16:00-21:00",
+        "phone": "+34 93 653 39 48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9731708,
+          41.4491699
+        ]
+      },
+      "id": "node/7536467215"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7679728298",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "3-5",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Barcelona",
+        "amenity": "dentist",
+        "brand": "Vitaldent",
+        "brand:wikidata": "Q5860599",
+        "brand:wikipedia": "es:Vitaldent",
+        "name": "Vitaldent",
+        "phone": "+34 936 82 91 07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9726972,
+          41.4492887
+        ]
+      },
+      "id": "node/7679728298"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9384677006",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "2",
+        "addr:place": "Plaça de l'Onze de Setembre",
+        "addr:postcode": "08740",
+        "amenity": "dentist",
+        "email": "info@dentalpunt.com",
+        "healthcare": "dentist",
+        "healthcare:speciality": "dentist",
+        "name": "Dentalpunt",
+        "operator": "Dentalpunt",
+        "phone": "+34 93 682 46 99",
+        "website": "https://www.dentalpunt.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.975506,
+          41.444925
+        ]
+      },
+      "id": "node/9384677006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9775009814",
+        "amenity": "dentist",
+        "healthcare": "dentist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9684905,
+          41.4484826
+        ]
+      },
+      "id": "node/9775009814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9779711496",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "49",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "ABADEN",
+        "phone": "+34 93 682 59 93"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9649904,
+          41.4500236
+        ]
+      },
+      "id": "node/9779711496"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9818243805",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "20",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer del doctor Fleming",
+        "amenity": "dentist",
+        "contact:instagram": "clinicadentalsantandreu",
+        "healthcare": "dentist",
+        "name": "Dental Sant Andreu",
+        "phone": "+34 93 181 76 70",
+        "phone:mobile": "+34 640 34 91 74",
+        "website": "https://clinicadentalsantandreu.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9689628,
+          41.4470694
+        ]
+      },
+      "id": "node/9818243805"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10738724543",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "7",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Pau Casals",
+        "amenity": "dentist",
+        "amenity:-2007": "bank",
+        "contact:instagram": "inidental",
+        "email": "santandreu@inidental.com",
+        "healthcare": "dentist",
+        "healthcare:speciality": "dentist",
+        "name": "Institut Implantològic & Dental",
+        "name:-2007": "La Caixa",
+        "old_name": "Puig & Baldrich Centre Dental",
+        "phone": "+34 93 653 50 03",
+        "shop:2008-2023": "vacant",
+        "website": "https://inidental.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9747203,
+          41.4466595
+        ]
+      },
+      "id": "node/10738724543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11777394700",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "3",
+        "addr:postcode": "08740",
+        "addr:street": "Parc Vall del Palau",
+        "addr:unit": "2",
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "healthcare:speciality": "orthodontics;implantology",
+        "name": "Dental Palau",
+        "phone": "+34 93 653 08 50",
+        "website": "https://www.palaudental.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9598886,
+          41.4548042
+        ]
+      },
+      "id": "node/11777394700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11863282696",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "107",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda de la Constitució",
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "Unnodent"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.958786,
+          41.4539728
+        ]
+      },
+      "id": "node/11863282696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11934037233",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:postcode": "08740",
+        "addr:street": "Plaça de les Palmeres",
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "Clínica Dental Riu",
+        "phone": "+34 93 682 82 22",
+        "phone:mobile": "+34 619 511 478",
+        "website": "clinicadentalriu.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9722471,
+          41.4504386
+        ]
+      },
+      "id": "node/11934037233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12732141671",
+        "amenity": "dentist",
+        "healthcare": "dentist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9710352,
+          41.4475269
+        ]
+      },
+      "id": "node/12732141671"
+    }
+  ]
+}
