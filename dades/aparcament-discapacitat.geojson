@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2026-03-26T10:04:00Z",
+  "timestamp": "2026-03-26T23:52:24Z",
   "features": [
     {
       "type": "Feature",
@@ -658,117 +658,6 @@
         ]
       },
       "id": "way/1209155013"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1209229254",
-        "amenity": "parking_space",
-        "capacity": "1",
-        "parking_space": "disabled"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              1.9804275,
-              41.4432861
-            ],
-            [
-              1.9803999,
-              41.4433096
-            ],
-            [
-              1.980364,
-              41.4432862
-            ],
-            [
-              1.9803899,
-              41.4432621
-            ],
-            [
-              1.9804275,
-              41.4432861
-            ]
-          ]
-        ]
-      },
-      "id": "way/1209229254"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1209229270",
-        "amenity": "parking_space",
-        "capacity": "1",
-        "parking_space": "disabled"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              1.9807417,
-              41.44346
-            ],
-            [
-              1.980697,
-              41.4434992
-            ],
-            [
-              1.9806695,
-              41.4434813
-            ],
-            [
-              1.9807156,
-              41.4434428
-            ],
-            [
-              1.9807417,
-              41.44346
-            ]
-          ]
-        ]
-      },
-      "id": "way/1209229270"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/1209229271",
-        "amenity": "parking_space",
-        "capacity": "1",
-        "parking_space": "disabled"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              1.9807865,
-              41.4434207
-            ],
-            [
-              1.9807417,
-              41.44346
-            ],
-            [
-              1.9807156,
-              41.4434428
-            ],
-            [
-              1.9807616,
-              41.4434043
-            ],
-            [
-              1.9807865,
-              41.4434207
-            ]
-          ]
-        ]
-      },
-      "id": "way/1209229271"
     },
     {
       "type": "Feature",
