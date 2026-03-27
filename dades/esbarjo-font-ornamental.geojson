@@ -1,0 +1,191 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T00:38:14Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1150295175",
+        "amenity": "fountain"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9752828,
+              41.4485488
+            ],
+            [
+              1.9752806,
+              41.4485494
+            ],
+            [
+              1.9752769,
+              41.4485518
+            ],
+            [
+              1.9752565,
+              41.4485315
+            ],
+            [
+              1.975262,
+              41.4485281
+            ],
+            [
+              1.9752828,
+              41.4485488
+            ]
+          ]
+        ]
+      },
+      "id": "way/1150295175"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1288816683",
+        "amenity": "fountain"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9812548,
+              41.4437983
+            ],
+            [
+              1.9811609,
+              41.4437596
+            ],
+            [
+              1.981231,
+              41.4436638
+            ],
+            [
+              1.981325,
+              41.4437025
+            ],
+            [
+              1.9812548,
+              41.4437983
+            ]
+          ]
+        ]
+      },
+      "id": "way/1288816683"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1291736655",
+        "amenity": "fountain"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.958772,
+              41.4558245
+            ],
+            [
+              1.9587683,
+              41.4558235
+            ],
+            [
+              1.9587844,
+              41.4557906
+            ],
+            [
+              1.9587864,
+              41.4557912
+            ],
+            [
+              1.9588252,
+              41.4558019
+            ],
+            [
+              1.958809,
+              41.4558348
+            ],
+            [
+              1.958772,
+              41.4558245
+            ]
+          ]
+        ]
+      },
+      "id": "way/1291736655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2093574969",
+        "amenity": "fountain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9693535,
+          41.4482056
+        ]
+      },
+      "id": "node/2093574969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2093577001",
+        "amenity": "fountain",
+        "name": "Font de Sant Andreu",
+        "name:ca": "Font de Sant Andreu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9700724,
+          41.4523092
+        ]
+      },
+      "id": "node/2093577001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2093580331",
+        "amenity": "fountain",
+        "drinking_water": "no",
+        "fountain": "decorative"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9710899,
+          41.4492168
+        ]
+      },
+      "id": "node/2093580331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7024420420",
+        "amenity": "fountain",
+        "drinking_water": "no",
+        "fountain": "decorative"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9720052,
+          41.4499695
+        ]
+      },
+      "id": "node/7024420420"
+    }
+  ]
+}
