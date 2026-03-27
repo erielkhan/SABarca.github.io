@@ -1,0 +1,150 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T12:19:23Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8089948748",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "5",
+        "addr:postcode": "08740",
+        "addr:street": "Plaça de la Pau",
+        "amenity": "kindergarten",
+        "education": "kindergarten",
+        "name": "Escola Bressol Nostra Senyora del Carme",
+        "name:ca": "Escola Bressol Nostra Senyora del Carme",
+        "phone": "+34 93 653 09 13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9715812,
+          41.4490804
+        ]
+      },
+      "id": "node/8089948748"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9579194105",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "27",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de l'Anoia",
+        "amenity": "kindergarten",
+        "education": "kindergarten",
+        "email": "a8062985@xtec.cat",
+        "name": "EBM El Cavallet",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "phone": "+34 93 007 46 33",
+        "preschool": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9665272,
+          41.4519612
+        ]
+      },
+      "id": "node/9579194105"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10228594844",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "27",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Francesc Macià",
+        "amenity": "kindergarten",
+        "education": "kindergarten",
+        "email": "a8069955@xtec.cat",
+        "name": "EBM El Trenet",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "phone": "+34 93 682 14 43"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.975654,
+          41.444305
+        ]
+      },
+      "id": "node/10228594844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11222030482",
+        "amenity": "kindergarten",
+        "education": "kindergarten",
+        "name": "Escola Bressol Casa Estrada",
+        "name:ca": "Escola Bressol Casa Estrada",
+        "ref": "8071275"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9741224,
+          41.4465784
+        ]
+      },
+      "id": "node/11222030482"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11222118093",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "59",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Barcelona",
+        "amenity": "kindergarten",
+        "education": "kindergarten",
+        "email": "a8067910@xtec.cat",
+        "name": "EBM Casa Pedemonte",
+        "name:ca": "EBM Casa Pedemonte",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "phone": "+34 93 653 24 57",
+        "preschool": "yes",
+        "ref": "8067910"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9748822,
+          41.4480324
+        ]
+      },
+      "id": "node/11222118093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12726905317",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:postcode": "08740",
+        "addr:street": "Camí Vell del Palau",
+        "amenity": "kindergarten",
+        "education": "kindergarten",
+        "name": "Escola Bressol Virgen del Pilar",
+        "phone": "+34 93 682 30 30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.957905,
+          41.4555791
+        ]
+      },
+      "id": "node/12726905317"
+    }
+  ]
+}

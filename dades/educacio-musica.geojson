@@ -1,0 +1,58 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T12:26:30Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9603011527",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "14",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer del Valles",
+        "amenity": "music_school",
+        "education": "music_school",
+        "email": "emmdsab@sabarca.cat",
+        "name": "Escola Municipal de Música i Dansa",
+        "name:ca": "Escola Municipal de Música i Dansa",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "phone": "+34 93 653 03 62",
+        "website": "https://emmdsab.sabarca.cat/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9675251,
+          41.4493563
+        ]
+      },
+      "id": "node/9603011527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12726878115",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "14",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer del Penedes",
+        "amenity": "music_school",
+        "education": "music_school",
+        "name": "Escola de Música Sant Andreu",
+        "operator:type": "private",
+        "phone": "+34 93 676 98 43"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9657366,
+          41.4517713
+        ]
+      },
+      "id": "node/12726878115"
+    }
+  ]
+}

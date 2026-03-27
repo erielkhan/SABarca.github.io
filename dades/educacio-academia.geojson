@@ -1,0 +1,93 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T12:24:27Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9754237768",
+        "amenity": "prep_school",
+        "education": "prep_school",
+        "name": "nenoos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9672011,
+          41.4471565
+        ]
+      },
+      "id": "node/9754237768"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9818243804",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "20",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Joan XXIII",
+        "amenity": "prep_school",
+        "education": "prep_school",
+        "mobile": "+34 661 415 251",
+        "name": "Alba Roc",
+        "phone": "+34 93 185 72 31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9685592,
+          41.4472307
+        ]
+      },
+      "id": "node/9818243804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11194850658",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "68",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Barcelona",
+        "amenity": "prep_school",
+        "education": "prep_school",
+        "name": "7 ciències",
+        "phone": "+34 619 602 748"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9758982,
+          41.4470772
+        ]
+      },
+      "id": "node/11194850658"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13352166316",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "25",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Catalunya",
+        "amenity": "prep_school",
+        "education": "prep_school",
+        "email": "academia@imecat.es",
+        "name": "IMECAT",
+        "phone": "+34 936 53 25 05"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9703046,
+          41.4477327
+        ]
+      },
+      "id": "node/13352166316"
+    }
+  ]
+}

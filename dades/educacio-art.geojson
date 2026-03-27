@@ -1,0 +1,54 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T12:25:25Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11153301589",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "109",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Barcelona",
+        "amenity": "arts_centre",
+        "contact:instagram": "@taller_ana_",
+        "name": "El taller de Ana",
+        "phone": "+34 93 653 24 51",
+        "training": "art"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9766033,
+          41.4468327
+        ]
+      },
+      "id": "node/11153301589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11934624436",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "4",
+        "addr:postcode": "08740",
+        "addr:street": "Parc Vall del Palau",
+        "addr:unit": "6",
+        "amenity": "arts_centre",
+        "name": "Taller de Dibuix i Pintura Creativa Santacana",
+        "phone": "+34 664 700 709",
+        "training": "art"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.959783,
+          41.4551249
+        ]
+      },
+      "id": "node/11934624436"
+    }
+  ]
+}

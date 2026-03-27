@@ -1,0 +1,122 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T12:22:26Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7698940272",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "4",
+        "addr:postcode": "08740",
+        "addr:street": "Plaça de Catalunya",
+        "amenity": "driving_school",
+        "education": "driving_school",
+        "name": "Autoescoles Singuerlin",
+        "opening_hours": "Mo-Th 09:00-13:30, 16:00-20:30; Fr 09:30-13:30, 16:00-18:00",
+        "operator": "Autoescoles Singuerlin",
+        "operator:type": "private",
+        "phone": "+34 635 463 221",
+        "website": "https://www.autoescolasinguerlin.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9703719,
+          41.4485116
+        ]
+      },
+      "id": "node/7698940272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9922822173",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "37",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Guatemala",
+        "amenity": "driving_school",
+        "education": "driving_school",
+        "name": "Elias Autoescola",
+        "phone": "+34 93 682 31 75"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9733575,
+          41.4510719
+        ]
+      },
+      "id": "node/9922822173"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12727032265",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "1",
+        "addr:postcode": "08740",
+        "addr:street": "Via de l'Esport",
+        "amenity": "driving_school",
+        "education": "driving_school",
+        "name": "Esparó",
+        "phone": "+34 93 653 22 01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9720503,
+          41.4495771
+        ]
+      },
+      "id": "node/12727032265"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12727032266",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "16",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer Priorat",
+        "amenity": "driving_school",
+        "education": "driving_school",
+        "name": "Més Vial",
+        "phone": "+34 93 682 14 95"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9621203,
+          41.4522923
+        ]
+      },
+      "id": "node/12727032266"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12727069393",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "109",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Barcelona",
+        "amenity": "driving_school",
+        "education": "driving_school",
+        "name": "N-340",
+        "phone": "+34 609 684 119"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976524,
+          41.4468996
+        ]
+      },
+      "id": "node/12727069393"
+    }
+  ]
+}

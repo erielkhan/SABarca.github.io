@@ -1,0 +1,88 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T12:23:27Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11934005353",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "1",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de l'Onze de Març",
+        "amenity": "language_school",
+        "education": "language_school",
+        "email": "sab@kidsandus.es",
+        "language:en": "yes",
+        "mobile": "+34 656 81 09 90",
+        "name": "KIDS&US",
+        "phone": "+34 93 129 98 41",
+        "website": "https://www.kidsandus.es/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9757957,
+          41.4456761
+        ]
+      },
+      "id": "node/11934005353"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12726660396",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "1",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Barcelona",
+        "amenity": "language_school",
+        "education": "language_school",
+        "language:ca": "yes",
+        "name": "Servei de Català",
+        "operator": "Consorci per a la Normalització Lingüística",
+        "operator:type": "public"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9726472,
+          41.4496611
+        ]
+      },
+      "id": "node/12726660396"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12727054743",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "4B",
+        "addr:postcode": "08740",
+        "addr:street": "Plaça Onze de Setembre",
+        "amenity": "language_school",
+        "education": "language_school",
+        "email": "info@owl.cat",
+        "language:ca": "yes",
+        "language:de": "yes",
+        "language:en": "yes",
+        "language:es": "yes",
+        "language:it": "yes",
+        "language:zh": "yes",
+        "name": "OWL Language School",
+        "phone": "+34 93 127 27 20",
+        "website": "https://www.owl.cat/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976468,
+          41.4445476
+        ]
+      },
+      "id": "node/12727054743"
+    }
+  ]
+}

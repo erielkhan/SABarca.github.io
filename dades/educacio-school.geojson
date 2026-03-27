@@ -1,0 +1,1120 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T12:21:24Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/14238144",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "2",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Bonaventura Pedemonte",
+        "amenity": "school",
+        "building": "public",
+        "building:levels": "3",
+        "education": "school",
+        "email": "a8025265@xtec.cat",
+        "grades": "0-18",
+        "name": "Escola Àngel Guimerà",
+        "name:ca": "Escola Àngel Guimerà",
+        "name:etymology:wikidata": "Q175485",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "phone": "+34 93 653 06 79",
+        "ref": "8025265",
+        "type": "multipolygon",
+        "website": "https://agora.xtec.cat/ceip-agsantandreu/",
+        "wikidata": "Q111338805"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9661926,
+              41.445048
+            ],
+            [
+              1.9662117,
+              41.4450659
+            ],
+            [
+              1.9661294,
+              41.445113
+            ],
+            [
+              1.9660385,
+              41.4450274
+            ],
+            [
+              1.9661094,
+              41.4449846
+            ],
+            [
+              1.9660678,
+              41.4449455
+            ],
+            [
+              1.965997,
+              41.4449882
+            ],
+            [
+              1.9659936,
+              41.444985
+            ],
+            [
+              1.9659382,
+              41.4449329
+            ],
+            [
+              1.965905,
+              41.4449016
+            ],
+            [
+              1.9659857,
+              41.4448529
+            ],
+            [
+              1.9660051,
+              41.444871
+            ],
+            [
+              1.9660532,
+              41.444842
+            ],
+            [
+              1.9660341,
+              41.4448241
+            ],
+            [
+              1.9661161,
+              41.4447745
+            ],
+            [
+              1.9661337,
+              41.444791
+            ],
+            [
+              1.9661818,
+              41.4447618
+            ],
+            [
+              1.9661645,
+              41.4447457
+            ],
+            [
+              1.9662446,
+              41.444697
+            ],
+            [
+              1.9663365,
+              41.4447828
+            ],
+            [
+              1.9662645,
+              41.4448264
+            ],
+            [
+              1.9663047,
+              41.444864
+            ],
+            [
+              1.9663761,
+              41.4448206
+            ],
+            [
+              1.9664674,
+              41.4449056
+            ],
+            [
+              1.966385,
+              41.4449557
+            ],
+            [
+              1.966368,
+              41.4449399
+            ],
+            [
+              1.9663223,
+              41.4449676
+            ],
+            [
+              1.9663417,
+              41.4449857
+            ],
+            [
+              1.9662578,
+              41.4450363
+            ],
+            [
+              1.9662399,
+              41.4450195
+            ],
+            [
+              1.9661926,
+              41.445048
+            ]
+          ],
+          [
+            [
+              1.9662005,
+              41.4448591
+            ],
+            [
+              1.9661223,
+              41.4449068
+            ],
+            [
+              1.9661694,
+              41.4449505
+            ],
+            [
+              1.9661722,
+              41.4449515
+            ],
+            [
+              1.9662493,
+              41.4449044
+            ],
+            [
+              1.9662005,
+              41.4448591
+            ]
+          ]
+        ]
+      },
+      "id": "relation/14238144"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/104156180",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "7",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de l'Empordà",
+        "amenity": "school",
+        "education": "school",
+        "email": "a8043671@xtec.cat",
+        "grades": "12-18",
+        "name": "Institut El Palau",
+        "name:ca": "Institut El Palau",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "phone": "+34 93 653 16 59",
+        "ref": "8043671",
+        "website": "https://agora.xtec.cat/ieselpalau/",
+        "wikidata": "Q111261119"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9608635,
+              41.4542555
+            ],
+            [
+              1.9608982,
+              41.4542261
+            ],
+            [
+              1.9609769,
+              41.454205
+            ],
+            [
+              1.9610664,
+              41.4541812
+            ],
+            [
+              1.9610851,
+              41.4541765
+            ],
+            [
+              1.9611663,
+              41.4541552
+            ],
+            [
+              1.96124,
+              41.45416
+            ],
+            [
+              1.9616298,
+              41.4541838
+            ],
+            [
+              1.9620574,
+              41.4540406
+            ],
+            [
+              1.9620801,
+              41.454008
+            ],
+            [
+              1.9623356,
+              41.4539003
+            ],
+            [
+              1.9630075,
+              41.4537214
+            ],
+            [
+              1.963195,
+              41.4538753
+            ],
+            [
+              1.9620055,
+              41.4548926
+            ],
+            [
+              1.9615302,
+              41.4546547
+            ],
+            [
+              1.9613345,
+              41.4545569
+            ],
+            [
+              1.9611605,
+              41.4544547
+            ],
+            [
+              1.9608635,
+              41.4542555
+            ]
+          ]
+        ]
+      },
+      "id": "way/104156180"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/104156185",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "10",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer del Garraf",
+        "amenity": "school",
+        "education": "school",
+        "email": "a8038211@xtec.cat",
+        "grades": "0-12",
+        "name": "Escola José Juan Ortiz",
+        "name:ca": "Escola José Juan Ortiz",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "phone": "+34 93 682 52 24",
+        "ref": "8038211",
+        "website": "https://agora.xtec.cat/escolaortiz/",
+        "wikidata": "Q111339095"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9653428,
+              41.4502005
+            ],
+            [
+              1.9653802,
+              41.4501854
+            ],
+            [
+              1.9654204,
+              41.4501905
+            ],
+            [
+              1.9654443,
+              41.4502067
+            ],
+            [
+              1.9655508,
+              41.4502605
+            ],
+            [
+              1.9655531,
+              41.4502724
+            ],
+            [
+              1.9655566,
+              41.4502862
+            ],
+            [
+              1.9655974,
+              41.4502779
+            ],
+            [
+              1.9656116,
+              41.4503107
+            ],
+            [
+              1.9656299,
+              41.4503678
+            ],
+            [
+              1.9656416,
+              41.4504042
+            ],
+            [
+              1.9657793,
+              41.4503802
+            ],
+            [
+              1.9660981,
+              41.4505456
+            ],
+            [
+              1.9661393,
+              41.4505689
+            ],
+            [
+              1.96618,
+              41.4505906
+            ],
+            [
+              1.9661751,
+              41.4505944
+            ],
+            [
+              1.966158,
+              41.4506078
+            ],
+            [
+              1.9660774,
+              41.4506709
+            ],
+            [
+              1.9660538,
+              41.4506893
+            ],
+            [
+              1.9660224,
+              41.4507139
+            ],
+            [
+              1.966007,
+              41.4507259
+            ],
+            [
+              1.9659922,
+              41.4507375
+            ],
+            [
+              1.9659563,
+              41.4507656
+            ],
+            [
+              1.9658796,
+              41.4508256
+            ],
+            [
+              1.9658759,
+              41.4508242
+            ],
+            [
+              1.9658235,
+              41.4508667
+            ],
+            [
+              1.9657914,
+              41.4508887
+            ],
+            [
+              1.9657461,
+              41.4509263
+            ],
+            [
+              1.9651086,
+              41.4514264
+            ],
+            [
+              1.9650163,
+              41.4513128
+            ],
+            [
+              1.9646553,
+              41.4509982
+            ],
+            [
+              1.9642448,
+              41.4507203
+            ],
+            [
+              1.9645421,
+              41.4505587
+            ],
+            [
+              1.9647867,
+              41.4504473
+            ],
+            [
+              1.9653428,
+              41.4502005
+            ]
+          ]
+        ]
+      },
+      "id": "way/104156185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/104156186",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "9",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer d'Urgell",
+        "amenity": "school",
+        "barrier": "fence",
+        "education": "school",
+        "email": "a8032521@xtec.cat",
+        "grades": "0-12",
+        "name": "Escola Vall de Palau",
+        "name:ca": "Escola Vall de Palau",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "phone": "+34 93 653 18 68",
+        "ref": "8032521",
+        "website": "https://agora.xtec.cat/ceipvallpalau/",
+        "wikidata": "Q111338975"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9642448,
+              41.4507203
+            ],
+            [
+              1.9646553,
+              41.4509982
+            ],
+            [
+              1.9650163,
+              41.4513128
+            ],
+            [
+              1.9651086,
+              41.4514264
+            ],
+            [
+              1.9649061,
+              41.4515905
+            ],
+            [
+              1.9632501,
+              41.4514695
+            ],
+            [
+              1.9632232,
+              41.4514587
+            ],
+            [
+              1.9632027,
+              41.4514424
+            ],
+            [
+              1.9631815,
+              41.4514196
+            ],
+            [
+              1.9631693,
+              41.4513927
+            ],
+            [
+              1.9631719,
+              41.4513651
+            ],
+            [
+              1.9637549,
+              41.4510086
+            ],
+            [
+              1.9642448,
+              41.4507203
+            ]
+          ]
+        ]
+      },
+      "id": "way/104156186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/108457436",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "2",
+        "addr:postcode": "08740",
+        "addr:street": "Passeig Rafael de Casanova",
+        "amenity": "school",
+        "barrier": "fence",
+        "education": "school",
+        "email": "a8053315@xtec.cat",
+        "name": "Institut Montserrat Roig",
+        "name:ca": "Institut Montserrat Roig",
+        "name:etymology:wikidata": "Q2011958",
+        "operator": "Ajuntament de Sant Andreu de la Bara",
+        "operator:type": "public",
+        "phone": "+34 93 653 10 97",
+        "ref": "8053315",
+        "website": "www.insmontserratroig.com",
+        "wikidata": "Q111252399"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.974635,
+              41.4448246
+            ],
+            [
+              1.9746656,
+              41.4448094
+            ],
+            [
+              1.9746994,
+              41.4448086
+            ],
+            [
+              1.9747313,
+              41.4448221
+            ],
+            [
+              1.9750362,
+              41.4450758
+            ],
+            [
+              1.9752005,
+              41.4452246
+            ],
+            [
+              1.9752674,
+              41.4452984
+            ],
+            [
+              1.9752686,
+              41.4453274
+            ],
+            [
+              1.975243,
+              41.4453479
+            ],
+            [
+              1.9750255,
+              41.4454311
+            ],
+            [
+              1.9747539,
+              41.4455609
+            ],
+            [
+              1.974495,
+              41.4457079
+            ],
+            [
+              1.9741351,
+              41.4459368
+            ],
+            [
+              1.9737691,
+              41.4461631
+            ],
+            [
+              1.9737193,
+              41.4461222
+            ],
+            [
+              1.9736826,
+              41.4461471
+            ],
+            [
+              1.9734083,
+              41.4459826
+            ],
+            [
+              1.973351,
+              41.4459479
+            ],
+            [
+              1.973647,
+              41.44569
+            ],
+            [
+              1.973895,
+              41.4453398
+            ],
+            [
+              1.9740536,
+              41.4452691
+            ],
+            [
+              1.974221,
+              41.4451501
+            ],
+            [
+              1.974635,
+              41.4448246
+            ]
+          ]
+        ]
+      },
+      "id": "way/108457436"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/108458433",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "2",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Josep Pla",
+        "amenity": "school",
+        "education": "school",
+        "email": "a8039367@xtec.cat",
+        "grades": "0-12",
+        "mobile": "+34 684 18 64 84",
+        "name": "Escola Josep Pla",
+        "name:ca": "Escola Josep Pla",
+        "name:etymology:wikidata": "Q740256",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "phone": "+34 93 653 26 04",
+        "ref": "8039367",
+        "website": "https://agora.xtec.cat/escolajoseppla/",
+        "wikidata": "Q111339114"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9744568,
+              41.4515766
+            ],
+            [
+              1.9732445,
+              41.4516911
+            ],
+            [
+              1.973859,
+              41.4508307
+            ],
+            [
+              1.9739489,
+              41.4507981
+            ],
+            [
+              1.9742877,
+              41.4507378
+            ],
+            [
+              1.9747165,
+              41.4506614
+            ],
+            [
+              1.9751658,
+              41.4505814
+            ],
+            [
+              1.9747426,
+              41.4511597
+            ],
+            [
+              1.9746246,
+              41.4513318
+            ],
+            [
+              1.9744568,
+              41.4515766
+            ]
+          ]
+        ]
+      },
+      "id": "way/108458433"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/108458435",
+        "amenity": "school",
+        "education": "school"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9655354,
+              41.444683
+            ],
+            [
+              1.9655309,
+              41.4445583
+            ],
+            [
+              1.9658606,
+              41.4444855
+            ],
+            [
+              1.966054,
+              41.4444227
+            ],
+            [
+              1.9662464,
+              41.4444329
+            ],
+            [
+              1.9666879,
+              41.4445226
+            ],
+            [
+              1.9666198,
+              41.4449759
+            ],
+            [
+              1.9665777,
+              41.4449785
+            ],
+            [
+              1.9665141,
+              41.4449885
+            ],
+            [
+              1.9665267,
+              41.4450742
+            ],
+            [
+              1.9661232,
+              41.4453112
+            ],
+            [
+              1.9657145,
+              41.4449204
+            ],
+            [
+              1.9654965,
+              41.444706
+            ],
+            [
+              1.9655243,
+              41.4446896
+            ],
+            [
+              1.9655354,
+              41.444683
+            ]
+          ]
+        ]
+      },
+      "id": "way/108458435"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/108458436",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "37",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Catalunya",
+        "amenity": "school",
+        "barrier": "fence",
+        "education": "school",
+        "email": "a8025241@xtec.cat",
+        "grades": "0-12",
+        "name": "Escola Joan Maragall",
+        "name:etymology:wikidata": "Q562402",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "ref": "8025241",
+        "website": "https://agora.xtec.cat/escmaragallsab/",
+        "wikidata": "Q111338804"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9690526,
+              41.4469404
+            ],
+            [
+              1.9694257,
+              41.4466227
+            ],
+            [
+              1.9695852,
+              41.4467627
+            ],
+            [
+              1.9698348,
+              41.4470199
+            ],
+            [
+              1.9698694,
+              41.4470494
+            ],
+            [
+              1.969914,
+              41.4470847
+            ],
+            [
+              1.9699546,
+              41.4471162
+            ],
+            [
+              1.9699916,
+              41.4471467
+            ],
+            [
+              1.9700391,
+              41.4471868
+            ],
+            [
+              1.9701138,
+              41.4472394
+            ],
+            [
+              1.9701337,
+              41.4472505
+            ],
+            [
+              1.9701477,
+              41.4472604
+            ],
+            [
+              1.9702101,
+              41.447301
+            ],
+            [
+              1.9699538,
+              41.4475355
+            ],
+            [
+              1.9690526,
+              41.4469404
+            ]
+          ]
+        ]
+      },
+      "id": "way/108458436"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/129725643",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "59",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "amenity": "school",
+        "education": "school",
+        "email": "a8063758@xtec.cat",
+        "grades": "0-12",
+        "name": "Escola Can Salvi",
+        "name:ca": "Escola Can Salvi",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "phone": "+34 93 682 51 62",
+        "ref": "8063758",
+        "website": "https://agora.xtec.cat/ceipcansalvi/",
+        "wikidata": "Q111339388"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9627773,
+              41.4512417
+            ],
+            [
+              1.9619853,
+              41.4508275
+            ],
+            [
+              1.9621524,
+              41.4506369
+            ],
+            [
+              1.9623145,
+              41.4504584
+            ],
+            [
+              1.9628232,
+              41.4504293
+            ],
+            [
+              1.9631907,
+              41.4506414
+            ],
+            [
+              1.9634872,
+              41.4508104
+            ],
+            [
+              1.9627773,
+              41.4512417
+            ]
+          ]
+        ]
+      },
+      "id": "way/129725643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/237200772",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "38",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer Josep Tarradellas",
+        "amenity": "school",
+        "barrier": "fence",
+        "education": "school",
+        "email": "escolasab@xtec.cat",
+        "grades": "0-12",
+        "mobile": "+34 628 46 13 98",
+        "name": "Escola de Sant Andreu de la Barca",
+        "name:ca": "Escola de Sant Andreu de la Barca",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "phone": "+34 93 682 83 44",
+        "ref": "8060848",
+        "website": "https://agora.xtec.cat/ceipsab/pagines-dinici/",
+        "wikidata": "Q111339331"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9787509,
+              41.4435377
+            ],
+            [
+              1.9787099,
+              41.4435289
+            ],
+            [
+              1.9786708,
+              41.44351
+            ],
+            [
+              1.9786477,
+              41.4434883
+            ],
+            [
+              1.9786207,
+              41.4434133
+            ],
+            [
+              1.9785497,
+              41.4433046
+            ],
+            [
+              1.9784931,
+              41.443251
+            ],
+            [
+              1.9783784,
+              41.4431673
+            ],
+            [
+              1.9783097,
+              41.443137
+            ],
+            [
+              1.9782408,
+              41.4431097
+            ],
+            [
+              1.9781205,
+              41.4430836
+            ],
+            [
+              1.9780518,
+              41.4430771
+            ],
+            [
+              1.9779674,
+              41.4430759
+            ],
+            [
+              1.9779316,
+              41.4427619
+            ],
+            [
+              1.9779751,
+              41.4427115
+            ],
+            [
+              1.9780186,
+              41.4427041
+            ],
+            [
+              1.9780719,
+              41.4427175
+            ],
+            [
+              1.9785445,
+              41.4429131
+            ],
+            [
+              1.9787659,
+              41.4430317
+            ],
+            [
+              1.9788905,
+              41.4430435
+            ],
+            [
+              1.9792073,
+              41.4429575
+            ],
+            [
+              1.9795875,
+              41.4432678
+            ],
+            [
+              1.9794032,
+              41.4435544
+            ],
+            [
+              1.9787509,
+              41.4435377
+            ]
+          ]
+        ]
+      },
+      "id": "way/237200772"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12727026518",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "33",
+        "addr:postcode": "08740",
+        "addr:street": "Passeig de Joan Falguera i Estapé",
+        "amenity": "school",
+        "education": "school",
+        "name": "Teatre Transformate",
+        "school": "art"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9635417,
+          41.4497134
+        ]
+      },
+      "id": "node/12727026518"
+    }
+  ]
+}
