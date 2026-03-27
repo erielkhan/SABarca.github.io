@@ -1,1 +1,184 @@
-
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T00:25:59Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7817673118",
+        "amenity": "recycling",
+        "recycling:clothes": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9772398,
+          41.4480601
+        ]
+      },
+      "id": "node/7817673118"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9815883911",
+        "amenity": "recycling",
+        "operator": "roba amiga",
+        "recycling:clothes": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9681061,
+          41.4460947
+        ]
+      },
+      "id": "node/9815883911"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11168455741",
+        "amenity": "recycling",
+        "operator": "roba amiga",
+        "recycling:clothes": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9718736,
+          41.4503615
+        ]
+      },
+      "id": "node/11168455741"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11168478972",
+        "amenity": "recycling",
+        "operator": "roba amiga",
+        "recycling:clothes": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9743665,
+          41.4501004
+        ]
+      },
+      "id": "node/11168478972"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11194652215",
+        "amenity": "recycling",
+        "operator": "roba amiga",
+        "recycling:clothes": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9764635,
+          41.4467395
+        ]
+      },
+      "id": "node/11194652215"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11938292459",
+        "amenity": "recycling",
+        "recycling:clothes": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9628732,
+          41.4514253
+        ]
+      },
+      "id": "node/11938292459"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12013053935",
+        "amenity": "recycling",
+        "operator": "roba amiga",
+        "phone": "+34 93 685 44 34",
+        "recycling:clothes": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.972025,
+          41.4488886
+        ]
+      },
+      "id": "node/12013053935"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919068633",
+        "amenity": "recycling",
+        "recycling:clothes": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9668493,
+          41.4494207
+        ]
+      },
+      "id": "node/12919068633"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919110906",
+        "amenity": "recycling",
+        "recycling:clothes": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.965531,
+          41.4515746
+        ]
+      },
+      "id": "node/12919110906"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13360578864",
+        "amenity": "recycling",
+        "recycling:clothes": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9724594,
+          41.4471776
+        ]
+      },
+      "id": "node/13360578864"
+    }
+  ]
+}

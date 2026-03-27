@@ -1,1 +1,204 @@
-
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T00:18:52Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919056825",
+        "amenity": "recycling",
+        "note": "Minideixalleria",
+        "note:ca": "Minideixalleria",
+        "note:es": "Minipunto Limpio",
+        "opening_hours": "24/7",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "recycling:batteries": "yes",
+        "recycling:cds": "yes",
+        "recycling:light_bulbs": "yes",
+        "recycling:low_energy_bulbs": "yes",
+        "recycling:printer_cartridges": "yes",
+        "recycling:printer_inkjet_cartridges": "yes",
+        "recycling:small_electrical_appliances": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9696616,
+          41.4486331
+        ]
+      },
+      "id": "node/12919056825"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919056826",
+        "amenity": "recycling",
+        "note": "Minideixalleria",
+        "note:ca": "Minideixalleria",
+        "note:es": "Minipunto Limpio",
+        "opening_hours": "24/7",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "recycling:batteries": "yes",
+        "recycling:cds": "yes",
+        "recycling:light_bulbs": "yes",
+        "recycling:low_energy_bulbs": "yes",
+        "recycling:printer_cartridges": "yes",
+        "recycling:printer_inkjet_cartridges": "yes",
+        "recycling:small_electrical_appliances": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9733519,
+          41.446579
+        ]
+      },
+      "id": "node/12919056826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919056827",
+        "amenity": "recycling",
+        "note": "Minideixalleria",
+        "note:ca": "Minideixalleria",
+        "note:es": "Minipunto Limpio",
+        "opening_hours": "24/7",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "recycling:batteries": "yes",
+        "recycling:cds": "yes",
+        "recycling:light_bulbs": "yes",
+        "recycling:low_energy_bulbs": "yes",
+        "recycling:printer_cartridges": "yes",
+        "recycling:printer_inkjet_cartridges": "yes",
+        "recycling:small_electrical_appliances": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9754227,
+          41.448897
+        ]
+      },
+      "id": "node/12919056827"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919056828",
+        "amenity": "recycling",
+        "note": "Minideixalleria",
+        "note:ca": "Minideixalleria",
+        "note:es": "Minipunto Limpio",
+        "opening_hours": "24/7",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "recycling:batteries": "yes",
+        "recycling:cds": "yes",
+        "recycling:light_bulbs": "yes",
+        "recycling:low_energy_bulbs": "yes",
+        "recycling:printer_cartridges": "yes",
+        "recycling:printer_inkjet_cartridges": "yes",
+        "recycling:small_electrical_appliances": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9669502,
+          41.4459412
+        ]
+      },
+      "id": "node/12919056828"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919056829",
+        "amenity": "recycling",
+        "note": "Minideixalleria",
+        "note:ca": "Minideixalleria",
+        "note:es": "Minipunto Limpio",
+        "opening_hours": "24/7",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "recycling:batteries": "yes",
+        "recycling:cds": "yes",
+        "recycling:light_bulbs": "yes",
+        "recycling:low_energy_bulbs": "yes",
+        "recycling:printer_cartridges": "yes",
+        "recycling:printer_inkjet_cartridges": "yes",
+        "recycling:small_electrical_appliances": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9757971,
+          41.4454346
+        ]
+      },
+      "id": "node/12919056829"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919079640",
+        "amenity": "recycling",
+        "note": "Minideixalleria",
+        "note:ca": "Minideixalleria",
+        "note:es": "Minipunto Limpio",
+        "opening_hours": "24/7",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "recycling:batteries": "yes",
+        "recycling:cds": "yes",
+        "recycling:light_bulbs": "yes",
+        "recycling:low_energy_bulbs": "yes",
+        "recycling:printer_cartridges": "yes",
+        "recycling:printer_inkjet_cartridges": "yes",
+        "recycling:small_electrical_appliances": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9631542,
+          41.4513676
+        ]
+      },
+      "id": "node/12919079640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919079641",
+        "amenity": "recycling",
+        "note": "Minideixalleria",
+        "note:ca": "Minideixalleria",
+        "note:es": "Minipunto Limpio",
+        "opening_hours": "24/7",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "recycling:batteries": "yes",
+        "recycling:cds": "yes",
+        "recycling:light_bulbs": "yes",
+        "recycling:low_energy_bulbs": "yes",
+        "recycling:printer_cartridges": "yes",
+        "recycling:printer_inkjet_cartridges": "yes",
+        "recycling:small_electrical_appliances": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9599844,
+          41.4545194
+        ]
+      },
+      "id": "node/12919079641"
+    }
+  ]
+}

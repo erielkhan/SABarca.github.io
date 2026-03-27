@@ -1,1 +1,213 @@
-
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-27T00:21:56Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9720608824",
+        "amenity": "recycling",
+        "recycling:cooking_oil": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9799237,
+          41.4444753
+        ]
+      },
+      "id": "node/9720608824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11168478973",
+        "amenity": "recycling",
+        "operator": "roba amiga",
+        "recycling:cooking_oil": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9743776,
+          41.4500907
+        ]
+      },
+      "id": "node/11168478973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11196491717",
+        "amenity": "recycling",
+        "recycling:cooking_oil": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9682012,
+          41.44611
+        ]
+      },
+      "id": "node/11196491717"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11198623253",
+        "amenity": "recycling",
+        "recycling:cooking_oil": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9772444,
+          41.4480507
+        ]
+      },
+      "id": "node/11198623253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11211253130",
+        "amenity": "recycling",
+        "recycling:cooking_oil": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9599718,
+          41.4545525
+        ]
+      },
+      "id": "node/11211253130"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11225683915",
+        "amenity": "recycling",
+        "recycling:cooking_oil": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9582803,
+          41.4542627
+        ]
+      },
+      "id": "node/11225683915"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11938292460",
+        "amenity": "recycling",
+        "recycling:cooking_oil": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9628891,
+          41.451419
+        ]
+      },
+      "id": "node/11938292460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919056830",
+        "amenity": "recycling",
+        "recycling:cooking_oil": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9758581,
+          41.4454998
+        ]
+      },
+      "id": "node/12919056830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919068617",
+        "amenity": "recycling",
+        "recycling:cooking_oil": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9580127,
+          41.4508896
+        ]
+      },
+      "id": "node/12919068617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919068640",
+        "amenity": "recycling",
+        "recycling:cooking_oil": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9667629,
+          41.4494526
+        ]
+      },
+      "id": "node/12919068640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919110907",
+        "amenity": "recycling",
+        "recycling:cooking_oil": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9656541,
+          41.4514999
+        ]
+      },
+      "id": "node/12919110907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13360578865",
+        "amenity": "recycling",
+        "recycling:cooking_oil": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9724495,
+          41.4471752
+        ]
+      },
+      "id": "node/13360578865"
+    }
+  ]
+}
