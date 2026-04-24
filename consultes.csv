@@ -1,0 +1,21 @@
+nom_fitxer,consulta
+aparcament-bicibox,"node[""amenity""=""drinking_water""](41.97, 2.81, 41.99, 2.83);"
+aparcament-bicicletes,"node[""amenity""=""drinking_water""](41.97, 2.81, 41.99, 2.83);"
+aparcament-blava,
+aparcament-carrega-descarrega,
+aparcament-comercial,
+aparcament-emergencia,
+aparcament-discapacitat,
+aparcament-lliure,
+aparcament-especial,
+aparcament-taxi,
+educacio-academia,
+educacio-art,
+educacio-autoescola,
+educacio-bressol,
+educacio-idiomes,
+educacio-musica,
+educacio-dansa,
+educacio-school,
+esbarjo-arbrat,
+esbarjo-font-aigua,
