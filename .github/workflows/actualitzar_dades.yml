@@ -1,0 +1,32 @@
+name: Actualització Automàtica de GeoJSONs
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # S'executa cada dilluns a les 00:00
+  workflow_dispatch:   # Permet l'execució manual des de la pestanya "Actions"
+
+jobs:
+  proces_actualitzacio:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del codi
+        uses: actions/checkout@v3
+
+      - name: Configurar entorn Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Instal·lar llibreries
+        run: pip install pandas requests
+
+      - name: Executar script de descàrrega
+        run: python descarregar_dades.py
+
+      - name: Guardar canvis al GitHub
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add dades/*.geojson
+          git commit -m "Actualització de dades GeoJSON: $(date +'%Y-%m-%d')" || echo "Sense canvis per pujar"
+          git push
