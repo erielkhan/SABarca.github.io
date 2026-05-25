@@ -1,9 +1,8 @@
-name: Actualització Automàtica de GeoJSONs
+name: Actualització Manual de GeoJSONs
 
+# Ara només s'executarà quan tu li diguis
 on:
-  schedule:
-    - cron: '0 0 * * 1' # S'executa cada dilluns a les 00:00
-  workflow_dispatch:   # Permet l'execució manual des de la pestanya "Actions"
+  workflow_dispatch: # Activa el botó d'execució manual a la web de GitHub
 
 jobs:
   proces_actualitzacio:
@@ -28,5 +27,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add dades/*.geojson
-          git commit -m "Actualització de dades GeoJSON: $(date +'%Y-%m-%d')" || echo "Sense canvis per pujar"
+          git commit -m "Actualització manual de dades GeoJSON: $(date +'%Y-%m-%d')" || echo "Sense canvis per pujar"
           git push
