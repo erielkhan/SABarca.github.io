@@ -7,13 +7,12 @@ from datetime import datetime
 POBLACIO_FIXA = 'Sant Andreu de la Barca'
 
 def descarregar_geojson(nom, consulta_csv):
-    # Al no usar comillas protectoras en el CSV, el texto ya viene 100% limpio
     consulta_neta = consulta_csv.strip()
     
-    # Reemplazamos la palabra clave (area); por el objeto nativo mapeado de Sant Andreu de la Barca
+    # Reemplacem la paraula clave (area); pel municipi de Sant Andreu de la Barca
     consulta_filtrada = consulta_neta.replace('(area)', '(area.municipi)')
     
-    # Reconstruimos la estructura Overpass pura respetando tu sintaxis exacta
+    # Reconstruïm la consulta estructural pura
     consulta_completa = f"""[out:json][timeout:400][maxsize:2147483648];
 area["name"="{POBLACIO_FIXA}"]["admin_level"="8"]->.municipi;
 (
@@ -23,7 +22,7 @@ out body;
 >;
 out skel qt;"""
     
-    print(f"\n>>> ENVIANDO CONSULTA A OVERPASS PARA: {nom}")
+    print(f"\n>>> ENVIANT CONSULTA A OVERPASS PER A: {nom}")
     print(consulta_completa)
     print("-" * 50)
     
@@ -34,12 +33,15 @@ out skel qt;"""
     ruta_fitxer = f"dades/{nom}.geojson"
     
     try:
+        # Canviem les capçaleres i enviem la consulta com a text pur (data=...) 
+        # en lloc d'un diccionari. Això evita l'error 406 de codificació.
         headers = {
-            'User-Agent': 'GitHubActions-OSM-Downloader/1.3',
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'application/json'
         }
-        # Enviamos usando POST pasándolo en el cuerpo del mensaje
-        resposta = requests.post(url, data={'data': consulta_completa}, headers=headers, timeout=430)
+        
+        # Enviem la consulta codificada correctament en UTF-8 en el cos del POST
+        resposta = requests.post(url, data=consulta_completa.encode('utf-8'), headers=headers, timeout=430)
         
         if resposta.status_code == 200:
             dades_json = resposta.json()
@@ -50,29 +52,28 @@ out skel qt;"""
                 
                 with open(ruta_fitxer, "w", encoding='utf-8') as f:
                     f.write(resposta.text)
-                msg = f"[OK] {nom}: Guardado con éxito ({len(dades_json['elements'])} elements trobats)."
+                msg = f"[OK] {nom}: Guardat correctament ({len(dades_json['elements'])} elements trobats)."
                 print(msg)
                 return msg
             else:
                 if "remark" in dades_json:
-                    msg = f"[ERROR SINTAXIS] {nom}: {dades_json['remark']}"
+                    msg = f"[ERROR SINTAXI] {nom}: {dades_json['remark']}"
                 else:
-                    msg = f"[ALERTA] {nom}: La consulta no ha devuelto ningún elemento en {POBLACIO_FIXA}."
+                    msg = f"[ALERTA] {nom}: La consulta no ha tornat cap element a {POBLACIO_FIXA}."
                 print(msg)
                 return msg
         else:
-            msg = f"[ERROR HTTP {resposta.status_code}] El servidor Overpass rechazó la petición."
+            msg = f"[ERROR HTTP {resposta.status_code}] El servidor Overpass ha rebutjat la petició."
             print(msg)
             return msg
             
     except Exception as e:
-        msg = f"[ERROR CONEXIÓN] {nom}: {str(e)}"
+        msg = f"[ERROR CONEXIÓ] {nom}: {str(e)}"
         print(msg)
         return msg
 
-# Ejecución principal
+# Execució principal
 try:
-    # IMPORTANTE: Indicamos a pandas que el separador del CSV es el punto y coma (sep=';')
     df = pd.read_csv('consultes.csv', sep=';')
     total_files = len(df)
     resultats = []
@@ -82,12 +83,12 @@ try:
         resultats.append(resultat)
         
         if index < total_files - 1:
-            print("Esperando 15 segundos de cortesía entre consultas...")
+            print("Esperant 15 segons de seguretat...")
             time.sleep(15)
             
     with open("dades/log_execucio.txt", "w", encoding='utf-8') as log:
-        log.write(f"Última ejecución: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        log.write(f"Última execució: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
         log.write("\n".join(resultats))
 
 except Exception as e:
-    print(f"Error general en el flujo principal: {e}")
+    print(f"Error general en el flux principal: {e}")
