@@ -1,7 +1,11 @@
 name: Actualització Manual de GeoJSONs
 
 on:
-  workflow_dispatch: # Activa el botó d'execució manual a la web de GitHub
+  workflow_dispatch: # Activa el botó d'execució manual
+
+# Forcem a tot el procés a utilitzar Node 24 per eliminar l'avís de GitHub
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
 jobs:
   proces_actualitzacio:
@@ -9,11 +13,14 @@ jobs:
     steps:
       - name: Checkout del codi
         uses: actions/checkout@v4
+        with:
+          # Important: Necessari perquè el push funcioni correctament amb permisos
+          persist-credentials: true 
 
       - name: Configurar entorn Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
       - name: Instal·lar llibreries
         run: pip install pandas requests
@@ -25,6 +32,13 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add dades/*.geojson
-          git commit -m "Actualització manual de dades GeoJSON: $(date +'%Y-%m-%d')" || echo "Sense canvis per pujar"
-          git push
+          
+          # Creem la carpeta explicitament si per algun motiu Python no ho ha fet
+          mkdir -p dades
+          
+          # Afegim absolutament tot el que hi hagi a la carpeta dades
+          git add dades/*.geojson || echo "No hi ha fitxers GeoJSON per afegir"
+          
+          # Fem el commit i forcem el push
+          git commit -m "Actualització de dades GeoJSON: $(date +'%Y-%m-%d')" || echo "Sense canvis detectats"
+          git push origin HEAD:${{ github.ref }}
