@@ -7,8 +7,8 @@ from datetime import datetime
 POBLACIO_FIXA = 'Sant Andreu de la Barca'
 
 def descarregar_geojson(nom, consulta_csv):
-    # Eliminamos las comillas simples de los extremos que pusimos en el CSV para proteger el texto
-    consulta_neta = consulta_csv.strip().strip("'").strip('"')
+    # Al no usar comillas protectoras en el CSV, el texto ya viene 100% limpio
+    consulta_neta = consulta_csv.strip()
     
     # Reemplazamos la palabra clave (area); por el objeto nativo mapeado de Sant Andreu de la Barca
     consulta_filtrada = consulta_neta.replace('(area)', '(area.municipi)')
@@ -35,10 +35,10 @@ out skel qt;"""
     
     try:
         headers = {
-            'User-Agent': 'GitHubActions-OSM-Downloader/1.2',
+            'User-Agent': 'GitHubActions-OSM-Downloader/1.3',
             'Content-Type': 'application/x-www-form-urlencoded'
         }
-        # Enviamos usando POST pasándolo en el cuerpo del mensaje, la forma más robusta para consultas complejas
+        # Enviamos usando POST pasándolo en el cuerpo del mensaje
         resposta = requests.post(url, data={'data': consulta_completa}, headers=headers, timeout=430)
         
         if resposta.status_code == 200:
@@ -50,7 +50,7 @@ out skel qt;"""
                 
                 with open(ruta_fitxer, "w", encoding='utf-8') as f:
                     f.write(resposta.text)
-                msg = f"[OK] {nom}: Guardado con éxito ({len(dades_json['elements'])} elementos)."
+                msg = f"[OK] {nom}: Guardado con éxito ({len(dades_json['elements'])} elements trobats)."
                 print(msg)
                 return msg
             else:
@@ -61,7 +61,7 @@ out skel qt;"""
                 print(msg)
                 return msg
         else:
-            msg = f"[ERROR HTTP {resposta.status_code}] El servidor Overpass rechazó la petición. Detalles: {resposta.text[:200]}"
+            msg = f"[ERROR HTTP {resposta.status_code}] El servidor Overpass rechazó la petición."
             print(msg)
             return msg
             
@@ -72,7 +72,8 @@ out skel qt;"""
 
 # Ejecución principal
 try:
-    df = pd.read_csv('consultes.csv')
+    # IMPORTANTE: Indicamos a pandas que el separador del CSV es el punto y coma (sep=';')
+    df = pd.read_csv('consultes.csv', sep=';')
     total_files = len(df)
     resultats = []
     
