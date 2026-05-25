@@ -7,17 +7,14 @@ jobs:
   proces_actualitzacio:
     runs-on: ubuntu-latest
     steps:
-      # Actualitzat de v3 a v4 (ja és compatible amb Node 24)
       - name: Checkout del codi
         uses: actions/checkout@v4
 
-      # Actualitzat de v4 a v5 (ja és compatible amb Node 24)
       - name: Configurar entorn Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.9'
 
-       Sirve per preparar l'entorn de cara a futures restriccions si calgués
       - name: Instal·lar llibreries
         run: pip install pandas requests
 
