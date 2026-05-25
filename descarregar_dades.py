@@ -2,26 +2,27 @@ import pandas as pd
 import requests
 import os
 import time
+from datetime import datetime
 
 POBLACIO_FIXA = 'Sant Andreu de la Barca'
 
-def descarregar_geojson(nom, consulta):
-    # Generem la consulta combinada
-    consulta_neta = consulta.replace('(area)', '(area.municipi)')
+def descarregar_geojson(nom, etiqueta_csv):
+    # Netegem potencials espais o punts i comes sobrants que vinguin del CSV
+    etiqueta = etiqueta_csv.strip().replace(';', '')
     
+    # Reconstruïm la consulta d'Overpass perfectament formatada
     consulta_completa = f"""[out:json][timeout:400][maxsize:2147483648];
 area["name"="{POBLACIO_FIXA}"]["admin_level"="8"]->.municipi;
 (
-  {consulta_neta}
+  {etiqueta}(area.municipi);
 );
 out body;
 >;
 out skel qt;"""
     
-    # --- LÍNIA DE DIAGNÒSTIC ---
-    print("\n--- CODI ENVIAT A OVERPASS (Copia'l si falla per provar-lo a la web) ---")
+    print(f"\n--- S'ESTÀ ENVIANT AQUESTA CONSULTA PER A: {nom} ---")
     print(consulta_completa)
-    print("---------------------------------------------------------------------\n")
+    print("---------------------------------------------------\n")
     
     url = "https://overpass-api.de/api/interpreter"
     
@@ -35,38 +36,52 @@ out skel qt;"""
         if resposta.status_code == 200:
             dades_json = resposta.json()
             
+            # Comprovem si realment Overpass ha trobat coses
             if "elements" in dades_json and len(dades_json["elements"]) > 0:
                 if os.path.exists(ruta_fitxer):
                     os.remove(ruta_fitxer)
                 
                 with open(ruta_fitxer, "w", encoding='utf-8') as f:
                     f.write(resposta.text)
-                print(f" -> [OK] Èxit! Fitxer desat a: {ruta_fitxer} ({len(dades_json['elements'])} elements).")
+                msg = f"[OK] {nom}: Creat correctament amb {len(dades_json['elements'])} elements."
+                print(msg)
+                return msg
             else:
                 if "remark" in dades_json:
-                    print(f" -> [ALERTA] El servidor d'Overpass ha tornat un error de sintaxi: {dades_json['remark']}")
+                    msg = f"[ALERTA] {nom}: Error de sintaxi del servidor: {dades_json['remark']}"
                 else:
-                    print(f" -> [ALERTA] La consulta ha anat bé però ha tornat 0 elements. Segur que hi ha dades d'això a Sant Andreu de la Barca?")
-                    
-        elif resposta.status_code == 429:
-            print(f" -> [ERROR 429] Bloqueig temporal per excés de peticions.")
+                    msg = f"[ALERTA] {nom}: La consulta no ha tornat cap element dins de {POBLACIO_FIXA}."
+                print(msg)
+                return msg
         else:
-            print(f" -> [ERROR] El servidor ha respost amb codi: {resposta.status_code}")
-            print(f" Contingut de la resposta d'error: {resposta.text[:200]}")
+            msg = f"[ERROR HTTP {resposta.status_code}] No s'ha pogut descarregar {nom}."
+            print(msg)
+            return msg
             
     except Exception as e:
-        print(f" -> [ERROR INESPERAT]: {e}")
+        msg = f"[ERROR CRÍTIC] {nom}: {str(e)}"
+        print(msg)
+        return msg
 
-# Llegir el llistat de consultes del CSV
+# Execució principal
 try:
     df = pd.read_csv('consultes.csv')
     total_files = len(df)
+    resultats = []
     
     for index, fila in df.iterrows():
-        descarregar_geojson(fila['nom_fitxer'], fila['consulta'])
+        resultat = descarregar_geojson(fila['nom_fitxer'], fila['consulta'])
+        resultats.append(resultat)
+        
         if index < total_files - 1:
-            print(" -> Esperant 60 segons per cortesia...")
-            time.sleep(60) 
+            print("Esperant 60 segons de seguretat...")
+            time.sleep(60)
             
+    # FORÇAR CANVI AL REPOSITORI: Guardem un historial de l'execució
+    # Així, encara que Overpass falli, GitHub Actions sempre tindrà un fitxer modificat per pujar (push)
+    with open("dades/log_execucio.txt", "w", encoding='utf-8') as log:
+        log.write(f"Última execució: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        log.write("\n".join(resultats))
+
 except Exception as e:
-    print(f"Error crític llegint el fitxer CSV: {e}")
+    print(f"Error general: {e}")
