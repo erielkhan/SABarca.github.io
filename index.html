@@ -17,6 +17,11 @@
         body, html { margin: 0; padding: 0; height: 100%; font-family: 'Segoe UI', sans-serif; overflow: hidden; }
         #map { height: 100vh; width: 100%; z-index: 1; }
 
+        /* --- FILTRE PER DEIXAR EL MAPA EN BLANC I NEGRE --- */
+        .leaflet-tile-container {
+            filter: grayscale(100%) brightness(95%) contrast(105%);
+        }
+
         /* --- MENÚ LATERAL ESQUERRE (CAPES) --- */
         #sidebar {
             position: absolute; top: 20px; left: 20px; width: 310px; z-index: 1000;
@@ -84,6 +89,7 @@
 
     <button id="menu-toggle" title="Mostra/Amaga el menú">☰</button>
 
+    <!-- SIDEBAR ESQUERRE: CAPES -->
     <div id="sidebar">
         <h2>Sant Andreu de la Barca</h2>
         <p class="subtitle">Visor d'elements d'OpenStreetMap</p>
@@ -319,6 +325,7 @@
         </details>
     </div>
 
+    <!-- SIDEBAR DRET: PANNELL DINÀMIC -->
     <div id="right-sidebar">
         <h3>Elements al mapa</h3>
         <p style="margin:0; font-size:0.75rem; color:#7f8c8d;">Visibles a la zona actual</p>
@@ -339,18 +346,19 @@
             menuBtn.innerHTML = isCollapsed ? '☰' : '✕';
         });
 
-        // --- MAPA BASE STANDARD (A COLOR) ---
+        // --- MAPA BASE ---
         const centroSAB = [41.44997317478169, 1.9711849410595195];
         const map = L.map('map', { zoomControl: false }).setView(centroSAB, 16);
         L.control.zoom({ position: 'topright' }).addTo(map);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
+        // Utilitzem CartoDB Positron, combinat amb el filtre CSS ".leaflet-tile-container" per deixar-lo 100% en blanc i negre
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
         }).addTo(map);
 
         const individualLayers = {};
-
-        // RUTA DE LES IMATGES (Modifica-ho amb la URL del teu repositori si ho prefereixes)
         const getIconUrl = (id) => `icones/${id}.svg`; 
 
         function crearPopup(props, color) {
@@ -388,7 +396,6 @@
                         const response = await fetch(filePath);
                         const data = await response.json();
                         
-                        // Validació asíncrona d'existència de la imatge a GitHub/Ruta
                         const urlIcona = getIconUrl(id);
                         let imatgeExisteix = false;
                         
@@ -403,7 +410,6 @@
                             style: { color: colorCapa, weight: 3, opacity: 0.85, fillColor: colorCapa, fillOpacity: 0.4 },
                             pointToLayer: (feature, latlng) => {
                                 if (imatgeExisteix) {
-                                    // S'aplica el marcador d'imatge PNG/SVG si existeix
                                     const customIcon = L.icon({
                                         iconUrl: urlIcona,
                                         iconSize: [26, 26],
@@ -412,7 +418,6 @@
                                     });
                                     return L.marker(latlng, { icon: customIcon });
                                 } else {
-                                    // Fallback: Cercle de color original si la imatge dona error o no està pujada
                                     return L.circleMarker(latlng, {
                                         radius: 9, fillColor: colorCapa, color: "#ffffff", weight: 2, opacity: 1, fillOpacity: 0.9
                                     });
@@ -440,7 +445,7 @@
             }
         }
 
-        // --- LÒGICA DINÀMICA DEL PANELL DRET (FILTRAT PER ZOOM I EXISTÈNCIA DE DADES) ---
+        // --- LÒGICA DINÀMICA DEL PANELL DRET ---
         function actualitzarLlistatDret() {
             const listContainer = document.getElementById('elements-list');
             listContainer.innerHTML = ''; 
@@ -467,10 +472,8 @@
                             const telefon = props.phone || props['contact:phone'] || "";
                             const horari = props.opening_hours || "";
 
-                            // Títol visible superior
                             let cardContent = `<div class="element-title">${nom || "Element sense nom"}</div>`;
 
-                            // Especificar Nom, Telèfon i Horari NOMÉS si els elements disposen d'aquesta informació
                             if (nom !== "") {
                                 cardContent += `<div class="element-prop"><strong>Nom:</strong> ${nom}</div>`;
                             }
@@ -481,7 +484,6 @@
                                 cardContent += `<div class="element-prop"><strong>Horari:</strong> ${horari}</div>`;
                             }
 
-                            // Desplegable amb la resta de metadades extres d'OpenStreetMap
                             let extraRows = "";
                             for (const clau in props) {
                                 if (!['name', 'phone', 'contact:phone', 'opening_hours', '_layerColor', '_leafletId', 'id'].includes(clau) && !clau.startsWith('@')) {
@@ -499,7 +501,6 @@
 
                             card.innerHTML = cardContent;
                             
-                            // Enfocament de zoom i obertura automàtica de popup en fer clic a la targeta
                             card.addEventListener('click', () => {
                                 if (layer.getLatLng) {
                                     map.setView(layer.getLatLng(), 18);
@@ -526,11 +527,9 @@
             el.style.display = (el.style.display === 'block') ? 'none' : 'block';
         };
 
-        // Escoltadors d'events del mapa per recalcular el panell dret dinàmicament
         map.on('moveend', actualitzarLlistatDret);
         map.on('zoomend', actualitzarLlistatDret);
 
-        // Controladors del menú d'arbre esquerre
         document.querySelectorAll('.layer-toggle').forEach(input => {
             input.addEventListener('change', (e) => toggleLayer(e.target));
         });
