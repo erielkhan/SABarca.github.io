@@ -27,7 +27,7 @@
         }
         #sidebar.collapsed { transform: translateX(-350px); opacity: 0; pointer-events: none; }
 
-        /* --- MENÚ LATERAL DRET (ELEMENTS DINÀMICS AMB ZOOM) --- */
+        /* --- MENÚ LATERAL DRET (ELEMENTS EN PANTALLA) --- */
         #right-sidebar {
             position: absolute; top: 20px; right: 20px; width: 320px; z-index: 1000;
             background: var(--bg-sidebar); padding: 20px; border-radius: 12px;
@@ -339,7 +339,7 @@
             menuBtn.innerHTML = isCollapsed ? '☰' : '✕';
         });
 
-        // --- MAPA BASE (AMB COLORS DE CARRETERES, PARCS I EDIFICIS - OSM STANDARD) ---
+        // --- MAPA BASE STANDARD (A COLOR) ---
         const centroSAB = [41.44997317478169, 1.9711849410595195];
         const map = L.map('map', { zoomControl: false }).setView(centroSAB, 16);
         L.control.zoom({ position: 'topright' }).addTo(map);
@@ -350,8 +350,7 @@
 
         const individualLayers = {};
 
-        // RUTA DE LES IMATGES A GITHUB 
-        // Canvia el path pel del teu directori (Ex: `https://raw.githubusercontent.com/USUARI/REPOSITORI/main/icones/${id}.svg`)
+        // RUTA DE LES IMATGES (Modifica-ho amb la URL del teu repositori si ho prefereixes)
         const getIconUrl = (id) => `icones/${id}.svg`; 
 
         function crearPopup(props, color) {
@@ -389,19 +388,35 @@
                         const response = await fetch(filePath);
                         const data = await response.json();
                         
-                        // Icona SVG/PNG definida per codi des de GitHub/Directori
-                        const customIcon = L.icon({
-                            iconUrl: getIconUrl(id),
-                            iconSize: [26, 26],
-                            iconAnchor: [13, 13],
-                            popupAnchor: [0, -10]
-                        });
+                        // Validació asíncrona d'existència de la imatge a GitHub/Ruta
+                        const urlIcona = getIconUrl(id);
+                        let imatgeExisteix = false;
+                        
+                        try {
+                            const checkImg = await fetch(urlIcona, { method: 'HEAD' });
+                            if (checkImg.ok) imatgeExisteix = true;
+                        } catch(e) {
+                            console.log("No s'ha pogut verificar la icona, s'usarà el fallback de cercles.");
+                        }
 
                         const geojsonLayer = L.geoJSON(data, {
                             style: { color: colorCapa, weight: 3, opacity: 0.85, fillColor: colorCapa, fillOpacity: 0.4 },
                             pointToLayer: (feature, latlng) => {
-                                // Creem un marcador tipus Marker utilitzant la icona de la imatge carregada
-                                return L.marker(latlng, { icon: customIcon });
+                                if (imatgeExisteix) {
+                                    // S'aplica el marcador d'imatge PNG/SVG si existeix
+                                    const customIcon = L.icon({
+                                        iconUrl: urlIcona,
+                                        iconSize: [26, 26],
+                                        iconAnchor: [13, 13],
+                                        popupAnchor: [0, -10]
+                                    });
+                                    return L.marker(latlng, { icon: customIcon });
+                                } else {
+                                    // Fallback: Cercle de color original si la imatge dona error o no està pujada
+                                    return L.circleMarker(latlng, {
+                                        radius: 9, fillColor: colorCapa, color: "#ffffff", weight: 2, opacity: 1, fillOpacity: 0.9
+                                    });
+                                }
                             },
                             onEachFeature: (feature, layer) => {
                                 layer.bindPopup(crearPopup(feature.properties, colorCapa), { maxWidth: 260 });
@@ -414,8 +429,7 @@
                         map.addLayer(geojsonLayer);
                         actualitzarLlistatDret();
                     } catch (err) { 
-                        console.warn("Falla la icona personalitzada, s'aplica cercle genèric:", err);
-                        carregarFallbackCercles(id, filePath, colorCapa);
+                        console.error("Error carregant el fitxer GeoJSON de la capa:", err);
                     }
                 }
             } else {
@@ -426,29 +440,7 @@
             }
         }
 
-        // Sistema de contingència (Fallback) si la imatge SVG/PNG a GitHub no respon correctament
-        async function carregarFallbackCercles(id, filePath, colorCapa) {
-            try {
-                const response = await fetch(filePath);
-                const data = await response.json();
-                const geojsonLayer = L.geoJSON(data, {
-                    style: { color: colorCapa, weight: 3, opacity: 0.85, fillColor: colorCapa, fillOpacity: 0.4 },
-                    pointToLayer: (feature, latlng) => L.circleMarker(latlng, {
-                        radius: 9, fillColor: colorCapa, color: "#ffffff", weight: 2, opacity: 1, fillOpacity: 0.9
-                    }),
-                    onEachFeature: (feature, layer) => {
-                        layer.bindPopup(crearPopup(feature.properties, colorCapa), { maxWidth: 260 });
-                        feature.properties._layerColor = colorCapa;
-                        feature.properties._leafletId = L.stamp(layer);
-                    }
-                });
-                individualLayers[id] = geojsonLayer;
-                map.addLayer(geojsonLayer);
-                actualitzarLlistatDret();
-            } catch(e) { console.error("Error crític carregant dades:", e); }
-        }
-
-        // --- SISTEMA DINÀMIC PER AL PANELL LATERAL DRET ---
+        // --- LÒGICA DINÀMICA DEL PANELL DRET (FILTRAT PER ZOOM I EXISTÈNCIA DE DADES) ---
         function actualitzarLlistatDret() {
             const listContainer = document.getElementById('elements-list');
             listContainer.innerHTML = ''; 
@@ -471,19 +463,25 @@
                             card.className = 'element-card';
                             card.style.borderLeftColor = props._layerColor || '#ccc';
                             
-                            // Mapeig i traducció explicita al Català sol·licitada
-                            const nom = props.name || "Sense nom especificat";
-                            const telefon = props.phone || props['contact:phone'] || "No indicat";
-                            const horari = props.opening_hours || "No indicat";
+                            const nom = props.name ? props.name.trim() : "";
+                            const telefon = props.phone || props['contact:phone'] || "";
+                            const horari = props.opening_hours || "";
 
-                            let cardContent = `
-                                <div class="element-title">${nom}</div>
-                                <div class="element-prop"><strong>Nom:</strong> ${nom}</div>
-                                <div class="element-prop"><strong>Telèfon:</strong> ${telefon}</div>
-                                <div class="element-prop"><strong>Horari:</strong> ${horari}</div>
-                            `;
+                            // Títol visible superior
+                            let cardContent = `<div class="element-title">${nom || "Element sense nom"}</div>`;
 
-                            // Recorrem la resta d'etiquetes del fitxer osm per posar-les sota el desplegable
+                            // Especificar Nom, Telèfon i Horari NOMÉS si els elements disposen d'aquesta informació
+                            if (nom !== "") {
+                                cardContent += `<div class="element-prop"><strong>Nom:</strong> ${nom}</div>`;
+                            }
+                            if (telefon !== "") {
+                                cardContent += `<div class="element-prop"><strong>Telèfon:</strong> ${telefon}</div>`;
+                            }
+                            if (horari !== "") {
+                                cardContent += `<div class="element-prop"><strong>Horari:</strong> ${horari}</div>`;
+                            }
+
+                            // Desplegable amb la resta de metadades extres d'OpenStreetMap
                             let extraRows = "";
                             for (const clau in props) {
                                 if (!['name', 'phone', 'contact:phone', 'opening_hours', '_layerColor', '_leafletId', 'id'].includes(clau) && !clau.startsWith('@')) {
@@ -501,7 +499,7 @@
 
                             card.innerHTML = cardContent;
                             
-                            // En fer clic a un element de la dreta, ens hi apropem (Zoom) i obrim el seu popup
+                            // Enfocament de zoom i obertura automàtica de popup en fer clic a la targeta
                             card.addEventListener('click', () => {
                                 if (layer.getLatLng) {
                                     map.setView(layer.getLatLng(), 18);
@@ -519,7 +517,7 @@
             }
 
             if (!elementsTrobats) {
-                listContainer.innerHTML = '<p style="font-size:0.8rem; color:#999; text-align:center; margin-top:20px;">No hi ha cap element d\'una capa activa dins de la visualització d\'aquest zoom.</p>';
+                listContainer.innerHTML = '<p style="font-size:0.8rem; color:#999; text-align:center; margin-top:20px;">No hi ha cap element d\'una capa activa dins d\'aquest zoom.</p>';
             }
         }
 
@@ -528,11 +526,11 @@
             el.style.display = (el.style.display === 'block') ? 'none' : 'block';
         };
 
-        // Event listeners de moviment sobre el mapa per recalcular el llistat dinàmic segons zoom/pan
+        // Escoltadors d'events del mapa per recalcular el panell dret dinàmicament
         map.on('moveend', actualitzarLlistatDret);
         map.on('zoomend', actualitzarLlistatDret);
 
-        // Controladors d'esdeveniments per a l'arbre de capes esquerre
+        // Controladors del menú d'arbre esquerre
         document.querySelectorAll('.layer-toggle').forEach(input => {
             input.addEventListener('change', (e) => toggleLayer(e.target));
         });
