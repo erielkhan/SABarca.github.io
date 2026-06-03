@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2026-03-26T13:11:15Z",
+  "timestamp": "2026-06-03T12:43:30Z",
   "features": [
     {
       "type": "Feature",
@@ -363,6 +363,84 @@
         ]
       },
       "id": "way/1457019247"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1524485293",
+        "amenity": "parking_space",
+        "note": "farmàcia",
+        "note:ca": "farmàcia",
+        "note:en": "pharmacy",
+        "parking_space": "emergency"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.973149,
+              41.4516006
+            ],
+            [
+              1.9731279,
+              41.4515919
+            ],
+            [
+              1.9731562,
+              41.4515533
+            ],
+            [
+              1.9731773,
+              41.451562
+            ],
+            [
+              1.973149,
+              41.4516006
+            ]
+          ]
+        ]
+      },
+      "id": "way/1524485293"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1524485294",
+        "amenity": "parking_space",
+        "note": "farmàcia",
+        "note:ca": "farmàcia",
+        "note:en": "pharmacy",
+        "parking_space": "emergency"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9731206,
+              41.4516392
+            ],
+            [
+              1.9730995,
+              41.4516305
+            ],
+            [
+              1.9731279,
+              41.4515919
+            ],
+            [
+              1.973149,
+              41.4516006
+            ],
+            [
+              1.9731206,
+              41.4516392
+            ]
+          ]
+        ]
+      },
+      "id": "way/1524485294"
     }
   ]
 }

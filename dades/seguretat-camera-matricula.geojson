@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-06-03T12:40:30Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11168455742",
+        "camera:direction": "60;205",
+        "camera:mount": "pole",
+        "camera:type": "fixed",
+        "direction": "135",
+        "highway": "street_lamp",
+        "lamp_mount": "straight_mast",
+        "lamp_type": "led",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "support": "pole",
+        "surveillance:type": "ALPR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9717881,
+          41.4501231
+        ]
+      },
+      "id": "node/11168455742"
+    }
+  ]
+}

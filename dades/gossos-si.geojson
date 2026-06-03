@@ -1,0 +1,374 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-06-03T12:37:22Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1208504262",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "4",
+        "addr:postcode": "08740",
+        "addr:street": "Via de l'Esport",
+        "air_conditioning": "yes",
+        "brand": "Catalonia Hotels",
+        "building": "hotel",
+        "check_date": "2024-05-15",
+        "dog": "yes",
+        "email": "booking@cataloniahotels.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Hotel Bristol",
+        "name:ca": "Hotel Bristol",
+        "opening_hours": "24/7",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+34 93 236 00 59",
+        "swimming_pool": "outdoor",
+        "tourism": "hotel",
+        "website": "https://www.cataloniahotels.com/ca/hotel/catalonia-bristol",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9709178,
+              41.4500218
+            ],
+            [
+              1.9708736,
+              41.4499953
+            ],
+            [
+              1.9708317,
+              41.4499701
+            ],
+            [
+              1.9708632,
+              41.4499403
+            ],
+            [
+              1.9708318,
+              41.4499198
+            ],
+            [
+              1.9708661,
+              41.449888
+            ],
+            [
+              1.9709605,
+              41.4498009
+            ],
+            [
+              1.9709944,
+              41.4497695
+            ],
+            [
+              1.9710262,
+              41.4497889
+            ],
+            [
+              1.9710597,
+              41.4497578
+            ],
+            [
+              1.9710948,
+              41.4497793
+            ],
+            [
+              1.9711455,
+              41.4498103
+            ],
+            [
+              1.9711003,
+              41.449852
+            ],
+            [
+              1.9710922,
+              41.449847
+            ],
+            [
+              1.9710424,
+              41.4498928
+            ],
+            [
+              1.9710367,
+              41.4498893
+            ],
+            [
+              1.9709969,
+              41.4499261
+            ],
+            [
+              1.971003,
+              41.4499297
+            ],
+            [
+              1.9709539,
+              41.4499756
+            ],
+            [
+              1.9709618,
+              41.4499803
+            ],
+            [
+              1.9709178,
+              41.4500218
+            ]
+          ]
+        ]
+      },
+      "id": "way/1208504262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8089948763",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "26",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Barcelona",
+        "amenity": "fast_food",
+        "amenity:-2020": "bank",
+        "amenity:2023": "fast_food",
+        "brand": "DELICIOUS BAKERY & COFFEE S.L.",
+        "brand:-2020": "BBVA",
+        "brand:2023": "DELICIOUS BAKERY & COFFEE S.L.",
+        "dog": "yes",
+        "name": "Delicious Bakery & Coffee",
+        "name:-2020": "BBVA",
+        "name:2023": "Delicious Bakery & Coffee",
+        "name:ca": "Delicious Bakery & Coffee",
+        "official_name:-2020": "Banco Bilbao Vizcaya Argentaria",
+        "opening_hours": "06:30-21:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9741787,
+          41.4480541
+        ]
+      },
+      "id": "node/8089948763"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8089948768",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "9",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de la Riera de Canals",
+        "contact:mobile": "+34 674 09 58 30",
+        "dog": "yes",
+        "email": "ffernandez10365@hotmail.com",
+        "name": "Ferreteria Carmona",
+        "name:ca": "Carmona",
+        "phone": "+34 93 653 04 36",
+        "shop": "hardware"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9724974,
+          41.4486775
+        ]
+      },
+      "id": "node/8089948768"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8089948771",
+        "check_date": "2024-05-15",
+        "dog": "yes",
+        "name": "Optimus La Roda",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "hardware",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9725107,
+          41.4479601
+        ]
+      },
+      "id": "node/8089948771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8142722300",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "1",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Parera",
+        "addr:unit": "2",
+        "amenity": "cafe",
+        "amenity:-2022": "cafe",
+        "amenity:2026": "cafe",
+        "cuisine": "colombian;latin_american;empanada",
+        "dog": "yes",
+        "instagram": "tien.da_midioslepague",
+        "mobile": "+34 610 43 98 84",
+        "name": "Mi dios le pague",
+        "name:-2022": "Ca l'Olga Degustació",
+        "name:-2025": "AfroMarket",
+        "name:2026": "Mi dios le pague",
+        "opening_hours": "Tu-Sa 10:30-20:00, Su 10:30-16:00",
+        "outdoor_seating": "no",
+        "shop:-2025": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.973512,
+          41.4479656
+        ]
+      },
+      "id": "node/8142722300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8262956000",
+        "amenity": "cafe",
+        "check_date": "2024-05-16",
+        "dog": "yes",
+        "name": "365",
+        "name:ca": "365",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9683767,
+          41.4489618
+        ]
+      },
+      "id": "node/8262956000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8820476158",
+        "amenity": "pub",
+        "dog": "yes",
+        "name": "Rou",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9706841,
+          41.4506777
+        ]
+      },
+      "id": "node/8820476158"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9570875804",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "7",
+        "addr:street": "Carrer de l'Estatut",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "amenity:2022-2024": "cafe",
+        "amenity:2025": "restaurant",
+        "contact:instagram": "ma.de.pizza.oficial",
+        "cuisine": "pizza",
+        "dog": "yes",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Mà de Pizza",
+        "name:2022-2024": "Paniteca",
+        "name:2024-2024": "Ecco",
+        "name:ca": "Mà de Pizza",
+        "opening_hours": "Th-Sa 20:00-23:00; Fr-Su 13:00-16:00",
+        "outdoor_seating": "no",
+        "phone": "+34 936 43 86 52",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "website": "madepizza.last.shop",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9711897,
+          41.4478709
+        ]
+      },
+      "id": "node/9570875804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9715840387",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "1",
+        "addr:postcode": "08740",
+        "addr:street": "Via de l'Esport",
+        "check_date": "2024-05-15",
+        "dog": "yes",
+        "name": "Yumo House",
+        "name:-2018": "Iber Japó",
+        "name:2019": "Trendy",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "variety_store",
+        "shop:-2018": "car",
+        "shop:2019": "clothes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9720623,
+          41.4495766
+        ]
+      },
+      "id": "node/9715840387"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9775009809",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "9",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "amenity": "restaurant",
+        "cuisine": "crepe;ice_cream",
+        "dog": "yes",
+        "name": "Creperia Essència",
+        "name:ca": "Creperia Essència",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9682588,
+          41.4485877
+        ]
+      },
+      "id": "node/9775009809"
+    }
+  ]
+}

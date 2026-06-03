@@ -1,0 +1,134 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-06-03T12:40:30Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12431807774",
+        "camera:mount": "ceiling",
+        "camera:type": "fixed",
+        "man_made": "surveillance",
+        "operator": "Ferrocarrils de la Generalitat de Catalunya",
+        "operator:short": "FGC",
+        "surveillance": "outdoor",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9624217,
+          41.455851
+        ]
+      },
+      "id": "node/12431807774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12431807775",
+        "camera:mount": "ceiling",
+        "camera:type": "fixed",
+        "man_made": "surveillance",
+        "operator": "Ferrocarrils de la Generalitat de Catalunya",
+        "operator:short": "FGC",
+        "surveillance": "outdoor",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9632009,
+          41.4550701
+        ]
+      },
+      "id": "node/12431807775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12431807776",
+        "camera:mount": "pole",
+        "camera:type": "fixed",
+        "man_made": "surveillance",
+        "operator": "Ferrocarrils de la Generalitat de Catalunya",
+        "operator:short": "FGC",
+        "surveillance": "outdoor",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9623251,
+          41.4557872
+        ]
+      },
+      "id": "node/12431807776"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12431807777",
+        "camera:mount": "ceiling",
+        "camera:type": "fixed",
+        "man_made": "surveillance",
+        "operator": "Ferrocarrils de la Generalitat de Catalunya",
+        "operator:short": "FGC",
+        "surveillance": "outdoor",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9629216,
+          41.4554593
+        ]
+      },
+      "id": "node/12431807777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12431807778",
+        "camera:mount": "ceiling",
+        "camera:type": "fixed",
+        "man_made": "surveillance",
+        "operator": "Ferrocarrils de la Generalitat de Catalunya",
+        "operator:short": "FGC",
+        "surveillance": "outdoor",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9627441,
+          41.4554325
+        ]
+      },
+      "id": "node/12431807778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12431807779",
+        "camera:mount": "ceiling",
+        "camera:type": "fixed",
+        "man_made": "surveillance",
+        "operator": "Ferrocarrils de la Generalitat de Catalunya",
+        "operator:short": "FGC",
+        "surveillance": "outdoor",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9632459,
+          41.4552155
+        ]
+      },
+      "id": "node/12431807779"
+    }
+  ]
+}

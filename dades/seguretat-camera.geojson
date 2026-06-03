@@ -1,0 +1,492 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-06-03T12:39:30Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11166831919",
+        "camera:direction": "195;15",
+        "camera:mount": "pole",
+        "camera:type": "fixed",
+        "direction": "200;20;70",
+        "highway": "street_lamp",
+        "lamp_mount": "straight_mast",
+        "lamp_type": "led",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "support": "pole",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9694087,
+          41.4483112
+        ]
+      },
+      "id": "node/11166831919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11638583627",
+        "camera:direction": "230",
+        "camera:mount": "pole",
+        "camera:type": "fixed",
+        "direction": "70",
+        "highway": "street_lamp",
+        "lamp_mount": "straight_mast",
+        "lamp_type": "led",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "support": "pole",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.971359,
+          41.4503034
+        ]
+      },
+      "id": "node/11638583627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11654399451",
+        "camera:direction": "90",
+        "camera:mount": "wall",
+        "camera:type": "fixed",
+        "direction": "70",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance": "camera",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9748488,
+          41.4482999
+        ]
+      },
+      "id": "node/11654399451"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11956783309",
+        "camera:direction": "345",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9746398,
+          41.4457924
+        ]
+      },
+      "id": "node/11956783309"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12736395507",
+        "camera:mount": "wall",
+        "camera:type": "fixed",
+        "highway": "street_lamp",
+        "lamp_mount": "straight_mast",
+        "lamp_type": "led",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "support": "pole",
+        "surveillance": "camera",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9703389,
+          41.4478141
+        ]
+      },
+      "id": "node/12736395507"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12736395508",
+        "camera:direction": "90",
+        "camera:mount": "wall",
+        "camera:type": "fixed",
+        "direction": "70",
+        "highway": "street_lamp",
+        "lamp_mount": "straight_mast",
+        "lamp_type": "led",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "support": "pole",
+        "surveillance": "camera",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9705338,
+          41.4478919
+        ]
+      },
+      "id": "node/12736395508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13041179920",
+        "camera:direction": "60;290",
+        "camera:mount": "pole",
+        "camera:type": "fixed",
+        "direction": "135",
+        "highway": "street_lamp",
+        "lamp_mount": "straight_mast",
+        "lamp_type": "led",
+        "man_made": "measurement_device;surveillance",
+        "monitoring": "weather",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "support": "pole",
+        "surveillance:type": "camera",
+        "weather:anemometer": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.970068,
+          41.4520269
+        ]
+      },
+      "id": "node/13041179920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13097350791",
+        "camera:direction": "180",
+        "camera:mount": "pole",
+        "highway": "street_lamp",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9734054,
+          41.4519508
+        ]
+      },
+      "id": "node/13097350791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13239636245",
+        "camera:direction": "90;270",
+        "camera:mount": "wall",
+        "camera:type": "fixed",
+        "direction": "90;270",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance": "camera",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9692679,
+          41.4486114
+        ]
+      },
+      "id": "node/13239636245"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13352057742",
+        "camera:mount": "wall",
+        "camera:type": "fixed",
+        "highway": "street_lamp",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance": "camera",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.970834,
+          41.4481141
+        ]
+      },
+      "id": "node/13352057742"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794407",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9532572,
+          41.4629565
+        ]
+      },
+      "id": "node/13689794407"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794408",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9588565,
+          41.4606016
+        ]
+      },
+      "id": "node/13689794408"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794409",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9542109,
+          41.4574055
+        ]
+      },
+      "id": "node/13689794409"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794410",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9574564,
+          41.4548787
+        ]
+      },
+      "id": "node/13689794410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794411",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.959688,
+          41.4538816
+        ]
+      },
+      "id": "node/13689794411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794412",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9619545,
+          41.4519336
+        ]
+      },
+      "id": "node/13689794412"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794413",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9657874,
+          41.4500881
+        ]
+      },
+      "id": "node/13689794413"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794414",
+        "camera:direction": "60;320",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9736838,
+          41.4521755
+        ]
+      },
+      "id": "node/13689794414"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794416",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.967158,
+          41.4469457
+        ]
+      },
+      "id": "node/13689794416"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794417",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9665796,
+          41.4436422
+        ]
+      },
+      "id": "node/13689794417"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794418",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9712044,
+          41.4448818
+        ]
+      },
+      "id": "node/13689794418"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794419",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9813317,
+          41.4434894
+        ]
+      },
+      "id": "node/13689794419"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794420",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9768095,
+          41.4465273
+        ]
+      },
+      "id": "node/13689794420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689794421",
+        "camera:mount": "pole",
+        "man_made": "surveillance",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9793469,
+          41.4453572
+        ]
+      },
+      "id": "node/13689794421"
+    }
+  ]
+}

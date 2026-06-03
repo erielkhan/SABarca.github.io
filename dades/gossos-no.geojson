@@ -1,0 +1,162 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-06-03T12:38:25Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1192018895",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "2",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "brand": "La Sirena",
+        "brand:wikidata": "Q21034458",
+        "dog": "no",
+        "indoor": "shop",
+        "indoor:level": "0",
+        "level": "0",
+        "name": "La Sirena",
+        "shop": "frozen_food"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.96922,
+              41.4488549
+            ],
+            [
+              1.9691822,
+              41.4488816
+            ],
+            [
+              1.9691558,
+              41.4488603
+            ],
+            [
+              1.9691319,
+              41.4488404
+            ],
+            [
+              1.9690866,
+              41.4488028
+            ],
+            [
+              1.9690495,
+              41.4488279
+            ],
+            [
+              1.9690271,
+              41.4488122
+            ],
+            [
+              1.9690167,
+              41.4488034
+            ],
+            [
+              1.9690517,
+              41.4487795
+            ],
+            [
+              1.9690134,
+              41.448748
+            ],
+            [
+              1.9689784,
+              41.4487719
+            ],
+            [
+              1.9689102,
+              41.4487168
+            ],
+            [
+              1.9689503,
+              41.448689
+            ],
+            [
+              1.9689877,
+              41.448662
+            ],
+            [
+              1.96922,
+              41.4488549
+            ]
+          ]
+        ]
+      },
+      "id": "way/1192018895"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7536467211",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "18",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Guatemala",
+        "brand:-2025": "Suma",
+        "brand:wikidata": "Q58012362",
+        "dog": "no",
+        "name": "Bon Carrito",
+        "name:-2025": "Suma",
+        "opening_hours": "PH,Mo-Su 08:30-23:00",
+        "operator:-2025": "Suma",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9757713,
+          41.4486718
+        ]
+      },
+      "id": "node/7536467211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7536467221",
+        "check_date": "2024-05-15",
+        "dog": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "variety_store",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.970772,
+          41.4513419
+        ]
+      },
+      "id": "node/7536467221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9468022190",
+        "check_date": "2024-05-15",
+        "dog": "no",
+        "name": "Agadir",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "butcher"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9722394,
+          41.4478017
+        ]
+      },
+      "id": "node/9468022190"
+    }
+  ]
+}

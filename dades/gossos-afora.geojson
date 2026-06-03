@@ -1,0 +1,911 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-06-03T12:37:22Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1192748733",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "4",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "addr:unit": "2",
+        "amenity": "cafe",
+        "dog": "outside",
+        "indoor": "shop",
+        "indoor:level": "0",
+        "level": "0",
+        "name": "Dori Dori",
+        "name:ca": "Dori Dori",
+        "opening_hours": "Mo 08:00-14:00; Tu-Th 08:00-13:30; Tu-Th 16:30-19:30; Fr 08:00-19:30; Sa 08:00-14:00",
+        "outdoor_seating": "yes",
+        "phone": "+34 661 327 005",
+        "website": "https://www.doridori.es/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9693861,
+              41.4489915
+            ],
+            [
+              1.9693517,
+              41.4490149
+            ],
+            [
+              1.9693138,
+              41.4490407
+            ],
+            [
+              1.9692475,
+              41.448988
+            ],
+            [
+              1.9693203,
+              41.4489379
+            ],
+            [
+              1.9693861,
+              41.4489915
+            ]
+          ]
+        ]
+      },
+      "id": "way/1192748733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1194531479",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "6",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "amenity": "pub",
+        "dog": "outside",
+        "indoor": "shop",
+        "level": "0",
+        "name": "El secreto",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "outdoor_seating": "yes",
+        "phone": "+34 93 682 30 01"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9687746,
+              41.4488649
+            ],
+            [
+              1.9688088,
+              41.4488916
+            ],
+            [
+              1.9687867,
+              41.4489075
+            ],
+            [
+              1.9688098,
+              41.4489255
+            ],
+            [
+              1.9687754,
+              41.4489503
+            ],
+            [
+              1.9687394,
+              41.4489763
+            ],
+            [
+              1.968738,
+              41.4489752
+            ],
+            [
+              1.9686471,
+              41.4489043
+            ],
+            [
+              1.96868,
+              41.4488806
+            ],
+            [
+              1.9687396,
+              41.4488376
+            ],
+            [
+              1.9687746,
+              41.4488649
+            ]
+          ]
+        ]
+      },
+      "id": "way/1194531479"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1290117607",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "10",
+        "addr:postcode": "08740",
+        "addr:street": "Plaça Federico Garcia Lorca",
+        "amenity": "ice_cream",
+        "brand": "Jijonenca",
+        "brand:website": "https://www.jijonenca.es",
+        "brand:wikidata": "Q109332228",
+        "dog": "outside",
+        "name": "Jijonenca"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9695347,
+              41.4489547
+            ],
+            [
+              1.9695861,
+              41.4489966
+            ],
+            [
+              1.9694609,
+              41.4490827
+            ],
+            [
+              1.9694348,
+              41.4491007
+            ],
+            [
+              1.9693687,
+              41.4490468
+            ],
+            [
+              1.9693795,
+              41.4490394
+            ],
+            [
+              1.9694154,
+              41.4490147
+            ],
+            [
+              1.9694301,
+              41.4490266
+            ],
+            [
+              1.9694713,
+              41.4489983
+            ],
+            [
+              1.9695347,
+              41.4489547
+            ]
+          ]
+        ]
+      },
+      "id": "way/1290117607"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1293037630",
+        "building:part": "yes",
+        "dog": "outside",
+        "height": "4"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9693861,
+              41.4489915
+            ],
+            [
+              1.9693517,
+              41.4490149
+            ],
+            [
+              1.9693138,
+              41.4490407
+            ],
+            [
+              1.9692475,
+              41.448988
+            ],
+            [
+              1.9691768,
+              41.4489315
+            ],
+            [
+              1.9692126,
+              41.4489062
+            ],
+            [
+              1.9692473,
+              41.4488803
+            ],
+            [
+              1.9692853,
+              41.4489098
+            ],
+            [
+              1.9693203,
+              41.4489379
+            ],
+            [
+              1.9693861,
+              41.4489915
+            ]
+          ]
+        ]
+      },
+      "id": "way/1293037630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7536467212",
+        "amenity": "pub",
+        "dog": "outside",
+        "name": "Bar Cerveceria Los Escudos",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9755722,
+          41.4489917
+        ]
+      },
+      "id": "node/7536467212"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7536467218",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Sant Jordi",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "dog": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9719431,
+          41.4507071
+        ]
+      },
+      "id": "node/7536467218"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7536467224",
+        "addr:housenumber": "18A",
+        "addr:street": "Avinguda Constitució",
+        "amenity": "cafe",
+        "brand": "Granier",
+        "brand:wikidata": "Q102311169",
+        "check_date": "2024-05-17",
+        "dog": "outside",
+        "name": "Granier",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "bakery",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9680896,
+          41.4490845
+        ]
+      },
+      "id": "node/7536467224"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7660760278",
+        "amenity": "cafe",
+        "dog": "outside",
+        "indoor_seating": "yes",
+        "name": "Forn de l'Avi Josep",
+        "name:ca": "Forn de l'Avi Josep",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9744032,
+          41.4470872
+        ]
+      },
+      "id": "node/7660760278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7671056643",
+        "amenity": "pub",
+        "dog": "outside",
+        "indoor_seating": "yes",
+        "name": "la Parada",
+        "name:ca": "la Parada",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9737778,
+          41.4482833
+        ]
+      },
+      "id": "node/7671056643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7671056657",
+        "addr:housenumber": "15",
+        "addr:street": "Carrer de Josep Pla",
+        "amenity": "pub",
+        "check_date": "2024-05-15",
+        "dog": "outside",
+        "indoor_seating": "yes",
+        "internet_access": "no",
+        "name": "Frankfurt Tu i Jo",
+        "name:ca": "Frankfurt Tu i Jo",
+        "opening_hours": "Mo-Su,PH 08:00-24:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+34 936 53 16 13",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9713294,
+          41.4512882
+        ]
+      },
+      "id": "node/7671056657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7686962980",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "2",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Catalunya",
+        "amenity": "restaurant",
+        "cuisine": "catalan",
+        "dog": "outside",
+        "indoor_seating": "yes",
+        "name": "El Cafè del Casino",
+        "name:ca": "El Cafè del Casino",
+        "outdoor_seating": "yes",
+        "phone": "+34 93 682 47 88"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9722422,
+          41.4492881
+        ]
+      },
+      "id": "node/7686962980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7733828167",
+        "addr:housenumber": "18B",
+        "amenity": "pub",
+        "dog": "outside",
+        "name": "Cerveceria Marc's",
+        "opening_hours": "Mo-Su 08:30-23:59",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.968026,
+          41.4491488
+        ]
+      },
+      "id": "node/7733828167"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7733828169",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "21",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "amenity": "restaurant",
+        "contact:instagram": "@dtaping_dgustam",
+        "cuisine": "burger;american",
+        "dog": "outside",
+        "email": "info@dtaping.com",
+        "name": "Dtaping",
+        "outdoor_seating": "yes",
+        "phone": "+34 935 10 18 49",
+        "website": "https://dtaping.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9665036,
+          41.4493693
+        ]
+      },
+      "id": "node/7733828169"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7817673097",
+        "dog": "outside",
+        "name": "el Forn del Poble",
+        "outdoor_seating": "yes",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9760931,
+          41.448399
+        ]
+      },
+      "id": "node/7817673097"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7817673111",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "14",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Guatemala",
+        "addr:unit": "2",
+        "amenity": "cafe",
+        "dog": "outside",
+        "instagram": "cafedeisa",
+        "name": "El cafè de l'Isa",
+        "name:-2025": "Meraki",
+        "name:2025": "El cafè de l'Isa",
+        "opening_hours": "Mo-Fr 06:00-20:00; Sa 06:00-19:00; Su 07:00-15:00",
+        "phone": "+34 611 78 48 60",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9765029,
+          41.4479103
+        ]
+      },
+      "id": "node/7817673111"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8089948764",
+        "amenity": "pub",
+        "dog": "outside",
+        "name": "Bar Rey Chico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9738601,
+          41.4482451
+        ]
+      },
+      "id": "node/8089948764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8089948770",
+        "amenity": "pub",
+        "dog": "outside",
+        "indoor_seating": "yes",
+        "name": "Garnatxa",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9728607,
+          41.448541
+        ]
+      },
+      "id": "node/8089948770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8142722312",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "8",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Guatemala",
+        "amenity": "pub",
+        "dog": "outside",
+        "name": "Traga Traga",
+        "outdoor_seating": "yes",
+        "phone": "+34 667 76 71 64"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9769243,
+          41.4472929
+        ]
+      },
+      "id": "node/8142722312"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8262956001",
+        "amenity": "bar",
+        "dog": "outside",
+        "name": "Mi Café",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9683022,
+          41.4490171
+        ]
+      },
+      "id": "node/8262956001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8408736966",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "17",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "amenity": "restaurant",
+        "cuisine": "burger;cuban",
+        "dog": "outside",
+        "email": "hola@esquinitadelmojito.com",
+        "name": "Esquinita del Mojito",
+        "name:ca": "Esquinita del Mojito",
+        "opening_hours": "Mo-Th 11:00-24:00; Fr-Sa 11:00-01:00",
+        "outdoor_seating": "yes",
+        "phone": "+34 936532449",
+        "website": "https://esquinitadelmojito.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9666992,
+          41.4491646
+        ]
+      },
+      "id": "node/8408736966"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8820476160",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "17",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Martorell",
+        "amenity": "restaurant",
+        "cuisine": "galician",
+        "dog": "outside",
+        "indoor_seating": "yes",
+        "name": "Foixos",
+        "outdoor_seating": "yes",
+        "phone": "+34 93 682 25 36"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9707898,
+          41.4505817
+        ]
+      },
+      "id": "node/8820476160"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8820476161",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "3",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Martorell",
+        "amenity": "pub",
+        "check_date": "2024-05-09",
+        "dog": "outside",
+        "indoor_seating": "yes",
+        "internet_access": "no",
+        "name": "Bendita Tapa",
+        "name:ca": "Bendita Tapa",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9710835,
+          41.4502961
+        ]
+      },
+      "id": "node/8820476161"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8820476162",
+        "amenity": "pub",
+        "dog": "outside",
+        "indoor_seating": "yes",
+        "name": "Vela",
+        "name:ca": "Vela",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9710192,
+          41.4503514
+        ]
+      },
+      "id": "node/8820476162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8820476163",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "13",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Martorell",
+        "amenity": "fast_food",
+        "check_date": "2024-05-09",
+        "cuisine": "pizza",
+        "dog": "outside",
+        "drive_through": "no",
+        "indoor_seating": "yes",
+        "internet_access": "no",
+        "name": "Redpizza",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+34 93 682 21 21",
+        "website": "https://redpizzasantandreu.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9708949,
+          41.4504725
+        ]
+      },
+      "id": "node/8820476163"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9231326408",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "2",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Sant Josep Oriol",
+        "addr:unit": "3",
+        "amenity": "cafe",
+        "check_date": "2024-05-15",
+        "dog": "outside",
+        "indoor_seating": "yes",
+        "name": "Migas",
+        "opening_hours": "Mo-Sa 07:00-21:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+34 93 004 74 65",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9720984,
+          41.4480888
+        ]
+      },
+      "id": "node/9231326408"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9384677010",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "7",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Guatemala",
+        "amenity": "pub",
+        "cuisine": "tapas",
+        "dog": "outside",
+        "name": "la Solana",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976554,
+          41.4472547
+        ]
+      },
+      "id": "node/9384677010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9468022170",
+        "amenity": "restaurant",
+        "dog": "outside",
+        "name": "23 Focs",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9708662,
+          41.4499516
+        ]
+      },
+      "id": "node/9468022170"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9809374038",
+        "addr:housenumber": "21",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Martorell",
+        "dog": "outside",
+        "entrance": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9707363,
+          41.4506438
+        ]
+      },
+      "id": "node/9809374038"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9956367062",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "22",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "cuisine:-2021": "kebab",
+        "dog": "outside",
+        "name": "Tití Burger",
+        "name:-2021": "Micky's Kebab",
+        "outdoor_seating": "yes",
+        "phone": "+34 620 899 259"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9678445,
+          41.4491922
+        ]
+      },
+      "id": "node/9956367062"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10699278781",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "2",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Martorell",
+        "check_date": "2025-01-02",
+        "description": "Pastisseria - Forn de pa - Catering - Cafeteria",
+        "dog": "outside",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Pastisseria Arenas",
+        "name:-2020": "Condis",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "pastry",
+        "shop:-2020": "supermarket",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9715849,
+          41.4506547
+        ]
+      },
+      "id": "node/10699278781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11082705713",
+        "addr:housenumber": "1",
+        "addr:place": "Plaça Federico Garcia Lorca",
+        "amenity": "pub",
+        "dog": "outside",
+        "name": "Cafè del Teatre",
+        "name:ca": "Cafè del Teatre",
+        "phone": "+34 93 632 36 72"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9696196,
+          41.4488687
+        ]
+      },
+      "id": "node/11082705713"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11377522712",
+        "amenity": "cafe",
+        "amenity:-2023": "pub",
+        "amenity:2023": "cafe",
+        "dog": "outside",
+        "name": "23D",
+        "name:-2023": "Benji",
+        "name:2023": "23D",
+        "name:ca": "23D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9754875,
+          41.4451218
+        ]
+      },
+      "id": "node/11377522712"
+    }
+  ]
+}
