@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2026-03-27T00:23:58Z",
+  "timestamp": "2026-06-03T18:01:36Z",
   "features": [
     {
       "type": "Feature",
@@ -105,11 +105,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.9764042,
-          41.4477157
+          1.9763945,
+          41.4477261
         ]
       },
       "id": "node/9787684147"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10559008414",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9728185,
+          41.4506858
+        ]
+      },
+      "id": "node/10559008414"
     },
     {
       "type": "Feature",
@@ -173,8 +190,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.9731726,
-          41.4453601
+          1.9732275,
+          41.4453547
         ]
       },
       "id": "node/10734536882"
@@ -190,8 +207,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.955235,
-          41.4503298
+          1.9552534,
+          41.4503101
         ]
       },
       "id": "node/11083027174"
@@ -273,7 +290,6 @@
       "properties": {
         "@id": "node/11168395639",
         "amenity": "recycling",
-        "recycling:glass": "yes",
         "recycling:glass_bottles": "yes",
         "recycling_type": "container"
       },
@@ -365,7 +381,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.966669,
+          1.9666733,
           41.4507964
         ]
       },
@@ -425,6 +441,23 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/11211243106",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.961108,
+          41.454015
+        ]
+      },
+      "id": "node/11211243106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/11211253131",
         "amenity": "recycling",
         "recycling:glass_bottles": "yes",
@@ -438,6 +471,23 @@
         ]
       },
       "id": "node/11211253131"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11218786097",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9622305,
+          41.4550469
+        ]
+      },
+      "id": "node/11218786097"
     },
     {
       "type": "Feature",
@@ -512,6 +562,23 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/11756700571",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9735463,
+          41.4583699
+        ]
+      },
+      "id": "node/11756700571"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/11777325925",
         "amenity": "recycling",
         "recycling:glass_bottles": "yes",
@@ -577,6 +644,23 @@
         ]
       },
       "id": "node/12013053934"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12013288517",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9574342,
+          41.4484026
+        ]
+      },
+      "id": "node/12013288517"
     },
     {
       "type": "Feature",
@@ -781,6 +865,210 @@
         ]
       },
       "id": "node/13361600318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689698464",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9681673,
+          41.4441145
+        ]
+      },
+      "id": "node/13689698464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689747193",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9744644,
+          41.4448316
+        ]
+      },
+      "id": "node/13689747193"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689775601",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.978415,
+          41.4436212
+        ]
+      },
+      "id": "node/13689775601"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13694973301",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9572187,
+          41.4552145
+        ]
+      },
+      "id": "node/13694973301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13694973308",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9585014,
+          41.4562764
+        ]
+      },
+      "id": "node/13694973308"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13694973421",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9632065,
+          41.4532078
+        ]
+      },
+      "id": "node/13694973421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13694997513",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9629221,
+          41.452341
+        ]
+      },
+      "id": "node/13694997513"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13694997516",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9647673,
+          41.4479197
+        ]
+      },
+      "id": "node/13694997516"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13729239398",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9763798,
+          41.4477397
+        ]
+      },
+      "id": "node/13729239398"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13759830624",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9743273,
+          41.4458698
+        ]
+      },
+      "id": "node/13759830624"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13759874855",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9734162,
+          41.4466046
+        ]
+      },
+      "id": "node/13759874855"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13798243504",
+        "amenity": "recycling",
+        "recycling:glass_bottles": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9688566,
+          41.4502794
+        ]
+      },
+      "id": "node/13798243504"
     }
   ]
 }

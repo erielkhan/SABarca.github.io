@@ -1,0 +1,124 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-06-03T17:56:30Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9603011527",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "14",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer del Valles",
+        "amenity": "music_school;dancing_school",
+        "education": "music_school;dancing_school",
+        "email": "emmdsab@sabarca.cat",
+        "name": "Escola Municipal de Música i Dansa",
+        "name:ca": "Escola Municipal de Música i Dansa",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "operator:type": "public",
+        "phone": "+34 93 653 03 62",
+        "website": "https://emmdsab.sabarca.cat/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9675251,
+          41.4493563
+        ]
+      },
+      "id": "node/9603011527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9802616440",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "6",
+        "addr:postcode": "08740",
+        "addr:street": "Carrer de Joan Archs",
+        "dance:teaching": "yes",
+        "leisure": "dance",
+        "name": "Sonia Navarro",
+        "phone": "+34 93 653 29 02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9739641,
+          41.4472338
+        ]
+      },
+      "id": "node/9802616440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11223334687",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "5",
+        "addr:postcode": "08740",
+        "addr:street": "Parc Vall del Palau",
+        "amenity": "dancing_school",
+        "education": "dancing_school",
+        "name": "Lili's dance",
+        "phone": "+34 686 752 362",
+        "website": "http://www.lilisdance.es"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9601205,
+          41.4550259
+        ]
+      },
+      "id": "node/11223334687"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12726874321",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "2",
+        "addr:postcode": "08740",
+        "addr:street": "Plaça Onze de Setembre",
+        "amenity": "dancing_school",
+        "education": "dancing_school",
+        "name": "entre bambolines",
+        "phone": "+34 644 741 489"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9754572,
+          41.4449324
+        ]
+      },
+      "id": "node/12726874321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12726943953",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:housenumber": "77",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Barcelona",
+        "amenity": "dancing_school",
+        "education": "dancing_school",
+        "name": "ACTIVA'T",
+        "phone": "+34 636 747 212"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9753134,
+          41.4476519
+        ]
+      },
+      "id": "node/12726943953"
+    }
+  ]
+}

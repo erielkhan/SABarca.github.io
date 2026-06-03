@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2026-03-26T23:52:24Z",
+  "timestamp": "2026-06-03T17:52:29Z",
   "features": [
     {
       "type": "Feature",
@@ -262,6 +262,42 @@
         ]
       },
       "id": "way/1208846558"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1208846607",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9622905,
+              41.4549851
+            ],
+            [
+              1.9623249,
+              41.454942
+            ],
+            [
+              1.9623566,
+              41.4549562
+            ],
+            [
+              1.9623222,
+              41.4549994
+            ],
+            [
+              1.9622905,
+              41.4549851
+            ]
+          ]
+        ]
+      },
+      "id": "way/1208846607"
     },
     {
       "type": "Feature",
@@ -658,6 +694,120 @@
         ]
       },
       "id": "way/1209155013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1209229254",
+        "access": "customers",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9804275,
+              41.4432861
+            ],
+            [
+              1.9803999,
+              41.4433096
+            ],
+            [
+              1.980364,
+              41.4432862
+            ],
+            [
+              1.9803899,
+              41.4432621
+            ],
+            [
+              1.9804275,
+              41.4432861
+            ]
+          ]
+        ]
+      },
+      "id": "way/1209229254"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1209229270",
+        "access": "customers",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9807417,
+              41.44346
+            ],
+            [
+              1.980697,
+              41.4434992
+            ],
+            [
+              1.9806695,
+              41.4434813
+            ],
+            [
+              1.9807156,
+              41.4434428
+            ],
+            [
+              1.9807417,
+              41.44346
+            ]
+          ]
+        ]
+      },
+      "id": "way/1209229270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1209229271",
+        "access": "customers",
+        "amenity": "parking_space",
+        "capacity": "1",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9807865,
+              41.4434207
+            ],
+            [
+              1.9807417,
+              41.44346
+            ],
+            [
+              1.9807156,
+              41.4434428
+            ],
+            [
+              1.9807616,
+              41.4434043
+            ],
+            [
+              1.9807865,
+              41.4434207
+            ]
+          ]
+        ]
+      },
+      "id": "way/1209229271"
     },
     {
       "type": "Feature",
@@ -2082,53 +2232,1338 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11168395662",
+        "@id": "way/1494186662",
         "amenity": "parking_space",
-        "capacity": "2",
         "parking_space": "disabled"
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          1.9715027,
-          41.4498184
+          [
+            [
+              1.9688342,
+              41.4450031
+            ],
+            [
+              1.9688584,
+              41.4450176
+            ],
+            [
+              1.9688145,
+              41.4450587
+            ],
+            [
+              1.9687903,
+              41.4450443
+            ],
+            [
+              1.9688342,
+              41.4450031
+            ]
+          ]
         ]
       },
-      "id": "node/11168395662"
+      "id": "way/1494186662"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11195022445",
+        "@id": "way/1494188911",
         "amenity": "parking_space",
-        "capacity": "1",
         "parking_space": "disabled"
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          1.9656475,
-          41.4502719
+          [
+            [
+              1.9664163,
+              41.4452681
+            ],
+            [
+              1.9664255,
+              41.4452951
+            ],
+            [
+              1.9663636,
+              41.445307
+            ],
+            [
+              1.9663535,
+              41.4452775
+            ],
+            [
+              1.9664163,
+              41.4452681
+            ]
+          ]
         ]
       },
-      "id": "node/11195022445"
+      "id": "way/1494188911"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11196491700",
+        "@id": "way/1494188912",
         "amenity": "parking_space",
-        "capacity": "2",
         "parking_space": "disabled"
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          1.9663821,
-          41.4453111
+          [
+            [
+              1.96649,
+              41.4454193
+            ],
+            [
+              1.9664674,
+              41.4454337
+            ],
+            [
+              1.966413,
+              41.4454431
+            ],
+            [
+              1.9664046,
+              41.4454168
+            ],
+            [
+              1.9664782,
+              41.4454011
+            ],
+            [
+              1.96649,
+              41.4454193
+            ]
+          ]
         ]
       },
-      "id": "node/11196491700"
+      "id": "way/1494188912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1494189012",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9668819,
+              41.4457801
+            ],
+            [
+              1.9669076,
+              41.4458003
+            ],
+            [
+              1.9668614,
+              41.4458334
+            ],
+            [
+              1.9668333,
+              41.4458113
+            ],
+            [
+              1.9668819,
+              41.4457801
+            ]
+          ]
+        ]
+      },
+      "id": "way/1494189012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1494472006",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.971461,
+              41.4498325
+            ],
+            [
+              1.9714985,
+              41.4497912
+            ],
+            [
+              1.971521,
+              41.4498027
+            ],
+            [
+              1.9714834,
+              41.449844
+            ],
+            [
+              1.971461,
+              41.4498325
+            ]
+          ]
+        ]
+      },
+      "id": "way/1494472006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1494472007",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.971496,
+              41.4498497
+            ],
+            [
+              1.9715335,
+              41.4498084
+            ],
+            [
+              1.971556,
+              41.4498198
+            ],
+            [
+              1.9715184,
+              41.4498611
+            ],
+            [
+              1.971496,
+              41.4498497
+            ]
+          ]
+        ]
+      },
+      "id": "way/1494472007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1494562032",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9603615,
+              41.4547193
+            ],
+            [
+              1.9603288,
+              41.4547568
+            ],
+            [
+              1.9603048,
+              41.4547447
+            ],
+            [
+              1.9603378,
+              41.4547072
+            ],
+            [
+              1.9603615,
+              41.4547193
+            ]
+          ]
+        ]
+      },
+      "id": "way/1494562032"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1499462780",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9706818,
+              41.4446616
+            ],
+            [
+              1.9706773,
+              41.444681
+            ],
+            [
+              1.9706181,
+              41.4446732
+            ],
+            [
+              1.9706227,
+              41.4446538
+            ],
+            [
+              1.9706818,
+              41.4446616
+            ]
+          ]
+        ]
+      },
+      "id": "way/1499462780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1499464895",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9706557,
+              41.4455119
+            ],
+            [
+              1.9706181,
+              41.445544
+            ],
+            [
+              1.9706021,
+              41.4455334
+            ],
+            [
+              1.9706397,
+              41.4455014
+            ],
+            [
+              1.9706557,
+              41.4455119
+            ]
+          ]
+        ]
+      },
+      "id": "way/1499464895"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1499464913",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9692337,
+              41.4467093
+            ],
+            [
+              1.9691923,
+              41.4467454
+            ],
+            [
+              1.9691752,
+              41.4467344
+            ],
+            [
+              1.9692167,
+              41.4466983
+            ],
+            [
+              1.9692337,
+              41.4467093
+            ]
+          ]
+        ]
+      },
+      "id": "way/1499464913"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1499464914",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.969088,
+              41.446833
+            ],
+            [
+              1.9690452,
+              41.4468683
+            ],
+            [
+              1.9690279,
+              41.4468565
+            ],
+            [
+              1.9690708,
+              41.4468212
+            ],
+            [
+              1.969088,
+              41.446833
+            ]
+          ]
+        ]
+      },
+      "id": "way/1499464914"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502414684",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9791773,
+              41.4450738
+            ],
+            [
+              1.9791642,
+              41.4450596
+            ],
+            [
+              1.9792169,
+              41.4450322
+            ],
+            [
+              1.97923,
+              41.4450464
+            ],
+            [
+              1.9791773,
+              41.4450738
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502414684"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502414686",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9793607,
+              41.4448001
+            ],
+            [
+              1.9793301,
+              41.4447659
+            ],
+            [
+              1.9793609,
+              41.4447504
+            ],
+            [
+              1.9793916,
+              41.4447845
+            ],
+            [
+              1.9793607,
+              41.4448001
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502414686"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502414687",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9793367,
+              41.4448128
+            ],
+            [
+              1.9793051,
+              41.4447789
+            ],
+            [
+              1.9793301,
+              41.4447659
+            ],
+            [
+              1.9793607,
+              41.4448001
+            ],
+            [
+              1.9793367,
+              41.4448128
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502414687"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502416989",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9783896,
+              41.4453132
+            ],
+            [
+              1.9783592,
+              41.4452816
+            ],
+            [
+              1.9783958,
+              41.4452619
+            ],
+            [
+              1.9784248,
+              41.4452945
+            ],
+            [
+              1.9783896,
+              41.4453132
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502416989"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502417002",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9780612,
+              41.4454913
+            ],
+            [
+              1.9780301,
+              41.4454596
+            ],
+            [
+              1.9780616,
+              41.4454425
+            ],
+            [
+              1.978092,
+              41.4454741
+            ],
+            [
+              1.9780612,
+              41.4454913
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502417002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502417016",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9776614,
+              41.4457079
+            ],
+            [
+              1.9776314,
+              41.445677
+            ],
+            [
+              1.9776565,
+              41.4456632
+            ],
+            [
+              1.9776868,
+              41.4456943
+            ],
+            [
+              1.9776614,
+              41.4457079
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502417016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503477076",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9692597,
+              41.4471181
+            ],
+            [
+              1.9692114,
+              41.4470875
+            ],
+            [
+              1.9692268,
+              41.4470739
+            ],
+            [
+              1.969275,
+              41.4471045
+            ],
+            [
+              1.9692597,
+              41.4471181
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503477076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483044",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9752158,
+              41.4455764
+            ],
+            [
+              1.9751839,
+              41.4455388
+            ],
+            [
+              1.9752073,
+              41.4455276
+            ],
+            [
+              1.9752393,
+              41.4455652
+            ],
+            [
+              1.9752158,
+              41.4455764
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483044"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483045",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9751792,
+              41.4455937
+            ],
+            [
+              1.9751473,
+              41.4455562
+            ],
+            [
+              1.9751707,
+              41.445545
+            ],
+            [
+              1.9752027,
+              41.4455825
+            ],
+            [
+              1.9751792,
+              41.4455937
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483045"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483093",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9735344,
+              41.4466487
+            ],
+            [
+              1.9735061,
+              41.4466235
+            ],
+            [
+              1.9735281,
+              41.4466097
+            ],
+            [
+              1.9735563,
+              41.4466348
+            ],
+            [
+              1.9735344,
+              41.4466487
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483099",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9733857,
+              41.4466746
+            ],
+            [
+              1.9733656,
+              41.4466571
+            ],
+            [
+              1.9734143,
+              41.4466257
+            ],
+            [
+              1.9734344,
+              41.4466433
+            ],
+            [
+              1.9733857,
+              41.4466746
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483099"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483143",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.974398,
+              41.4460692
+            ],
+            [
+              1.9744166,
+              41.4460577
+            ],
+            [
+              1.9744474,
+              41.4460856
+            ],
+            [
+              1.9744288,
+              41.4460972
+            ],
+            [
+              1.974398,
+              41.4460692
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483143"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483144",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9743631,
+              41.4460889
+            ],
+            [
+              1.9743862,
+              41.4460746
+            ],
+            [
+              1.9744185,
+              41.4461039
+            ],
+            [
+              1.9743955,
+              41.4461182
+            ],
+            [
+              1.9743631,
+              41.4460889
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483144"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483145",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9743302,
+              41.4461092
+            ],
+            [
+              1.9743529,
+              41.4460948
+            ],
+            [
+              1.9743861,
+              41.4461242
+            ],
+            [
+              1.9743635,
+              41.4461386
+            ],
+            [
+              1.9743302,
+              41.4461092
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483145"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483150",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9739353,
+              41.4463641
+            ],
+            [
+              1.973954,
+              41.4463526
+            ],
+            [
+              1.9739847,
+              41.4463806
+            ],
+            [
+              1.9739661,
+              41.4463921
+            ],
+            [
+              1.9739353,
+              41.4463641
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483151",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9739004,
+              41.4463838
+            ],
+            [
+              1.9739235,
+              41.4463695
+            ],
+            [
+              1.9739559,
+              41.4463988
+            ],
+            [
+              1.9739328,
+              41.4464131
+            ],
+            [
+              1.9739004,
+              41.4463838
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483151"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483152",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9738675,
+              41.4464041
+            ],
+            [
+              1.9738902,
+              41.4463897
+            ],
+            [
+              1.9739235,
+              41.4464191
+            ],
+            [
+              1.9739008,
+              41.4464335
+            ],
+            [
+              1.9738675,
+              41.4464041
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483152"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504493677",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9656264,
+              41.4502706
+            ],
+            [
+              1.9656381,
+              41.4502577
+            ],
+            [
+              1.965687,
+              41.4502827
+            ],
+            [
+              1.9656753,
+              41.4502955
+            ],
+            [
+              1.9656264,
+              41.4502706
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504493677"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537570",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9656708,
+              41.4497858
+            ],
+            [
+              1.9656982,
+              41.4497737
+            ],
+            [
+              1.9657241,
+              41.4498065
+            ],
+            [
+              1.9656967,
+              41.4498186
+            ],
+            [
+              1.9656708,
+              41.4497858
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1509448938",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9668932,
+              41.448142
+            ],
+            [
+              1.9668757,
+              41.448131
+            ],
+            [
+              1.966915,
+              41.4480956
+            ],
+            [
+              1.9669325,
+              41.4481066
+            ],
+            [
+              1.9668932,
+              41.448142
+            ]
+          ]
+        ]
+      },
+      "id": "way/1509448938"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1509453309",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9687051,
+              41.4499354
+            ],
+            [
+              1.9686718,
+              41.449914
+            ],
+            [
+              1.9687132,
+              41.4498778
+            ],
+            [
+              1.9687465,
+              41.4498992
+            ],
+            [
+              1.9687051,
+              41.4499354
+            ]
+          ]
+        ]
+      },
+      "id": "way/1509453309"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1509453310",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9687379,
+              41.4499568
+            ],
+            [
+              1.9687051,
+              41.4499354
+            ],
+            [
+              1.9687465,
+              41.4498992
+            ],
+            [
+              1.9687799,
+              41.4499207
+            ],
+            [
+              1.9687379,
+              41.4499568
+            ]
+          ]
+        ]
+      },
+      "id": "way/1509453310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1509453369",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9665368,
+              41.4476666
+            ],
+            [
+              1.9665193,
+              41.4476557
+            ],
+            [
+              1.9665586,
+              41.4476203
+            ],
+            [
+              1.9665761,
+              41.4476312
+            ],
+            [
+              1.9665368,
+              41.4476666
+            ]
+          ]
+        ]
+      },
+      "id": "way/1509453369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1509766346",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9762095,
+              41.4460075
+            ],
+            [
+              1.9761805,
+              41.44597
+            ],
+            [
+              1.9762063,
+              41.4459589
+            ],
+            [
+              1.9762351,
+              41.445996
+            ],
+            [
+              1.9762095,
+              41.4460075
+            ]
+          ]
+        ]
+      },
+      "id": "way/1509766346"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1509766349",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9760041,
+              41.4457382
+            ],
+            [
+              1.9759708,
+              41.4456948
+            ],
+            [
+              1.9759963,
+              41.4456838
+            ],
+            [
+              1.9760296,
+              41.4457272
+            ],
+            [
+              1.9760041,
+              41.4457382
+            ]
+          ]
+        ]
+      },
+      "id": "way/1509766349"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1509776457",
+        "amenity": "parking_space",
+        "parking_space": "disabled"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9790839,
+              41.4445015
+            ],
+            [
+              1.9790703,
+              41.4444872
+            ],
+            [
+              1.9791205,
+              41.4444602
+            ],
+            [
+              1.9791341,
+              41.4444745
+            ],
+            [
+              1.9790839,
+              41.4445015
+            ]
+          ]
+        ]
+      },
+      "id": "way/1509776457"
     },
     {
       "type": "Feature",

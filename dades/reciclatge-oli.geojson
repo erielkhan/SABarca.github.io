@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2026-03-27T00:21:56Z",
+  "timestamp": "2026-06-03T17:58:29Z",
   "features": [
     {
       "type": "Feature",
@@ -26,7 +26,6 @@
       "properties": {
         "@id": "node/11168478973",
         "amenity": "recycling",
-        "operator": "roba amiga",
         "recycling:cooking_oil": "yes",
         "recycling_type": "container"
       },

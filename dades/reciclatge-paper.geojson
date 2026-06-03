@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2026-03-27T00:20:54Z",
+  "timestamp": "2026-06-03T17:59:30Z",
   "features": [
     {
       "type": "Feature",
@@ -147,8 +147,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.9731954,
-          41.4453554
+          1.973202,
+          41.4453576
         ]
       },
       "id": "node/9765727481"
@@ -168,8 +168,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.9764042,
-          41.4477157
+          1.9763945,
+          41.4477261
         ]
       },
       "id": "node/9787684147"
@@ -191,6 +191,25 @@
         ]
       },
       "id": "node/9812250857"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9933977216",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:cartons": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9681287,
+          41.4441078
+        ]
+      },
+      "id": "node/9933977216"
     },
     {
       "type": "Feature",
@@ -233,7 +252,7 @@
       "properties": {
         "@id": "node/11083027171",
         "amenity": "recycling",
-        "recycling:cartons": "yes",
+        "recycling:cardboard": "yes",
         "recycling:paper": "yes",
         "recycling:paper_packaging": "yes",
         "recycling_type": "container"
@@ -306,7 +325,7 @@
       "properties": {
         "@id": "node/11168394536",
         "amenity": "recycling",
-        "recycling:cartons": "yes",
+        "recycling:cardboard": "yes",
         "recycling:paper": "yes",
         "recycling_type": "container"
       },
@@ -324,7 +343,7 @@
       "properties": {
         "@id": "node/11168395637",
         "amenity": "recycling",
-        "recycling:cartons": "yes",
+        "recycling:cardboard": "yes",
         "recycling:paper": "yes",
         "recycling_type": "container"
       },
@@ -439,8 +458,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.9666528,
-          41.450788
+          1.966659,
+          41.4507896
         ]
       },
       "id": "node/11195022461"
@@ -519,6 +538,24 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/11211243109",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9610387,
+          41.4540407
+        ]
+      },
+      "id": "node/11211243109"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/11211253134",
         "amenity": "recycling",
         "recycling:paper": "yes",
@@ -532,6 +569,42 @@
         ]
       },
       "id": "node/11211253134"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11214446248",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9632207,
+          41.4532023
+        ]
+      },
+      "id": "node/11214446248"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11218786096",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9621731,
+          41.4550221
+        ]
+      },
+      "id": "node/11218786096"
     },
     {
       "type": "Feature",
@@ -589,6 +662,24 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/11756700575",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9734834,
+          41.4583413
+        ]
+      },
+      "id": "node/11756700575"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/11777325922",
         "amenity": "recycling",
         "recycling:paper": "yes",
@@ -608,6 +699,7 @@
       "properties": {
         "@id": "node/11777327478",
         "amenity": "recycling",
+        "recycling:cardboard": "yes",
         "recycling:paper": "yes",
         "recycling_type": "container"
       },
@@ -661,6 +753,7 @@
       "properties": {
         "@id": "node/12013288520",
         "amenity": "recycling",
+        "recycling:cardboard": "yes",
         "recycling:paper": "yes",
         "recycling_type": "container"
       },
@@ -705,8 +798,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.9706171,
-          41.448089
+          1.970618,
+          41.4480881
         ]
       },
       "id": "node/12736384685"
@@ -726,11 +819,49 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.9706355,
-          41.4480972
+          1.9706347,
+          41.448098
         ]
       },
       "id": "node/12736384686"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919056831",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling:paper_packaging": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9757548,
+          41.4454578
+        ]
+      },
+      "id": "node/12919056831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12919056832",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling:paper_packaging": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9757716,
+          41.4454646
+        ]
+      },
+      "id": "node/12919056832"
     },
     {
       "type": "Feature",
@@ -950,6 +1081,217 @@
         ]
       },
       "id": "node/13362646732"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689747192",
+        "amenity": "recycling",
+        "recycling:books": "yes",
+        "recycling:cardboard": "yes",
+        "recycling:cartons": "yes",
+        "recycling:magazines": "yes",
+        "recycling:newspaper": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9745168,
+          41.44479
+        ]
+      },
+      "id": "node/13689747192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13689747200",
+        "amenity": "recycling",
+        "recycling:books": "yes",
+        "recycling:cardboard": "yes",
+        "recycling:cartons": "yes",
+        "recycling:magazines": "yes",
+        "recycling:newspaper": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9783742,
+          41.4436223
+        ]
+      },
+      "id": "node/13689747200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13694973302",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9572381,
+          41.4552023
+        ]
+      },
+      "id": "node/13694973302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13694973307",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9584846,
+          41.4562717
+        ]
+      },
+      "id": "node/13694973307"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13694997507",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9628074,
+          41.4522843
+        ]
+      },
+      "id": "node/13694997507"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13694997514",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9647277,
+          41.4479206
+        ]
+      },
+      "id": "node/13694997514"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13729239394",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.976407,
+          41.4477059
+        ]
+      },
+      "id": "node/13729239394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13759778682",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling:paper_bags": "yes",
+        "recycling:paper_packaging": "yes",
+        "recycling:paperboard_packaging": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.969161,
+          41.4470438
+        ]
+      },
+      "id": "node/13759778682"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13759830623",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling:paper_packaging": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9743579,
+          41.4458519
+        ]
+      },
+      "id": "node/13759830623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13759874856",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling:paper_packaging": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9733938,
+          41.4465863
+        ]
+      },
+      "id": "node/13759874856"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13798243508",
+        "amenity": "recycling",
+        "recycling:cardboard": "yes",
+        "recycling:paper": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9688697,
+          41.4502688
+        ]
+      },
+      "id": "node/13798243508"
     }
   ]
 }

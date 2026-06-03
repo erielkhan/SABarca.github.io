@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2026-03-26T13:16:11Z",
+  "timestamp": "2026-06-03T17:53:30Z",
   "features": [
     {
       "type": "Feature",
@@ -2212,24 +2212,24 @@
         "coordinates": [
           [
             [
-              1.9745098,
-              41.448185
+              1.974502,
+              41.4481848
             ],
             [
-              1.974491,
-              41.4481964
+              1.9744832,
+              41.4481962
             ],
             [
-              1.9744826,
-              41.4481887
+              1.9744748,
+              41.4481885
             ],
             [
-              1.9745015,
-              41.4481773
+              1.9744937,
+              41.4481771
             ],
             [
-              1.9745098,
-              41.448185
+              1.974502,
+              41.4481848
             ]
           ]
         ]
@@ -2248,24 +2248,24 @@
         "coordinates": [
           [
             [
-              1.9745182,
-              41.4481928
+              1.9745104,
+              41.4481926
             ],
             [
-              1.9744993,
-              41.4482042
+              1.9744915,
+              41.448204
             ],
             [
-              1.974491,
-              41.4481964
+              1.9744832,
+              41.4481962
             ],
             [
-              1.9745098,
-              41.448185
+              1.974502,
+              41.4481848
             ],
             [
-              1.9745182,
-              41.4481928
+              1.9745104,
+              41.4481926
             ]
           ]
         ]
@@ -2284,24 +2284,24 @@
         "coordinates": [
           [
             [
-              1.9745265,
-              41.4482006
+              1.9745187,
+              41.4482004
             ],
             [
-              1.9745077,
-              41.448212
+              1.9744999,
+              41.4482118
             ],
             [
-              1.9744993,
-              41.4482042
+              1.9744915,
+              41.448204
             ],
             [
-              1.9745182,
-              41.4481928
+              1.9745104,
+              41.4481926
             ],
             [
-              1.9745265,
-              41.4482006
+              1.9745187,
+              41.4482004
             ]
           ]
         ]
@@ -2847,6 +2847,2779 @@
         ]
       },
       "id": "way/1457025081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1494047858",
+        "amenity": "parking_space",
+        "capacity": "4",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9704042,
+              41.4454099
+            ],
+            [
+              1.9703464,
+              41.4454097
+            ],
+            [
+              1.9703465,
+              41.4453897
+            ],
+            [
+              1.9704043,
+              41.4453899
+            ],
+            [
+              1.9704042,
+              41.4454099
+            ]
+          ]
+        ]
+      },
+      "id": "way/1494047858"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502414649",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9791943,
+              41.4449855
+            ],
+            [
+              1.9791928,
+              41.4449645
+            ],
+            [
+              1.9792031,
+              41.4449592
+            ],
+            [
+              1.9792047,
+              41.4449798
+            ],
+            [
+              1.9791943,
+              41.4449855
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502414649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502414650",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9791839,
+              41.4449912
+            ],
+            [
+              1.9791824,
+              41.4449699
+            ],
+            [
+              1.9791928,
+              41.4449645
+            ],
+            [
+              1.9791943,
+              41.4449855
+            ],
+            [
+              1.9791839,
+              41.4449912
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502414650"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502414651",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9791735,
+              41.444997
+            ],
+            [
+              1.979172,
+              41.4449752
+            ],
+            [
+              1.9791824,
+              41.4449699
+            ],
+            [
+              1.9791839,
+              41.4449912
+            ],
+            [
+              1.9791735,
+              41.444997
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502414651"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502414652",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9791631,
+              41.4450027
+            ],
+            [
+              1.9791617,
+              41.4449806
+            ],
+            [
+              1.979172,
+              41.4449752
+            ],
+            [
+              1.9791735,
+              41.444997
+            ],
+            [
+              1.9791631,
+              41.4450027
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502414652"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502414653",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9791527,
+              41.4450085
+            ],
+            [
+              1.9791513,
+              41.4449859
+            ],
+            [
+              1.9791617,
+              41.4449806
+            ],
+            [
+              1.9791631,
+              41.4450027
+            ],
+            [
+              1.9791527,
+              41.4450085
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502414653"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502414654",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9791424,
+              41.4450142
+            ],
+            [
+              1.979141,
+              41.4449912
+            ],
+            [
+              1.9791513,
+              41.4449859
+            ],
+            [
+              1.9791527,
+              41.4450085
+            ],
+            [
+              1.9791424,
+              41.4450142
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502414654"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502414655",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.979132,
+              41.44502
+            ],
+            [
+              1.9791306,
+              41.4449966
+            ],
+            [
+              1.979141,
+              41.4449912
+            ],
+            [
+              1.9791424,
+              41.4450142
+            ],
+            [
+              1.979132,
+              41.44502
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502414655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502415100",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9778501,
+              41.445703
+            ],
+            [
+              1.9778499,
+              41.4456826
+            ],
+            [
+              1.9778607,
+              41.4456772
+            ],
+            [
+              1.9778593,
+              41.4456978
+            ],
+            [
+              1.9778501,
+              41.445703
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502415100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502415101",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.977841,
+              41.4457083
+            ],
+            [
+              1.9778401,
+              41.4456878
+            ],
+            [
+              1.9778499,
+              41.4456826
+            ],
+            [
+              1.9778501,
+              41.445703
+            ],
+            [
+              1.977841,
+              41.4457083
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502415101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502415102",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9778319,
+              41.4457136
+            ],
+            [
+              1.9778304,
+              41.4456929
+            ],
+            [
+              1.9778401,
+              41.4456878
+            ],
+            [
+              1.977841,
+              41.4457083
+            ],
+            [
+              1.9778319,
+              41.4457136
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502415102"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502415103",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9778228,
+              41.4457189
+            ],
+            [
+              1.9778207,
+              41.4456981
+            ],
+            [
+              1.9778304,
+              41.4456929
+            ],
+            [
+              1.9778319,
+              41.4457136
+            ],
+            [
+              1.9778228,
+              41.4457189
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502415103"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1502415104",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9778137,
+              41.4457242
+            ],
+            [
+              1.977811,
+              41.4457033
+            ],
+            [
+              1.9778207,
+              41.4456981
+            ],
+            [
+              1.9778228,
+              41.4457189
+            ],
+            [
+              1.9778137,
+              41.4457242
+            ]
+          ]
+        ]
+      },
+      "id": "way/1502415104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503477079",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.969181,
+              41.4471254
+            ],
+            [
+              1.9691713,
+              41.4471197
+            ],
+            [
+              1.9691987,
+              41.4471152
+            ],
+            [
+              1.9692085,
+              41.4471209
+            ],
+            [
+              1.969181,
+              41.4471254
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503477079"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503477080",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9691902,
+              41.4471319
+            ],
+            [
+              1.969181,
+              41.4471254
+            ],
+            [
+              1.9692085,
+              41.4471209
+            ],
+            [
+              1.9692182,
+              41.4471266
+            ],
+            [
+              1.9691902,
+              41.4471319
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503477080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503477081",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9691993,
+              41.4471384
+            ],
+            [
+              1.9691902,
+              41.4471319
+            ],
+            [
+              1.9692182,
+              41.4471266
+            ],
+            [
+              1.9692279,
+              41.4471323
+            ],
+            [
+              1.9691993,
+              41.4471384
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503477081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503477082",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9692085,
+              41.4471448
+            ],
+            [
+              1.9691993,
+              41.4471384
+            ],
+            [
+              1.9692279,
+              41.4471323
+            ],
+            [
+              1.9692376,
+              41.4471381
+            ],
+            [
+              1.9692085,
+              41.4471448
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503477082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503477107",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9703608,
+              41.4454098
+            ],
+            [
+              1.9703464,
+              41.4454097
+            ],
+            [
+              1.9703465,
+              41.4453897
+            ],
+            [
+              1.970361,
+              41.4453897
+            ],
+            [
+              1.9703608,
+              41.4454098
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503477107"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503477108",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9703753,
+              41.4454098
+            ],
+            [
+              1.9703608,
+              41.4454098
+            ],
+            [
+              1.970361,
+              41.4453897
+            ],
+            [
+              1.9703754,
+              41.4453898
+            ],
+            [
+              1.9703753,
+              41.4454098
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503477108"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503477109",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9703897,
+              41.4454099
+            ],
+            [
+              1.9703753,
+              41.4454098
+            ],
+            [
+              1.9703754,
+              41.4453898
+            ],
+            [
+              1.9703899,
+              41.4453898
+            ],
+            [
+              1.9703897,
+              41.4454099
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503477109"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503477110",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9704042,
+              41.4454099
+            ],
+            [
+              1.9703897,
+              41.4454099
+            ],
+            [
+              1.9703899,
+              41.4453898
+            ],
+            [
+              1.9704043,
+              41.4453899
+            ],
+            [
+              1.9704042,
+              41.4454099
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503477110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503478985",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9695217,
+              41.4477547
+            ],
+            [
+              1.9695156,
+              41.4477507
+            ],
+            [
+              1.969532,
+              41.4477366
+            ],
+            [
+              1.9695381,
+              41.4477405
+            ],
+            [
+              1.9695217,
+              41.4477547
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503478985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503478986",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9695277,
+              41.4477586
+            ],
+            [
+              1.9695217,
+              41.4477547
+            ],
+            [
+              1.9695381,
+              41.4477405
+            ],
+            [
+              1.9695441,
+              41.4477445
+            ],
+            [
+              1.9695277,
+              41.4477586
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503478986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503478987",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9695251,
+              41.4477146
+            ],
+            [
+              1.9695181,
+              41.4477101
+            ],
+            [
+              1.9695348,
+              41.4476953
+            ],
+            [
+              1.9695419,
+              41.4476998
+            ],
+            [
+              1.9695251,
+              41.4477146
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503478987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503478988",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9695322,
+              41.4477191
+            ],
+            [
+              1.9695251,
+              41.4477146
+            ],
+            [
+              1.9695419,
+              41.4476998
+            ],
+            [
+              1.9695489,
+              41.4477043
+            ],
+            [
+              1.9695322,
+              41.4477191
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503478988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503479704",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9684517,
+              41.4470477
+            ],
+            [
+              1.9684447,
+              41.4470432
+            ],
+            [
+              1.9684614,
+              41.4470284
+            ],
+            [
+              1.9684685,
+              41.4470329
+            ],
+            [
+              1.9684517,
+              41.4470477
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503479704"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503479705",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9684588,
+              41.4470522
+            ],
+            [
+              1.9684517,
+              41.4470477
+            ],
+            [
+              1.9684685,
+              41.4470329
+            ],
+            [
+              1.9684755,
+              41.4470374
+            ],
+            [
+              1.9684588,
+              41.4470522
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503479705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503479707",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9679979,
+              41.4467688
+            ],
+            [
+              1.9679908,
+              41.4467643
+            ],
+            [
+              1.9680076,
+              41.4467495
+            ],
+            [
+              1.9680146,
+              41.446754
+            ],
+            [
+              1.9679979,
+              41.4467688
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503479707"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503479708",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9679908,
+              41.4467643
+            ],
+            [
+              1.9679838,
+              41.4467598
+            ],
+            [
+              1.9680005,
+              41.446745
+            ],
+            [
+              1.9680076,
+              41.4467495
+            ],
+            [
+              1.9679908,
+              41.4467643
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503479708"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483065",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9746633,
+              41.4458287
+            ],
+            [
+              1.974647,
+              41.4458133
+            ],
+            [
+              1.9746603,
+              41.4458071
+            ],
+            [
+              1.9746737,
+              41.4458224
+            ],
+            [
+              1.9746633,
+              41.4458287
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483066",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9746528,
+              41.4458349
+            ],
+            [
+              1.9746365,
+              41.4458195
+            ],
+            [
+              1.974647,
+              41.4458133
+            ],
+            [
+              1.9746633,
+              41.4458287
+            ],
+            [
+              1.9746528,
+              41.4458349
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483067",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9746423,
+              41.4458411
+            ],
+            [
+              1.974626,
+              41.4458257
+            ],
+            [
+              1.9746365,
+              41.4458195
+            ],
+            [
+              1.9746528,
+              41.4458349
+            ],
+            [
+              1.9746423,
+              41.4458411
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483068",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9746318,
+              41.4458473
+            ],
+            [
+              1.9746155,
+              41.445832
+            ],
+            [
+              1.974626,
+              41.4458257
+            ],
+            [
+              1.9746423,
+              41.4458411
+            ],
+            [
+              1.9746318,
+              41.4458473
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483069",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9746213,
+              41.4458536
+            ],
+            [
+              1.974605,
+              41.4458382
+            ],
+            [
+              1.9746155,
+              41.445832
+            ],
+            [
+              1.9746318,
+              41.4458473
+            ],
+            [
+              1.9746213,
+              41.4458536
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483070",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9746108,
+              41.4458598
+            ],
+            [
+              1.9745945,
+              41.4458444
+            ],
+            [
+              1.974605,
+              41.4458382
+            ],
+            [
+              1.9746213,
+              41.4458536
+            ],
+            [
+              1.9746108,
+              41.4458598
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483126",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.974302,
+              41.4460422
+            ],
+            [
+              1.9742873,
+              41.4460288
+            ],
+            [
+              1.9742977,
+              41.4460224
+            ],
+            [
+              1.9743124,
+              41.4460357
+            ],
+            [
+              1.974302,
+              41.4460422
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483127",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9742916,
+              41.4460486
+            ],
+            [
+              1.9742769,
+              41.4460352
+            ],
+            [
+              1.9742873,
+              41.4460288
+            ],
+            [
+              1.974302,
+              41.4460422
+            ],
+            [
+              1.9742916,
+              41.4460486
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483127"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483128",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9742813,
+              41.446055
+            ],
+            [
+              1.9742666,
+              41.4460416
+            ],
+            [
+              1.9742769,
+              41.4460352
+            ],
+            [
+              1.9742916,
+              41.4460486
+            ],
+            [
+              1.9742813,
+              41.446055
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483128"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1503483129",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9742709,
+              41.4460614
+            ],
+            [
+              1.9742557,
+              41.4460482
+            ],
+            [
+              1.9742666,
+              41.4460416
+            ],
+            [
+              1.9742813,
+              41.446055
+            ],
+            [
+              1.9742709,
+              41.4460614
+            ]
+          ]
+        ]
+      },
+      "id": "way/1503483129"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537540",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9670729,
+              41.4510166
+            ],
+            [
+              1.9670647,
+              41.4510124
+            ],
+            [
+              1.9670912,
+              41.4510056
+            ],
+            [
+              1.9670993,
+              41.4510098
+            ],
+            [
+              1.9670729,
+              41.4510166
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537540"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537541",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.967081,
+              41.4510208
+            ],
+            [
+              1.9670729,
+              41.4510166
+            ],
+            [
+              1.9670993,
+              41.4510098
+            ],
+            [
+              1.9671074,
+              41.451014
+            ],
+            [
+              1.967081,
+              41.4510208
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537541"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537542",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9670892,
+              41.451025
+            ],
+            [
+              1.967081,
+              41.4510208
+            ],
+            [
+              1.9671074,
+              41.451014
+            ],
+            [
+              1.9671155,
+              41.4510182
+            ],
+            [
+              1.9670892,
+              41.451025
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537542"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537543",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9670973,
+              41.4510292
+            ],
+            [
+              1.9670892,
+              41.451025
+            ],
+            [
+              1.9671155,
+              41.4510182
+            ],
+            [
+              1.9671236,
+              41.4510224
+            ],
+            [
+              1.9670973,
+              41.4510292
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537544",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9671055,
+              41.4510334
+            ],
+            [
+              1.9670973,
+              41.4510292
+            ],
+            [
+              1.9671236,
+              41.4510224
+            ],
+            [
+              1.9671317,
+              41.4510266
+            ],
+            [
+              1.9671055,
+              41.4510334
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537544"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537545",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9671137,
+              41.4510375
+            ],
+            [
+              1.9671055,
+              41.4510334
+            ],
+            [
+              1.9671317,
+              41.4510266
+            ],
+            [
+              1.9671398,
+              41.4510308
+            ],
+            [
+              1.9671137,
+              41.4510375
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537545"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537563",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9651702,
+              41.4501815
+            ],
+            [
+              1.9651597,
+              41.4501669
+            ],
+            [
+              1.9651696,
+              41.4501629
+            ],
+            [
+              1.9651801,
+              41.4501775
+            ],
+            [
+              1.9651702,
+              41.4501815
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537563"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537564",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9651602,
+              41.4501855
+            ],
+            [
+              1.9651497,
+              41.450171
+            ],
+            [
+              1.9651597,
+              41.4501669
+            ],
+            [
+              1.9651702,
+              41.4501815
+            ],
+            [
+              1.9651602,
+              41.4501855
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537565",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9651503,
+              41.4501895
+            ],
+            [
+              1.9651398,
+              41.450175
+            ],
+            [
+              1.9651497,
+              41.450171
+            ],
+            [
+              1.9651602,
+              41.4501855
+            ],
+            [
+              1.9651503,
+              41.4501895
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537565"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537566",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9651403,
+              41.4501936
+            ],
+            [
+              1.9651298,
+              41.450179
+            ],
+            [
+              1.9651398,
+              41.450175
+            ],
+            [
+              1.9651503,
+              41.4501895
+            ],
+            [
+              1.9651403,
+              41.4501936
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537566"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537567",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9651304,
+              41.4501976
+            ],
+            [
+              1.9651199,
+              41.450183
+            ],
+            [
+              1.9651298,
+              41.450179
+            ],
+            [
+              1.9651403,
+              41.4501936
+            ],
+            [
+              1.9651304,
+              41.4501976
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537567"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537575",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9656488,
+              41.4499603
+            ],
+            [
+              1.9656361,
+              41.4499445
+            ],
+            [
+              1.965647,
+              41.4499397
+            ],
+            [
+              1.9656592,
+              41.4499561
+            ],
+            [
+              1.9656488,
+              41.4499603
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537575"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537576",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.965639,
+              41.4499647
+            ],
+            [
+              1.9656263,
+              41.449949
+            ],
+            [
+              1.9656361,
+              41.4499445
+            ],
+            [
+              1.9656488,
+              41.4499603
+            ],
+            [
+              1.965639,
+              41.4499647
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537576"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537577",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9656292,
+              41.4499691
+            ],
+            [
+              1.9656165,
+              41.4499534
+            ],
+            [
+              1.9656263,
+              41.449949
+            ],
+            [
+              1.965639,
+              41.4499647
+            ],
+            [
+              1.9656292,
+              41.4499691
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537577"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537578",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9656194,
+              41.4499735
+            ],
+            [
+              1.9656067,
+              41.4499578
+            ],
+            [
+              1.9656165,
+              41.4499534
+            ],
+            [
+              1.9656292,
+              41.4499691
+            ],
+            [
+              1.9656194,
+              41.4499735
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537578"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537579",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9656095,
+              41.449978
+            ],
+            [
+              1.9655969,
+              41.4499622
+            ],
+            [
+              1.9656067,
+              41.4499578
+            ],
+            [
+              1.9656194,
+              41.4499735
+            ],
+            [
+              1.9656095,
+              41.449978
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537579"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537580",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9655997,
+              41.4499824
+            ],
+            [
+              1.9655871,
+              41.4499666
+            ],
+            [
+              1.9655969,
+              41.4499622
+            ],
+            [
+              1.9656095,
+              41.449978
+            ],
+            [
+              1.9655997,
+              41.4499824
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537580"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537581",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9655899,
+              41.4499868
+            ],
+            [
+              1.9655773,
+              41.4499711
+            ],
+            [
+              1.9655871,
+              41.4499666
+            ],
+            [
+              1.9655997,
+              41.4499824
+            ],
+            [
+              1.9655899,
+              41.4499868
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537581"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537582",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9655801,
+              41.4499912
+            ],
+            [
+              1.9655675,
+              41.4499755
+            ],
+            [
+              1.9655773,
+              41.4499711
+            ],
+            [
+              1.9655899,
+              41.4499868
+            ],
+            [
+              1.9655801,
+              41.4499912
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537582"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537583",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9655703,
+              41.4499956
+            ],
+            [
+              1.9655577,
+              41.4499799
+            ],
+            [
+              1.9655675,
+              41.4499755
+            ],
+            [
+              1.9655801,
+              41.4499912
+            ],
+            [
+              1.9655703,
+              41.4499956
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537583"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537584",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9651626,
+              41.4500337
+            ],
+            [
+              1.9651504,
+              41.4500183
+            ],
+            [
+              1.9651612,
+              41.4500134
+            ],
+            [
+              1.9651735,
+              41.4500289
+            ],
+            [
+              1.9651626,
+              41.4500337
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537584"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537585",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9651518,
+              41.4500386
+            ],
+            [
+              1.9651395,
+              41.4500231
+            ],
+            [
+              1.9651504,
+              41.4500183
+            ],
+            [
+              1.9651626,
+              41.4500337
+            ],
+            [
+              1.9651518,
+              41.4500386
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537586",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.965141,
+              41.4500434
+            ],
+            [
+              1.9651287,
+              41.4500279
+            ],
+            [
+              1.9651395,
+              41.4500231
+            ],
+            [
+              1.9651518,
+              41.4500386
+            ],
+            [
+              1.965141,
+              41.4500434
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537587",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9651301,
+              41.4500482
+            ],
+            [
+              1.9651178,
+              41.4500327
+            ],
+            [
+              1.9651287,
+              41.4500279
+            ],
+            [
+              1.965141,
+              41.4500434
+            ],
+            [
+              1.9651301,
+              41.4500482
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537587"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537588",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9651193,
+              41.450053
+            ],
+            [
+              1.965107,
+              41.4500376
+            ],
+            [
+              1.9651178,
+              41.4500327
+            ],
+            [
+              1.9651301,
+              41.4500482
+            ],
+            [
+              1.9651193,
+              41.450053
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537588"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537589",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9651084,
+              41.4500579
+            ],
+            [
+              1.9650962,
+              41.4500424
+            ],
+            [
+              1.965107,
+              41.4500376
+            ],
+            [
+              1.9651193,
+              41.450053
+            ],
+            [
+              1.9651084,
+              41.4500579
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537590",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9650976,
+              41.4500627
+            ],
+            [
+              1.9650853,
+              41.4500472
+            ],
+            [
+              1.9650962,
+              41.4500424
+            ],
+            [
+              1.9651084,
+              41.4500579
+            ],
+            [
+              1.9650976,
+              41.4500627
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537591",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9650868,
+              41.4500675
+            ],
+            [
+              1.9650745,
+              41.450052
+            ],
+            [
+              1.9650853,
+              41.4500472
+            ],
+            [
+              1.9650976,
+              41.4500627
+            ],
+            [
+              1.9650868,
+              41.4500675
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537591"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537592",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9650759,
+              41.4500723
+            ],
+            [
+              1.9650637,
+              41.4500569
+            ],
+            [
+              1.9650745,
+              41.450052
+            ],
+            [
+              1.9650868,
+              41.4500675
+            ],
+            [
+              1.9650759,
+              41.4500723
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537592"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537593",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9650651,
+              41.4500772
+            ],
+            [
+              1.9650528,
+              41.4500617
+            ],
+            [
+              1.9650637,
+              41.4500569
+            ],
+            [
+              1.9650759,
+              41.4500723
+            ],
+            [
+              1.9650651,
+              41.4500772
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537594",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9650543,
+              41.450082
+            ],
+            [
+              1.965042,
+              41.4500665
+            ],
+            [
+              1.9650528,
+              41.4500617
+            ],
+            [
+              1.9650651,
+              41.4500772
+            ],
+            [
+              1.9650543,
+              41.450082
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1504537595",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9650434,
+              41.4500868
+            ],
+            [
+              1.9650312,
+              41.4500713
+            ],
+            [
+              1.965042,
+              41.4500665
+            ],
+            [
+              1.9650543,
+              41.450082
+            ],
+            [
+              1.9650434,
+              41.4500868
+            ]
+          ]
+        ]
+      },
+      "id": "way/1504537595"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1509445937",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9745927,
+              41.4481423
+            ],
+            [
+              1.9745736,
+              41.4481533
+            ],
+            [
+              1.9745654,
+              41.4481454
+            ],
+            [
+              1.9745845,
+              41.4481343
+            ],
+            [
+              1.9745927,
+              41.4481423
+            ]
+          ]
+        ]
+      },
+      "id": "way/1509445937"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1509445938",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9746005,
+              41.4481499
+            ],
+            [
+              1.9745814,
+              41.4481609
+            ],
+            [
+              1.9745736,
+              41.4481533
+            ],
+            [
+              1.9745927,
+              41.4481423
+            ],
+            [
+              1.9746005,
+              41.4481499
+            ]
+          ]
+        ]
+      },
+      "id": "way/1509445938"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1509445939",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9746086,
+              41.4481577
+            ],
+            [
+              1.9745895,
+              41.4481688
+            ],
+            [
+              1.9745814,
+              41.4481609
+            ],
+            [
+              1.9746005,
+              41.4481499
+            ],
+            [
+              1.9746086,
+              41.4481577
+            ]
+          ]
+        ]
+      },
+      "id": "way/1509445939"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1511159706",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9746172,
+              41.4481659
+            ],
+            [
+              1.9745982,
+              41.4481771
+            ],
+            [
+              1.9745895,
+              41.4481688
+            ],
+            [
+              1.9746086,
+              41.4481577
+            ],
+            [
+              1.9746172,
+              41.4481659
+            ]
+          ]
+        ]
+      },
+      "id": "way/1511159706"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1511159707",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.9746255,
+              41.4481739
+            ],
+            [
+              1.9746064,
+              41.448185
+            ],
+            [
+              1.9745982,
+              41.4481771
+            ],
+            [
+              1.9746172,
+              41.4481659
+            ],
+            [
+              1.9746255,
+              41.4481739
+            ]
+          ]
+        ]
+      },
+      "id": "way/1511159707"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1513411979",
+        "amenity": "parking_space",
+        "parking_space": "motorcycle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.974527,
+              41.4482086
+            ],
+            [
+              1.9745082,
+              41.44822
+            ],
+            [
+              1.9744999,
+              41.4482118
+            ],
+            [
+              1.9745187,
+              41.4482004
+            ],
+            [
+              1.974527,
+              41.4482086
+            ]
+          ]
+        ]
+      },
+      "id": "way/1513411979"
     }
   ]
 }

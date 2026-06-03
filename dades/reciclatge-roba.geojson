@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2026-03-27T00:25:59Z",
+  "timestamp": "2026-06-03T18:01:36Z",
   "features": [
     {
       "type": "Feature",
@@ -140,8 +140,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.9668493,
-          41.4494207
+          1.9668483,
+          41.4494196
         ]
       },
       "id": "node/12919068633"
@@ -179,6 +179,41 @@
         ]
       },
       "id": "node/13360578864"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13759830628",
+        "amenity": "recycling",
+        "recycling:clothes": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9744007,
+          41.4458264
+        ]
+      },
+      "id": "node/13759830628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13778136302",
+        "amenity": "recycling",
+        "operator": "roba amiga",
+        "recycling:clothes": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9716793,
+          41.4494135
+        ]
+      },
+      "id": "node/13778136302"
     }
   ]
 }

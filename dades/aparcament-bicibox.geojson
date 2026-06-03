@@ -1,1 +1,32 @@
-
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-06-03T17:49:19Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12012776092",
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "lockers",
+        "capacity": "14",
+        "covered": "yes",
+        "fee": "yes",
+        "name": "Bicibox - Complex Esportiu L'11",
+        "operator": "Bicibox",
+        "operator:type": "public",
+        "website": "https://www.bicibox.cat/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9665839,
+          41.4458503
+        ]
+      },
+      "id": "node/12012776092"
+    }
+  ]
+}
