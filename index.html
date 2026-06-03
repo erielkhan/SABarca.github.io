@@ -11,26 +11,44 @@
         :root {
             --primary-color: #2c3e50;
             --bg-sidebar: rgba(255, 255, 255, 0.95);
+            --accent-color: #3498db;
         }
 
         body, html { margin: 0; padding: 0; height: 100%; font-family: 'Segoe UI', sans-serif; overflow: hidden; }
         #map { height: 100vh; width: 100%; z-index: 1; }
 
-        /* --- MENÚ LATERAL --- */
+        /* --- MENÚ LATERAL ESQUERRE (CAPES) --- */
         #sidebar {
             position: absolute; top: 20px; left: 20px; width: 310px; z-index: 1000;
             background: var(--bg-sidebar); padding: 20px; border-radius: 12px;
             box-shadow: 0 8px 32px rgba(0,0,0,0.15); max-height: 85vh; overflow-y: auto;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            transform: translateX(0);
-            opacity: 1;
+            transform: translateX(0); opacity: 1;
         }
+        #sidebar.collapsed { transform: translateX(-350px); opacity: 0; pointer-events: none; }
 
-        #sidebar.collapsed {
-            transform: translateX(-350px);
-            opacity: 0;
-            pointer-events: none;
+        /* --- MENÚ LATERAL DRET (ELEMENTS DINÀMICS AMB ZOOM) --- */
+        #right-sidebar {
+            position: absolute; top: 20px; right: 20px; width: 320px; z-index: 1000;
+            background: var(--bg-sidebar); padding: 20px; border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15); max-height: 85vh;
+            display: flex; flex-direction: column;
         }
+        #right-sidebar h3 { margin: 0 0 5px 0; color: var(--primary-color); font-size: 1.1rem; }
+        #elements-list { flex-grow: 1; overflow-y: auto; margin-top: 10px; padding-right: 5px; }
+        
+        .element-card { 
+            background: #fff; border-left: 4px solid var(--accent-color); 
+            padding: 10px; margin-bottom: 8px; border-radius: 4px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer; transition: background 0.2s;
+        }
+        .element-card:hover { background: #f8f9fa; }
+        .element-title { font-weight: bold; color: #333; font-size: 0.9rem; margin-bottom: 6px; }
+        .element-prop { font-size: 0.8rem; color: #555; margin: 3px 0; }
+        .element-prop strong { color: #222; }
+        
+        .element-extra-toggle { font-size: 0.75rem; color: var(--accent-color); margin-top: 6px; cursor: pointer; display: block; }
+        .element-extra-data { display: none; margin-top: 5px; padding-top: 5px; border-top: 1px dashed #eee; font-size: 0.75rem; color: #666; }
 
         /* --- BOTÓ DE COL·LAPSE --- */
         #menu-toggle {
@@ -38,20 +56,12 @@
             background: white; border: none; width: 45px; height: 45px;
             border-radius: 8px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.2);
             display: flex; align-items: center; justify-content: center;
-            font-size: 1.2rem; color: var(--primary-color);
-            transition: all 0.3s ease;
+            font-size: 1.2rem; color: var(--primary-color); transition: all 0.3s ease;
         }
         #menu-toggle:hover { background: #f8f9fa; transform: scale(1.05); }
 
-        /* --- TÍTOL I SUBTÍTOL (DESPLAÇATS PER AL BOTÓ) --- */
-        h2 { 
-            margin: 0; color: var(--primary-color); font-size: 1.3rem; 
-            padding-top: 5px; padding-left: 55px; 
-        }
-        p.subtitle { 
-            margin: 0 0 15px 0; font-size: 0.8rem; color: #7f8c8d; 
-            border-bottom: 2px solid #eee; padding-bottom: 10px; padding-left: 55px; 
-        }
+        h2 { margin: 0; color: var(--primary-color); font-size: 1.3rem; padding-top: 5px; padding-left: 55px; }
+        p.subtitle { margin: 0 0 15px 0; font-size: 0.8rem; color: #7f8c8d; border-bottom: 2px solid #eee; padding-bottom: 10px; padding-left: 55px; }
         
         details { margin-bottom: 10px; border-radius: 8px; background: #f1f3f5; overflow: hidden; }
         summary { padding: 12px; font-weight: bold; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; text-transform: uppercase; }
@@ -67,7 +77,7 @@
         .osm-table td { padding: 4px; border: 1px solid #ddd; color: #333; }
         .popup-header { font-size: 1rem; font-weight: bold; display: block; margin-bottom: 8px; padding-bottom: 3px; border-bottom: 2px solid #eee; }
 
-        @media (max-width: 480px) { #sidebar { width: calc(100% - 70px); } }
+        @media (max-width: 768px) { #right-sidebar { display: none; } }
     </style>
 </head>
 <body>
@@ -142,7 +152,6 @@
             </div>
         </details>
 
-
         <details>
             <summary>
                 <input type="checkbox" class="category-toggle">
@@ -159,17 +168,17 @@
                     <label for="amenity-cap">CAP/CUAP</label>
                     <div class="dot" style="background: #D11C00;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="amenity-veterinary" data-file="salut-veterinari.geojson" data-color="#B3854D">
                     <label for="amenity-veterinary">Veterinari</label>
                     <div class="dot" style="background: #B3854D;"></div>
                 </div>
-                  <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="amenity-clinic" data-file="salut-clinica.geojson" data-color="#2F6DC4">
                     <label for="amenity-clinic">Clínica</label>
                     <div class="dot" style="background: #2F6DC4;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="amenity-dentist" data-file="salut-dentista.geojson" data-color="#A9BCDB">
                     <label for="amenity-dentist">Dentista</label>
                     <div class="dot" style="background: #A9BCDB;"></div>
@@ -177,8 +186,7 @@
             </div>
         </details>
 
-
-                <details>
+        <details>
             <summary>
                 <input type="checkbox" class="category-toggle">
                 Educació
@@ -194,17 +202,17 @@
                     <label for="amenity-kindergarten">Escola Bressol</label>
                     <div class="dot" style="background: #5386DB;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="amenity-driving-school" data-file="educacio-autoescola.geojson" data-color="#D1603B">
                     <label for="amenity-driving-school">Autoescola</label>
                     <div class="dot" style="background: #D1603B;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="amenity-language-school" data-file="educacio-idiomes.geojson" data-color="#A472DB">
                     <label for="amenity-language-school">Escola d'Idiomes</label>
                     <div class="dot" style="background: #A472DB;"></div>
                 </div>
-                  <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="amenity-prep-school" data-file="educacio-academia.geojson" data-color="#000000">
                     <label for="amenity-prep-school">Acadèmia de Repàs</label>
                     <div class="dot" style="background: #000000;"></div>
@@ -221,8 +229,8 @@
                 </div>
             </div>
         </details>
-        
-         <details>
+         
+        <details>
             <summary>
                 <input type="checkbox" class="category-toggle">
                 Reciclatge
@@ -233,27 +241,27 @@
                     <label for="recycle-paper">Paper</label>
                     <div class="dot" style="background: #3261C2;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="recycle-plastic" data-file="reciclatge-envasos.geojson" data-color="#EBE76F">
                     <label for="recycle-plastic">Envasos</label>
                     <div class="dot" style="background: #EBE76F;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="recycle-glass" data-file="reciclatge-vidre.geojson" data-color="#36D16B">
                     <label for="recycle-glass">Vidre</label>
                     <div class="dot" style="background: #36D16B;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="recycle-organic" data-file="reciclatge-organica.geojson" data-color="#9A7937">
                     <label for="recycle-organic">Orgànica</label>
                     <div class="dot" style="background: #9A7937;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="recycle-waste" data-file="reciclatge-resta.geojson" data-color="#000000">
                     <label for="recycle-waste">Resta</label>
                     <div class="dot" style="background: #000000;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="recycle-mini" data-file="reciclatge-minideixalleria.geojson" data-color="#9FE9D4">
                     <label for="recycle-mini">Minideixalleria</label>
                     <div class="dot" style="background: #9FE9D4;"></div>
@@ -263,7 +271,7 @@
                     <label for="recycle-oil">Oli</label>
                     <div class="dot" style="background: #BA2D2D;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="recycle-clothes" data-file="reciclatge-roba.geojson" data-color="#D585D5">
                     <label for="recycle-clothes">Roba</label>
                     <div class="dot" style="background: #D585D5;"></div>
@@ -271,8 +279,7 @@
             </div>
         </details>
 
-
-                 <details>
+        <details>
             <summary>
                 <input type="checkbox" class="category-toggle">
                 Esbarjo i carrer
@@ -283,35 +290,39 @@
                     <label for="amenity-water">Aigua potable</label>
                     <div class="dot" style="background: #7EC7E6;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="amenity-bench" data-file="esbarjo-banc.geojson" data-color="#906941">
                     <label for="amenity-bench">Bancs per seure</label>
                     <div class="dot" style="background: #906941;"></div>
                 </div>
-                  <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="amenity-waste-basket" data-file="esbarjo-paperera.geojson" data-color="#000000">
                     <label for="amenity-waste-basket">Papereres</label>
                     <div class="dot" style="background: #000000;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="amenity-playground" data-file="esbarjo-parc-infantil.geojson" data-color="#FF5C6C">
                     <label for="amenity-playground">Parcs infantils</label>
                     <div class="dot" style="background: #FF5C6C;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="amenity-fountain" data-file="esbarjo-font-ornamental.geojson" data-color="#A39DBE">
                     <label for="amenity-fountain">Font ornamental</label>
                     <div class="dot" style="background: #A39DBE;"></div>
                 </div>
-                 <div class="layer-item">
+                <div class="layer-item">
                     <input type="checkbox" class="layer-toggle" id="amenity-trees" data-file="esbarjo-arbrat.geojson" data-color="#217536">
                     <label for="amenity-trees">Arbrat</label>
                     <div class="dot" style="background: #217536;"></div>
                 </div>
             </div>
         </details>
+    </div>
 
-        
+    <div id="right-sidebar">
+        <h3>Elements al mapa</h3>
+        <p style="margin:0; font-size:0.75rem; color:#7f8c8d;">Visibles a la zona actual</p>
+        <div id="elements-list"></div>
     </div>
 
     <div id="map"></div>
@@ -319,7 +330,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <script>
-        // --- LÒGICA COL·LAPSE ---
+        // --- CONTROL DEL COL·LAPSE ---
         const sidebar = document.getElementById('sidebar');
         const menuBtn = document.getElementById('menu-toggle');
 
@@ -328,16 +339,20 @@
             menuBtn.innerHTML = isCollapsed ? '☰' : '✕';
         });
 
-        // --- MAPA ---
+        // --- MAPA BASE (AMB COLORS DE CARRETERES, PARCS I EDIFICIS - OSM STANDARD) ---
         const centroSAB = [41.44997317478169, 1.9711849410595195];
         const map = L.map('map', { zoomControl: false }).setView(centroSAB, 16);
         L.control.zoom({ position: 'topright' }).addTo(map);
 
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors'
         }).addTo(map);
 
         const individualLayers = {};
+
+        // RUTA DE LES IMATGES A GITHUB 
+        // Canvia el path pel del teu directori (Ex: `https://raw.githubusercontent.com/USUARI/REPOSITORI/main/icones/${id}.svg`)
+        const getIconUrl = (id) => `icones/${id}.svg`; 
 
         function crearPopup(props, color) {
             let html = "";
@@ -368,28 +383,156 @@
             if (checkbox.checked) {
                 if (individualLayers[id]) {
                     map.addLayer(individualLayers[id]);
+                    actualitzarLlistatDret();
                 } else {
                     try {
                         const response = await fetch(filePath);
                         const data = await response.json();
+                        
+                        // Icona SVG/PNG definida per codi des de GitHub/Directori
+                        const customIcon = L.icon({
+                            iconUrl: getIconUrl(id),
+                            iconSize: [26, 26],
+                            iconAnchor: [13, 13],
+                            popupAnchor: [0, -10]
+                        });
+
                         const geojsonLayer = L.geoJSON(data, {
                             style: { color: colorCapa, weight: 3, opacity: 0.85, fillColor: colorCapa, fillOpacity: 0.4 },
-                            pointToLayer: (feature, latlng) => L.circleMarker(latlng, {
-                                radius: 9, fillColor: colorCapa, color: "#ffffff", weight: 2, opacity: 1, fillOpacity: 0.9
-                            }),
+                            pointToLayer: (feature, latlng) => {
+                                // Creem un marcador tipus Marker utilitzant la icona de la imatge carregada
+                                return L.marker(latlng, { icon: customIcon });
+                            },
                             onEachFeature: (feature, layer) => {
                                 layer.bindPopup(crearPopup(feature.properties, colorCapa), { maxWidth: 260 });
+                                feature.properties._layerColor = colorCapa;
+                                feature.properties._leafletId = L.stamp(layer);
                             }
                         });
+                        
                         individualLayers[id] = geojsonLayer;
                         map.addLayer(geojsonLayer);
-                    } catch (err) { console.error("Error:", err); }
+                        actualitzarLlistatDret();
+                    } catch (err) { 
+                        console.warn("Falla la icona personalitzada, s'aplica cercle genèric:", err);
+                        carregarFallbackCercles(id, filePath, colorCapa);
+                    }
                 }
             } else {
-                if (individualLayers[id]) map.removeLayer(individualLayers[id]);
+                if (individualLayers[id]) {
+                    map.removeLayer(individualLayers[id]);
+                    actualitzarLlistatDret();
+                }
             }
         }
 
+        // Sistema de contingència (Fallback) si la imatge SVG/PNG a GitHub no respon correctament
+        async function carregarFallbackCercles(id, filePath, colorCapa) {
+            try {
+                const response = await fetch(filePath);
+                const data = await response.json();
+                const geojsonLayer = L.geoJSON(data, {
+                    style: { color: colorCapa, weight: 3, opacity: 0.85, fillColor: colorCapa, fillOpacity: 0.4 },
+                    pointToLayer: (feature, latlng) => L.circleMarker(latlng, {
+                        radius: 9, fillColor: colorCapa, color: "#ffffff", weight: 2, opacity: 1, fillOpacity: 0.9
+                    }),
+                    onEachFeature: (feature, layer) => {
+                        layer.bindPopup(crearPopup(feature.properties, colorCapa), { maxWidth: 260 });
+                        feature.properties._layerColor = colorCapa;
+                        feature.properties._leafletId = L.stamp(layer);
+                    }
+                });
+                individualLayers[id] = geojsonLayer;
+                map.addLayer(geojsonLayer);
+                actualitzarLlistatDret();
+            } catch(e) { console.error("Error crític carregant dades:", e); }
+        }
+
+        // --- SISTEMA DINÀMIC PER AL PANELL LATERAL DRET ---
+        function actualitzarLlistatDret() {
+            const listContainer = document.getElementById('elements-list');
+            listContainer.innerHTML = ''; 
+            
+            const boxMapa = map.getBounds();
+            let elementsTrobats = false;
+
+            for (const id in individualLayers) {
+                if (map.hasLayer(individualLayers[id])) {
+                    individualLayers[id].eachLayer((layer) => {
+                        let visible = false;
+                        if (layer.getLatLng && boxMapa.contains(layer.getLatLng())) visible = true;
+                        if (layer.getBounds && boxMapa.intersects(layer.getBounds())) visible = true;
+
+                        if (visible) {
+                            elementsTrobats = true;
+                            const props = layer.feature.properties;
+                            
+                            const card = document.createElement('div');
+                            card.className = 'element-card';
+                            card.style.borderLeftColor = props._layerColor || '#ccc';
+                            
+                            // Mapeig i traducció explicita al Català sol·licitada
+                            const nom = props.name || "Sense nom especificat";
+                            const telefon = props.phone || props['contact:phone'] || "No indicat";
+                            const horari = props.opening_hours || "No indicat";
+
+                            let cardContent = `
+                                <div class="element-title">${nom}</div>
+                                <div class="element-prop"><strong>Nom:</strong> ${nom}</div>
+                                <div class="element-prop"><strong>Telèfon:</strong> ${telefon}</div>
+                                <div class="element-prop"><strong>Horari:</strong> ${horari}</div>
+                            `;
+
+                            // Recorrem la resta d'etiquetes del fitxer osm per posar-les sota el desplegable
+                            let extraRows = "";
+                            for (const clau in props) {
+                                if (!['name', 'phone', 'contact:phone', 'opening_hours', '_layerColor', '_leafletId', 'id'].includes(clau) && !clau.startsWith('@')) {
+                                    extraRows += `<div><strong>${clau}:</strong> ${props[clau]}</div>`;
+                                }
+                            }
+
+                            if (extraRows !== "") {
+                                const uniqueId = `extra-${props._leafletId}`;
+                                cardContent += `
+                                    <span class="element-extra-toggle" onclick="event.stopPropagation(); toggleExtraData('${uniqueId}')">Més etiquetes ▾</span>
+                                    <div id="${uniqueId}" class="element-extra-data">${extraRows}</div>
+                                `;
+                            }
+
+                            card.innerHTML = cardContent;
+                            
+                            // En fer clic a un element de la dreta, ens hi apropem (Zoom) i obrim el seu popup
+                            card.addEventListener('click', () => {
+                                if (layer.getLatLng) {
+                                    map.setView(layer.getLatLng(), 18);
+                                    layer.openPopup();
+                                } else if (layer.getBounds) {
+                                    map.fitBounds(layer.getBounds());
+                                    layer.openPopup();
+                                }
+                            });
+
+                            listContainer.appendChild(card);
+                        }
+                    });
+                }
+            }
+
+            if (!elementsTrobats) {
+                listContainer.innerHTML = '<p style="font-size:0.8rem; color:#999; text-align:center; margin-top:20px;">No hi ha cap element d\'una capa activa dins de la visualització d\'aquest zoom.</p>';
+            }
+        }
+
+        window.toggleExtraData = function(id) {
+            const el = document.getElementById(id);
+            el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+        };
+
+        // Event listeners de moviment sobre el mapa per recalcular el llistat dinàmic segons zoom/pan
+        map.on('moveend', actualitzarLlistatDret);
+        map.on('zoomend', actualitzarLlistatDret);
+
+        // Controladors d'esdeveniments per a l'arbre de capes esquerre
         document.querySelectorAll('.layer-toggle').forEach(input => {
             input.addEventListener('change', (e) => toggleLayer(e.target));
         });
