@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2026-03-25T22:10:45Z",
+  "timestamp": "2026-06-03T18:40:15Z",
   "features": [
     {
       "type": "Feature",
@@ -6984,8 +6984,8 @@
         "coordinates": [
           [
             [
-              1.9745316,
-              41.4481903
+              1.9745329,
+              41.4481915
             ],
             [
               1.9745611,
@@ -7000,8 +7000,8 @@
               41.4482282
             ],
             [
-              1.9745316,
-              41.4481903
+              1.9745329,
+              41.4481915
             ]
           ]
         ]
