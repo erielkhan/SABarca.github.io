@@ -82,6 +82,25 @@
         .osm-table td { padding: 4px; border: 1px solid #ddd; color: #333; }
         .popup-header { font-size: 1rem; font-weight: bold; display: block; margin-bottom: 8px; padding-bottom: 3px; border-bottom: 2px solid #eee; }
 
+        /* --- CLASES NUEVAS PARA EL CONTROL DE ICONOS CIRCULARES --- */
+        .custom-circular-marker {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .custom-circular-marker img {
+            width: 65%;
+            height: 65%;
+            object-fit: contain;
+            /* Si tus iconos son negros y quieres que pasen a ser blancos sobre el fondo de color, descomenta la siguiente línea: */
+            /* filter: brightness(0) invert(1); */
+        }
+
         @media (max-width: 768px) { #right-sidebar { display: none; } }
     </style>
 </head>
@@ -292,8 +311,8 @@
             </summary>
             <div class="category-content">
                 <div class="layer-item">
-                    <input type="checkbox" class="layer-toggle" id="amenity-veterinary" data-file="salut-veterinari.geojson" data-color="#B3854D">
-                    <label for="amenity-veterinary">Veterinari</label>
+                    <input type="checkbox" class="layer-toggle" id="amenity-veterinary-gossos" data-file="salut-veterinari.geojson" data-color="#B3854D">
+                    <label for="amenity-veterinary-gossos">Veterinari</label>
                     <div class="dot" style="background: #B3854D;"></div>
                 </div>
                 <div class="layer-item">
@@ -399,19 +418,43 @@
             menuBtn.innerHTML = isCollapsed ? '☰' : '✕';
         });
 
+        // --- ENLLAÇ DE CATEGORIES AMB ELS SEUS INPUTS ---
+        document.querySelectorAll('.category-toggle').forEach(catToggle => {
+            catToggle.addEventListener('change', function() {
+                const layerContent = this.closest('details').querySelector('.category-content');
+                const checkboxes = layerContent.querySelectorAll('.layer-toggle');
+                checkboxes.forEach(cb => {
+                    if (cb.checked !== this.checked) {
+                        cb.checked = this.checked;
+                        toggleLayer(cb);
+                    }
+                });
+            });
+        });
+
+        document.querySelectorAll('.layer-toggle').forEach(layerToggle => {
+            layerToggle.addEventListener('change', function() {
+                toggleLayer(this);
+            });
+        });
+
         // --- MAPA BASE ---
         const centroSAB = [41.44997317478169, 1.9711849410595195];
         const map = L.map('map', { zoomControl: false }).setView(centroSAB, 16);
         L.control.zoom({ position: 'topright' }).addTo(map);
 
-        // Utilitzem CartoDB Positron, combinat amb el filtre CSS ".leaflet-tile-container" per deixar-lo 100% en blanc i negre
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
             subdomains: 'abcd',
             maxZoom: 20
         }).addTo(map);
 
+        map.on('moveend', actualitzarLlistatDret);
+
         const individualLayers = {};
+        
+        // Modificado para soportar tanto .svg como .png dinámicamente si fuera necesario
+        // (Por defecto busca .svg; si tus iconos son .png cambia la extensión aquí)
         const getIconUrl = (id) => `icones/${id}.svg`; 
 
         function crearPopup(props, color) {
@@ -432,6 +475,15 @@
             }
             html += `</table>`;
             return (props.name || teDades) ? html : `<span style="font-size:0.8rem; color:#999 italic;">Sense dades</span>`;
+        }
+
+        function toggleExtraData(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "block") {
+                el.style.display = "none";
+            } else {
+                el.style.display = "block";
+            }
         }
 
         async function toggleLayer(checkbox) {
@@ -463,13 +515,23 @@
                             style: { color: colorCapa, weight: 3, opacity: 0.85, fillColor: colorCapa, fillOpacity: 0.4 },
                             pointToLayer: (feature, latlng) => {
                                 if (imatgeExisteix) {
-                                    const customIcon = L.icon({
-                                        iconUrl: urlIcona,
-                                        iconSize: [26, 26],
-                                        iconAnchor: [13, 13],
-                                        popupAnchor: [0, -10]
+                                    // Cambiado L.icon por L.divIcon para poder inyectar estilos CSS y un fondo circular de color
+                                    const customCircularIcon = L.divIcon({
+                                        className: 'custom-circular-marker',
+                                        html: `<img src="${urlIcona}" alt="${id}">`,
+                                        iconSize: [32, 32],      // Tamaño del contenedor circular completo
+                                        iconAnchor: [16, 16],    // Punto de anclaje central
+                                        popupAnchor: [0, -14]    // Ajuste del popup con respecto al icono
                                     });
-                                    return L.marker(latlng, { icon: customIcon });
+
+                                    const marker = L.marker(latlng, { icon: customCircularIcon });
+                                    
+                                    // Aplicamos dinámicamente el color de fondo una vez el marcador se añade al mapa
+                                    marker.on('add', function() {
+                                        this.getElement().style.backgroundColor = colorCapa;
+                                    });
+                                    
+                                    return marker;
                                 } else {
                                     return L.circleMarker(latlng, {
                                         radius: 9, fillColor: colorCapa, color: "#ffffff", weight: 2, opacity: 1, fillOpacity: 0.9
@@ -571,35 +633,9 @@
             }
 
             if (!elementsTrobats) {
-                listContainer.innerHTML = '<p style="font-size:0.8rem; color:#999; text-align:center; margin-top:20px;">No hi ha cap element d\'una capa activa dins d\'aquest zoom.</p>';
+                listContainer.innerHTML = '<p style="text-align:center; color:#999; font-size:0.8rem; margin-top:20px;">No hi ha elements actius visibles</p>';
             }
         }
-
-        window.toggleExtraData = function(id) {
-            const el = document.getElementById(id);
-            el.style.display = (el.style.display === 'block') ? 'none' : 'block';
-        };
-
-        map.on('moveend', actualitzarLlistatDret);
-        map.on('zoomend', actualitzarLlistatDret);
-
-        document.querySelectorAll('.layer-toggle').forEach(input => {
-            input.addEventListener('change', (e) => toggleLayer(e.target));
-        });
-
-        document.querySelectorAll('.category-toggle').forEach(master => {
-            master.addEventListener('click', (e) => e.stopPropagation());
-            master.addEventListener('change', function() {
-                const parent = this.closest('details');
-                const children = parent.querySelectorAll('.layer-toggle');
-                children.forEach(c => {
-                    if (c.checked !== this.checked) {
-                        c.checked = this.checked;
-                        toggleLayer(c);
-                    }
-                });
-            });
-        });
     </script>
 </body>
 </html>
