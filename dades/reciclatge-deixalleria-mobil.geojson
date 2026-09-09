@@ -1,0 +1,140 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-09-09T01:46:04Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/14158295286",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:postcode": "08740",
+        "addr:street": "Carretera de Barcelona",
+        "amenity": "recycling",
+        "name": "Deixalleria mòbil",
+        "opening_hours": "Fr[1] 9:00-14:00",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "recycling:batteries": "yes",
+        "recycling:cleaning_supplies": "yes",
+        "recycling:clothes": "yes",
+        "recycling:cooking_oil": "yes",
+        "recycling:fluorescent_tubes": "yes",
+        "recycling:light_bulbs": "yes",
+        "recycling:low_energy_bulbs": "yes",
+        "recycling:shoes": "yes",
+        "recycling:small_appliances": "yes",
+        "recycling:small_electrical_appliances": "yes",
+        "recycling:smartphones": "yes",
+        "recycling_type": "centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9735625,
+          41.4484839
+        ]
+      },
+      "id": "node/14158295286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/14158361159",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Guatemala",
+        "amenity": "recycling",
+        "name": "Deixalleria mòbil",
+        "opening_hours": "Fr[3] 9:00-14:00",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "recycling:batteries": "yes",
+        "recycling:cleaning_supplies": "yes",
+        "recycling:clothes": "yes",
+        "recycling:cooking_oil": "yes",
+        "recycling:fluorescent_tubes": "yes",
+        "recycling:light_bulbs": "yes",
+        "recycling:low_energy_bulbs": "yes",
+        "recycling:shoes": "yes",
+        "recycling:small_appliances": "yes",
+        "recycling:small_electrical_appliances": "yes",
+        "recycling:smartphones": "yes",
+        "recycling_type": "centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9763198,
+          41.4477992
+        ]
+      },
+      "id": "node/14158361159"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/14158361160",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "amenity": "recycling",
+        "name": "Deixalleria mòbil",
+        "opening_hours": "Fr[4,5] 9:00-14:00",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "recycling:batteries": "yes",
+        "recycling:cleaning_supplies": "yes",
+        "recycling:clothes": "yes",
+        "recycling:cooking_oil": "yes",
+        "recycling:fluorescent_tubes": "yes",
+        "recycling:light_bulbs": "yes",
+        "recycling:low_energy_bulbs": "yes",
+        "recycling:shoes": "yes",
+        "recycling:small_appliances": "yes",
+        "recycling:small_electrical_appliances": "yes",
+        "recycling:smartphones": "yes",
+        "recycling_type": "centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9671578,
+          41.4492851
+        ]
+      },
+      "id": "node/14158361160"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/14158361161",
+        "addr:city": "Sant Andreu de la Barca",
+        "addr:postcode": "08740",
+        "addr:street": "Avinguda Constitució",
+        "amenity": "recycling",
+        "name": "Deixalleria mòbil",
+        "opening_hours": "Fr[2] 9:00-14:00",
+        "operator": "Ajuntament de Sant Andreu de la Barca",
+        "recycling:batteries": "yes",
+        "recycling:cleaning_supplies": "yes",
+        "recycling:clothes": "yes",
+        "recycling:cooking_oil": "yes",
+        "recycling:fluorescent_tubes": "yes",
+        "recycling:light_bulbs": "yes",
+        "recycling:low_energy_bulbs": "yes",
+        "recycling:shoes": "yes",
+        "recycling:small_appliances": "yes",
+        "recycling:small_electrical_appliances": "yes",
+        "recycling:smartphones": "yes",
+        "recycling_type": "centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9594532,
+          41.4540263
+        ]
+      },
+      "id": "node/14158361161"
+    }
+  ]
+}
